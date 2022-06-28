@@ -19,10 +19,14 @@ example_text = `
 `
 
 const annotate = (text) => {
+    // normalize text
+    text = text.replace("see, generally,", "see")
+    text = text.replace("see,", "see")
+
     // find v position
     v_indices = Array.from(text.matchAll(/\sv\s/gm), match => match.index);
 
-    const prefix = "\\(|(((^|\.\s*)((see, generally,))|(see)|(but)|(in)|(applied)|(cites)|(of)|(on)|(at)) )"
+    const prefix = "(((^|\.\s*)(see)|(but)|(in)|(applied)|(cites)|(of)|(on)|(at)) )|\\("
     const prefix_regex = new RegExp(prefix, "gm")
     prefix_indices = Array.from(text.matchAll(prefix_regex), match => match);
 
