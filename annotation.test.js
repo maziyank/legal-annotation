@@ -33,3 +33,8 @@ expect6 = 'Manchester College of Arts and Technology (MANCAT) v Mr G Smith [2007
 test(expect6, () => {
     expect(annotate('the tribunal see Manchester College of Arts and Technology (MANCAT) v Mr G Smith [2007] UKEAT 0460/06')).toStrictEqual([expect6]);
 });
+
+expect7 = 'Nicholls v Rockwell Automation Ltd EAT/0540/11/SM';
+test(expect7, () => {
+    expect(annotate('Appeal Tribunal in Nicholls v Rockwell Automation Ltd EAT/0540/11/SM.')).toStrictEqual([expect7]);
+});
