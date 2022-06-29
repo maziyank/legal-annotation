@@ -1,4 +1,4 @@
-const annotate = require('./annotation');
+const annotate = require('./../src/annotation');
 
 test('W v W [2011] EWCA Civ 703', () => {
     expect(annotate('Court of Appeal in W v W [2011] EWCA Civ 703 which suggest that the jurisdictional basis on which')).toStrictEqual(['W v W [2011] EWCA Civ 703']);
