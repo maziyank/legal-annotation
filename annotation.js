@@ -26,7 +26,7 @@ example_text = `
     ..as explained by Judge Gray in MT v Secretary of State for Work and Pensions (ESA) [2013] UKUT 0545 (AAC)-see paragraph 23. In assessing the risks to the mental health..
 `
 
-const annotate = (text) => {
+function annotate(text) {
     // normalize text
     text = text.replace("see, generally,", "see")
     text = text.replace("see,", "see")
@@ -48,18 +48,5 @@ const annotate = (text) => {
 
     return citations
 }
-
-const annotate_2 = (text) => {
-    const patterns = [
-        /(?<=((\.|\,|^)|(see)|(but)|(in)|(cites)|(of)|(on)|(at))\s)(([A-Z][a-z]*)(\sv\s).+\s(\[|\(\d{4}\]|\)).*[A-Z]\w+\s\d+)/gm,
-    ]
-
-    let citations = {}
-    patterns.forEach((pattern, i) => {
-        citations[`rules ${i + 1}`] = Array.from(text.matchAll(pattern), match => match[0]);
-    })
-
-    return citations
-} 
-
-console.log(annotate(example_text))
+ 
+module.exports = annotate;

@@ -1,0 +1,22 @@
+{
+  "name": "annotation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "annotation.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maziyank/legal-annotation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maziyank/legal-annotation/issues"
+  },
+  "homepage": "https://github.com/maziyank/legal-annotation#readme",
+  "dependencies": {
+    "jest": "^28.1.2"
+  }
+}
