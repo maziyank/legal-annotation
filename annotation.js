@@ -27,9 +27,21 @@ example_text = `
 `
 
 function annotate(text) {
+
+    const normalize = (txt) => {
+        txt = txt.replace("see, generally,", "see")
+        txt = txt.replace("see,", "see")
+        txt = txt.replace(/\(\S+\)/gm, x => x.replace(/\(\S+\)/gm, x => x.replace(/\(|\)/g, '-')))
+        return txt;
+    }
+
+    const denormalize = (txt) => {
+        txt = txt.replace(/\-\S+\-/gm, x => `(${x.slice(1, x.length - 1)})`)
+        txt = txt.replace(new RegExp(prefix), "")
+        return txt;
+    }
     // normalize text
-    text = text.replace("see, generally,", "see")
-    text = text.replace("see,", "see")
+    text = normalize(text);
 
     // find v position
     v_indices = Array.from(text.matchAll(/\sv\s/gm), match => match.index);
@@ -43,10 +55,12 @@ function annotate(text) {
         return cadidate[cadidate.length - 1].index
     })
 
-    const end = /(.*(\[|\\(\d{4}\]|\\)).*[A-Z]\w+\s\d+)/g
-    const citations = start.map((s, i) => Array.from(text.slice(s, v_indices[i + 1]).matchAll(end), match => match[0].replace(new RegExp(prefix),""))[0])
+    const end = /(.*(|\[|\\(\d{4}\]|\\|)).*([A-Z]\w+)*\s(\d+\/\d+|\d+))/g
+    const citations = start.map((s, i) => denormalize(Array.from(text.slice(s, v_indices[i + 1]).matchAll(end), match => match[0])[0]))
 
+    // denormalize
     return citations
 }
- 
+
+// console.log(annotate("the tribunal see Manchester College of Arts and Technology (MANCAT) v Mr G Smith [2007] UKEAT 0460/06"))
 module.exports = annotate;
