@@ -16,6 +16,14 @@ example_text = `
     “In AM Richardson v. BETR 2000/65 the Transport Tribunal accepted that the Traffic Commissioner is a public authority and thus subject to control by section 6 of the Human Rights Act 1988. 
 
     This approach of the Traffic Commissioner is an error of law in that it reverses the burden of proof for an existing licence holder resting on the Commissioner (Muck-it v Merritt and Others [2005] EWCA 1124 and Patricia Bakewell (t/a PP Haulage T/2017/4)). 
+
+    The reconsideration must be undertaken in accordance with KK v Secretary of State for Work and Pensions [2015] UKUT 417 (AAC).
+
+    at stake’: R (Osborn) v Parole Board [2014] AC 1115 at [2(i)]. I am required to have regard
+
+    In SM v Secretary of State for Work and Pensions [2015] UKUT 617 (AAC), Upper Tribunal Judge Ward said this..
+
+    ..as explained by Judge Gray in MT v Secretary of State for Work and Pensions (ESA) [2013] UKUT 0545 (AAC)-see paragraph 23. In assessing the risks to the mental health..
 `
 
 const annotate = (text) => {
@@ -26,7 +34,7 @@ const annotate = (text) => {
     // find v position
     v_indices = Array.from(text.matchAll(/\sv\s/gm), match => match.index);
 
-    const prefix = "(((^|\.\s*)(see)|(but)|(in)|(applied)|(cites)|(of)|(on)|(at)) )|\\("
+    const prefix = "(((^|\.|\:)(see)|(but)|(in)|(applied)|(cites)|(of)|(on)|(by)|(at)|(with)|(to)) )|\\("
     const prefix_regex = new RegExp(prefix, "gm")
     prefix_indices = Array.from(text.matchAll(prefix_regex), match => match);
 
