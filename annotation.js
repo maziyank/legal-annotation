@@ -19,7 +19,7 @@ function annotate(text) {
     // find v position
     v_indices = Array.from(text.matchAll(/\sv\s/gm), match => match.index);
 
-    const prefix = "(((^|\.|\:)(see)|(but)|(in)|(applied)|(cites)|(of)|(on)|(by)|(at)|(with)|(to)) )|\\("
+    const prefix = "(((^|\.|\:)(see)|(but)|(in)|(applied)|(cites)|(on)|(by)|(at)|(with)|(to)) )|\\("
     const prefix_regex = new RegExp(prefix, "gm")
     prefix_indices = Array.from(text.matchAll(prefix_regex), match => match);
 
@@ -35,6 +35,6 @@ function annotate(text) {
     return citations
 }
 
-console.log(annotate('Appeal Tribunal in Nicholls v Rockwell Automation Ltd EAT/0540/11/SM'))
-// console.log(annotate("the tribunal see Manchester College of Arts and Technology (MANCAT) v Mr G Smith [2007] UKEAT 0460/06"))
+// console.log(annotate('Appeal Tribunal in Nicholls v Rockwell Automation Ltd EAT/0540/11/SM'))
+console.log(annotate("the tribunal see Manchester College of Arts and Technology (MANCAT) v Mr G Smith [2007] UKEAT 0460/06"))
 module.exports = annotate;
