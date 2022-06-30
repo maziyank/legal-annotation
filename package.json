@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/maziyank/legal-annotation#readme",
   "dependencies": {
-    "jest": "^28.1.2"
+    "http-server": "^14.1.1",
+    "jest": "^28.1.2",
+    "jest-html-reporter": "^3.5.0"
   }
 }
