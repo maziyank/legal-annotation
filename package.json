@@ -5,7 +5,7 @@
   "main": "annotation.js",
   "scripts": {
     "test": "jest",
-    "build": "jest && mkdir public && cp index.html public/index.html && cp test-report.html public/test-report.html"
+    "build": "jest && mkdir public && cp index.html public/index.html && cp test-report.html public/test-report.html & cp test/test_case.json public/test_case.json & cp src/annotation.js public/annotation.js"
   },
   "repository": {
     "type": "git",
