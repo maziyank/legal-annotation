@@ -39,6 +39,14 @@
         {
             "text": "The Tribunal directed itself in line with the Court of Appeal decision in Walton v Independent Living Organisation Limited [2003] ICR 688, CA. The Claimant in that case was paid a fixed daily",
             "expected": "Walton v Independent Living Organisation Limited [2003] ICR 688"
+        },
+        {
+            "text": "The late Laws LJ explained in R(Cart) v Upper Tribunal [2009] EWHC 3052 (Admin), ",
+            "expected": "R(Cart) v Upper Tribunal [2009] EWHC 3052"
+        },
+        {
+            "text": "…at stake’: R (Osborn) v Parole Board [2014] AC 1115 at [2(i)]. I am required to have regard",
+            "expected": "R (Osborn) v Parole Board [2014] AC 1115"
         }
     ]
 }
