@@ -1,4 +1,4 @@
-function annotate(text) {
+function detector1(text) {
 
     const normalize = (txt) => {
         txt = txt.replace("see, generally,", "see");
@@ -38,8 +38,6 @@ function annotate(text) {
     })
      if (!start) return false
 
-     console.log(prefix_indices.map(m=>m.index), start)
-
     const end = /(.*(|\[|\\(\d{4}\]|\\|)).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|(.*[A-Z]+\/\d+\/\d+\/[A-Z]+)|(.*(\(\w+\/\d+\/\d+\)))/g;
     const citations = start.map((s, i) => denormalize(Array.from(text.slice(s, v_indices[i + 1]).matchAll(end), match => match[0])[0]));
 
@@ -47,4 +45,13 @@ function annotate(text) {
     return citations;
 }
 
+function annotate(text) {
+    const detectors = [detector1]
+    let citations = []
+    detectors.forEach(detector => {
+        citations = citations.concat(detector(text));
+    })
+
+    return [...new Set(citations)];
+}
 module.exports = annotate;
