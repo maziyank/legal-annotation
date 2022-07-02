@@ -29,23 +29,26 @@
 </body>
 
 </html>
+ 
 
 <script>
     const text_container = document.querySelector("#text-container");
-    fetch("./test/test_case.json")
+    var cases = []
+    fetch("test_case.json")
         .then(response => response.json())
         .then(({ scenarios }) => {
-            scenarios.forEach(item => text_container.innerHTML += `...${item.text}...</br></br>`)
+            cases = scenarios;
+            scenarios.forEach((item, i) => text_container.innerHTML += `Case ${i} <br/>...${item.text}...</br></br>`);
 
         });
 
     const annotate_text = () => {
-        let fulltext = text_container.innerHTML;
-        const citations = annotate(fulltext);
-        citations.forEach(item => {
-            fulltext = fulltext.replace(item, `<a href="#" data-toggle="tooltip" data-placement="top" title="${item}"><mark>${item}</mark></a>`);
+        text_container.innerHTML = "";
+        cases.forEach((item, i) => {
+            const cit = annotate(item.text);
+            const text = item.text.replace(cit, `<a href="#" data-toggle="tooltip" data-placement="top" title="${cit}"><mark>${cit}</mark></a>`);
+            console.log(text);
+            text_container.innerHTML += `Case ${i} <br/>...${text}...</br></br>`;
         });
-
-        text_container.innerHTML = fulltext;
     }
 </script>
