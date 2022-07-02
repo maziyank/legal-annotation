@@ -1,19 +1,17 @@
-const prefix = "((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(accord)|(cites)|(on)|(by)|(at)|(with)|(to)) )|\\(|^|\\n";
+const prefix = "((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(on appeal)|(accord)|(cites)|(on)|(by)|(at)|(with)|(to)) )|\\(|^|\\n";
 const prefix_regex = new RegExp(prefix, "gm");
 const end = /(.*(|\[|\\(\d{4}\]|\\|)).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|(.*[A-Z]+\/\d+\/\d+\/[A-Z]+)|(.*(\(\w+\/\d+\/\d+\)))/g;
 
-const indexOfGroup = (match, n) => {
-    var ix= match.index;
-    for (var i= 1; i<n; i++)
-        ix+= match[i].length;
-    return ix;
-}
-
 const normalize = (txt) => {
     txt = txt.replace("see, generally,", "see");
+    txt = txt.replace("See, generally,", "see");
     txt = txt.replace("see,", "see");
-    txt = txt.replace(/,?\sand\s/g, " and ");
-    txt = txt.replace(/\:\s*/, '\n'); 
+    txt = txt.replace("See,", "see");
+    txt = txt.replace("see also ", "see ");
+    txt = txt.replace("See also ", "see ");
+    txt = txt.replace(/,?\sand\s/gm, " and ");
+    txt = txt.replace(/\:\s*/gm, '\n');
+    txt = txt.replace(/;/gm, '\n'); 
 
     // split if `and` found 
     const and_ = /(\sv\s.*((|\[|\\(\d{4}\]|\\|))([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(\s+and\s+)/g
@@ -40,7 +38,7 @@ const denormalize = (txt) => {
 function detector1(text) {
     // normalize text
     text = normalize(text);
-
+    console.log(text);
     // find v position
     v_indices = Array.from(text.matchAll(/\sv\.?\s/gm), match => match.index);
 
