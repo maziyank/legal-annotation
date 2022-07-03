@@ -1,6 +1,7 @@
-const prefix = "((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(on appeal)|(accord)|(cites)|(on)|(by)|(at)|(with)|(to)) )|\\(|^|\\n";
+const prefix = "((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(on appeal)|(accord)|(cites)|(cite)|(cited)|(on)|(by)|(at)|(with)|(to)) )|\\(|^|\\n";
 const prefix_regex = new RegExp(prefix, "gm");
-const end = /(.*(|\[|\\(\d{4}\]|\\|)).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|(.*[A-Z]+\/\d+\/\d+\/[A-Z]+)|(.*(\(\w+\/\d+\/\d+\)))/g;
+const end = /((.*((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|(.*[A-Z]+\/\d+\/\d+\/[A-Z]+)|(.*(\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\)|)/g;
+const end2 = /((((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\))/g;
 
 const normalize = (txt) => {
     txt = txt.replace("see, generally,", "see");
@@ -23,6 +24,7 @@ const normalize = (txt) => {
     
     // preserve
     txt = txt.replace(/(\(\S+\))(?=.*\sv\.?\s)/gm, x => x.replace(/\(|\)/g, '-'));
+    txt = txt.replace(/(\(\S+\))(?=.*((\[\d{4}\])|(\(\d{4}\))|(\d{4})))/gm, x => x.replace(/\(|\)/g, '-'));
     txt = txt.replace(/(?<=[A-Z]\w+)(\sof\s)(?=[A-Z])/gm, x => x.replace(' of ', ' %OF% '));
     return txt;
 }
@@ -36,19 +38,16 @@ const denormalize = (txt) => {
 }
 
 function detector1(text) {
-    // normalize text
-    text = normalize(text);
-    console.log(text);
     // find v position
-    v_indices = Array.from(text.matchAll(/\sv\.?\s/gm), match => match.index);
+    v_matches = Array.from(text.matchAll(/\sv\.?\s/gm), match => match.index);
 
-    if (!v_indices)
-        return false
+    if (!v_matches)
+        return []
 
     prefix_match = Array.from(text.matchAll(prefix_regex), match => match);
 
-    const start = v_indices.map(v_index => {
-        const candidate = prefix_match.filter(item => item.index < v_index);
+    const start = v_matches.map(v => {
+        const candidate = prefix_match.filter(item => item.index < v);
         if (!candidate) {
             return -1
         }
@@ -56,9 +55,9 @@ function detector1(text) {
         const final_candidate = candidate[candidate.length - 1]
         return final_candidate.index + final_candidate[0].length;
     })
-    if (!start) return false
+    if (!start) return []
 
-    let citations = start.map((s, i) => Array.from(text.slice(s, v_indices[i + 1]).matchAll(end), match => match[0])[0]);
+    let citations = start.map((s, i) => Array.from(text.slice(s, v_matches[i + 1]).matchAll(end), match => match[0])[0]);
 
     // revert text to original
     citations = citations.map(item => denormalize(item))
@@ -66,15 +65,41 @@ function detector1(text) {
     return citations;
 }
 
+function detector2(text) {
+    const end_matches = Array.from(text.matchAll(end2), match => match);
+    if (!end_matches)
+        return []
+
+    prefix_match = Array.from(text.matchAll(prefix_regex), match => match);
+    const start = end_matches.map(e => {
+        const candidate = prefix_match.filter(item => item.index < e.index);
+        if (!candidate) {
+            return -1
+        }
+        const final_candidate =  candidate[candidate.length - 1]
+        return [final_candidate.index + final_candidate[0].length, e.index + e[0].length];
+    })
+    if (!start) return 
+    
+    //  construct text and exclude citation with v
+    let citations = start.map(s => text.slice(s[0], s[1])).filter(s => s.indexOf(' v ') == -1);
+    // revert text to original
+    citations = citations.map(item => denormalize(item))
+    return citations
+}
+
 function annotate(text) {
-    const detectors = [detector1]
-    let citations = []
+    // normalize text
+    text = normalize(text);
+    
+    const detectors = [detector1, detector2];
+    let citations = [];
     detectors.forEach(detector => {
         citations = citations.concat(detector(text));
-    })
+    });
 
     return [...new Set(citations)];
 }
 
-// console.log(annotate("We need only refer to the well-known authorities of Meek v City of Birmingham DC [1987] IRLR 250 and English v Emery Reimbold and Strick [2003] IRLR 710 for"))
+console.log(annotate("That nobody"))
 module.exports = annotate;
