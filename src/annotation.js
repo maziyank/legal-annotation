@@ -35,6 +35,9 @@ const denormalize = (txt) => {
     if (!txt) return
     txt = txt.replace(/\-\S+\-/gm, x => `(${x.slice(1, x.length - 1)})`);
     txt = txt.replace(' %OF% ', ' of ');
+
+    // refine 'at digit' in the end of citation
+    txt = txt.replace(/((\sat\s)|(\sat\spp\s))(((\[|\()\d+(\]|\)))|\d+)$/g, "")
     txt = txt.trim();
     return txt;
 }
@@ -103,5 +106,5 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-// console.log(annotate("Thus, in In re K (Infants) [1963] Ch 381, Upjohn LJ at pp 405-406"));
+console.log(annotate("No question of proof on the civil or criminal standard arises in that context: Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563 per French J; Ovcharuk v Minister for Immigration and Multicultural Affairs (1998) 153 ALR 385 at 388 per Marshall J and on appeal Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179; 158 ALR 289 at 294–5; 51 ALD 549 at 554 per Whitlam J. See also Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476; 63 ALD 321 at 331–2 where Weinberg J reviewed the authorities"));
 module.exports = annotate;
