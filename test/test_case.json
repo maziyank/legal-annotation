@@ -99,6 +99,18 @@
                 "Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179",
                 "Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476"
             ]
+        },
+        {
+            "text": "Each of the specific matters contained in reg 1.15A(3) are effectively questions which must be answered: He v MIBP [2017] FCAFC 206",
+            "expected": ["He v MIBP [2017] FCAFC 206"] 
+        },
+        {
+            "text": "Each of the specific matters contained in reg 1.15A(3) are effectively questions which must be answered: He v MIBP (2017) FCAFC 206",
+            "expected": ["He v MIBP (2017) FCAFC 206"] 
+        },
+        {
+            "text": "Each of the specific matters contained in reg 1.15A(3) are effectively questions which must be answered: He v MIBP 2017 FCAFC 206",
+            "expected": ["He v MIBP 2017 FCAFC 206"] 
         }
     ]
 }
