@@ -23,30 +23,44 @@
             <button class="btn btn-info m-1" type="button" onclick="location.href='test-report.html'">Test
                 Report</button>
         </nav>
-        <div class="container-fluid" id="text-container" contenteditable></div>
+
+
+        <div class="row p-2 vh-100">
+            <div class="col-6">
+                <textarea id="text-input" rows="30" class="w-100 vh-75"></textarea>
+            </div>
+            <div class="col-6 border h-75 overflow-auto" id="text-output">
+                
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
- 
+
 
 <script>
-    const text_container = document.querySelector("#text-container");
-    var cases = []
+    const text_input = document.querySelector("#text-input");
+    const text_output = document.querySelector("#text-output");
+    var cases = [];
+
     fetch("test_case.json")
         .then(response => response.json())
         .then(({ scenarios }) => {
             cases = scenarios;
-            scenarios.forEach((item, i) => text_container.innerHTML += `<br/><br/>${item.text}`);
+            scenarios.forEach((item, i) => text_input.value += `\n\n${item.text}`);
 
         });
 
     const annotate_text = () => {
-        const cit = annotate(text_container.innerHTML);
-        let text = text_container.innerHTML;
-        cit.forEach(c=> {
+        let text = text_input.value;
+        const cit = annotate(text);
+        cit.forEach(c => {
             text = text.replace(c, `<a href="#" data-toggle="tooltip" data-placement="top" title="${c}"><mark>${c}</mark></a>`);
         });
-        text_container.innerHTML = text;
+        text = text.replace(/\n\n/gm,'</br></br>');
+        console.log(text);
+        text_output.innerHTML = text;
     }
 </script>
