@@ -2,6 +2,7 @@ const prefix = "((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(on appeal)|
 const prefix_regex = new RegExp(prefix, "gm");
 const end = /((.*((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|(.*[A-Z]+\/\d+\/\d+\/[A-Z]+)|(.*(\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\)|)/g;
 const end2 = /((((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\))/g;
+const and_ = /(((|\[|\\(\d{4}\]|\\|))([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(\s+and\s+)/g;
 
 const normalize = (txt) => {
     txt = txt.replace("see, generally,", "see");
@@ -10,18 +11,19 @@ const normalize = (txt) => {
     txt = txt.replace("See,", "see");
     txt = txt.replace("see also ", "see ");
     txt = txt.replace("See also ", "see ");
-    txt = txt.replace(/,?\sand\s/gm, " and ");
+    txt = txt.replace(/\,?\sand\s/gm, " and ");
     txt = txt.replace(/\:\s*/gm, '\n');
-    txt = txt.replace(/;/gm, '\n'); 
+    txt = txt.replace(/;/gm, '\n');
 
     // split if `and` found 
-    const and_ = /(\sv\s.*((|\[|\\(\d{4}\]|\\|))([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(\s+and\s+)/g
-    match_and_ = Array.from(txt.matchAll(and_))[0]
-    if (match_and_){
-        index_and_ = match_and_.index + match_and_[0].length    
-        txt = txt.substring(0, index_and_) + '\n' + txt.substring(index_and_);
+    match_and_ = Array.from(txt.matchAll(and_));
+    if (match_and_) {
+        match_and_.forEach(ma => {
+            index_and_ = ma.index + ma[0].length;
+            txt = txt.substring(0, index_and_) + '\n' + txt.substring(index_and_);
+        })
     }
-    
+
     // preserve
     txt = txt.replace(/(\(\S+\))(?=.*\sv\.?\s)/gm, x => x.replace(/\(|\)/g, '-'));
     txt = txt.replace(/(\(\S+\))(?=.*((\[\d{4}\])|(\(\d{4}\))|(\d{4})))/gm, x => x.replace(/\(|\)/g, '-'));
@@ -76,13 +78,13 @@ function detector2(text) {
         if (!candidate) {
             return -1
         }
-        const final_candidate =  candidate[candidate.length - 1]
+        const final_candidate = candidate[candidate.length - 1]
         return [final_candidate.index + final_candidate[0].length, e.index + e[0].length];
     })
-    if (!start) return 
-    
+    if (!start) return
+
     //  construct text and exclude citation with v
-    let citations = start.map(s => text.slice(s[0], s[1])).filter(s => s.indexOf(' v ') == -1);
+    let citations = start.map(s => text.slice(s[0], s[1])).filter(s => s.indexOf(' v ') == -1 && s.indexOf(' v. ') == -1);
     // revert text to original
     citations = citations.map(item => denormalize(item))
     return citations
@@ -91,7 +93,7 @@ function detector2(text) {
 function annotate(text) {
     // normalize text
     text = normalize(text);
-    
+
     const detectors = [detector1, detector2];
     let citations = [];
     detectors.forEach(detector => {
@@ -101,5 +103,5 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-console.log(annotate("That nobody"))
+// console.log(annotate("Thus, in In re K (Infants) [1963] Ch 381, Upjohn LJ at pp 405-406"));
 module.exports = annotate;

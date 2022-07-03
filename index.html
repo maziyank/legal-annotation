@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="annotation.js"></script>
-    <script src="test_case.json"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -24,7 +23,7 @@
             <button class="btn btn-info m-1" type="button" onclick="location.href='test-report.html'">Test
                 Report</button>
         </nav>
-        <div class="container-fluid" id="text-container"></div>
+        <div class="container-fluid" id="text-container" contenteditable></div>
     </div>
 </body>
 
@@ -38,17 +37,16 @@
         .then(response => response.json())
         .then(({ scenarios }) => {
             cases = scenarios;
-            scenarios.forEach((item, i) => text_container.innerHTML += `Case ${i} <br/>...${item.text}...</br></br>`);
+            scenarios.forEach((item, i) => text_container.innerHTML += `<br/><br/>${item.text}`);
 
         });
 
     const annotate_text = () => {
-        text_container.innerHTML = "";
-        cases.forEach((item, i) => {
-            const cit = annotate(item.text);
-            const text = item.text.replace(cit, `<a href="#" data-toggle="tooltip" data-placement="top" title="${cit}"><mark>${cit}</mark></a>`);
-            console.log(text);
-            text_container.innerHTML += `Case ${i} <br/>...${text}...</br></br>`;
+        const cit = annotate(text_container.innerHTML);
+        let text = text_container.innerHTML;
+        cit.forEach(c=> {
+            text = text.replace(c, `<a href="#" data-toggle="tooltip" data-placement="top" title="${c}"><mark>${c}</mark></a>`);
         });
+        text_container.innerHTML = text;
     }
 </script>
