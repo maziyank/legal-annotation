@@ -1,8 +1,8 @@
-const prefix = "((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(on appeal)|(accord)|(cites)|(cite)|(cited)|(on)|(by)|(at)|(with)|(to)) )|\\(|^|\\n";
-const prefix_regex = new RegExp(prefix, "gm");
-const end = /((.*((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|(.*[A-Z]+\/\d+\/\d+\/[A-Z]+)|(.*(\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\)|)/g;
-const end2 = /((((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\))/g;
-const and_ = /(((|\[|\\(\d{4}\]|\\|))([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(\s+and\s+)/g;
+const rgx_prefix = new RegExp("((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(on appeal)|(accord)|(cites)|(cite)|(cited)|(on)|(by)|(at)|(with)|(to)) )|\\(|^|\\n", "gm");
+const rgx_year = new RegExp("((\[\d{4}\])|(\(\d{4}\))|\d{4})", "g");
+const rgx_end = new RegExp(/((.*((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|(.*[A-Z]+\/\d+\/\d+\/[A-Z]+)|(.*(\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\)|)/, "g");
+const rgx_end2 = new RegExp(/((((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\))/, "g");
+const rgx_and_ = new RegExp(/(((|\[|\\(\d{4}\]|\\|))([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(\s+and\s+)/, "g");
 
 const normalize = (txt) => {
     txt = txt.replace("see, generally,", "see");
@@ -16,7 +16,7 @@ const normalize = (txt) => {
     txt = txt.replace(/;/gm, '\n');
 
     // split if `and` found 
-    match_and_ = Array.from(txt.matchAll(and_));
+    match_and_ = Array.from(txt.matchAll(rgx_and_));
     if (match_and_) {
         match_and_.forEach(ma => {
             index_and_ = ma.index + ma[0].length;
@@ -49,7 +49,7 @@ function detector1(text) {
     if (!v_matches)
         return []
 
-    prefix_match = Array.from(text.matchAll(prefix_regex), match => match);
+    prefix_match = Array.from(text.matchAll(rgx_prefix), match => match);
 
     const start = v_matches.map(v => {
         const candidate = prefix_match.filter(item => item.index < v);
@@ -62,7 +62,7 @@ function detector1(text) {
     })
     if (!start) return []
 
-    let citations = start.map((s, i) => Array.from(text.slice(s, v_matches[i + 1]).matchAll(end), match => match[0])[0]);
+    let citations = start.map((s, i) => Array.from(text.slice(s, v_matches[i + 1]).matchAll(rgx_end), match => match[0])[0]);
 
     // revert text to original
     citations = citations.map(item => denormalize(item))
@@ -71,11 +71,11 @@ function detector1(text) {
 }
 
 function detector2(text) {
-    const end_matches = Array.from(text.matchAll(end2), match => match);
+    const end_matches = Array.from(text.matchAll(rgx_end2), match => match);
     if (!end_matches)
         return []
 
-    prefix_match = Array.from(text.matchAll(prefix_regex), match => match);
+    prefix_match = Array.from(text.matchAll(rgx_prefix), match => match);
     const start = end_matches.map(e => {
         const candidate = prefix_match.filter(item => item.index < e.index);
         if (!candidate) {
