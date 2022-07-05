@@ -64,36 +64,36 @@ const denormalize = (txt) => {
 }
 
 // General Part
-const RGX_PREFIX = new RegExp(`((\\. +|\:|\\(| |^)(${DICT.prefix.map(t => `(${t})`).join('|')}) )|\\(|^|\\n`, "gm");
+const RGX_PREFIX = new RegExp(`((\\. +|\:|\\(|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|\\(|^|\\n`, "gm");
 const RGX_YEAR = new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})");
 const RGX_V = new RegExp("(\\sv\\.?\\s)");
-const RGV_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
+const RGX_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
 const RGX_PINPOINT = new RegExp(`(((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\]((\\s*-\\s*)\\[\\d+\\])*))`);
 const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
 const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))\\s+(${DICT.month.join('|')})\\s+\\d{4}`);
 const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
+const RGX_DIVISION = new RegExp(`((\\s+\\([A-Z]\\w*\\)))`);
+const RGX_COURT_ABBV = new RegExp(`[A-Z]+(\\s+([A-Z]\\w+))`);
 
+//(([A-Z]+(\\s+[A-Z]\\w+))|([A-Z]\w+(\\s+[A-Z]+)))
 // Various Citation
-const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}\\s+([A-Z]+(\\s+([A-Z]\\w+))*((\\s+\\([A-Z]\\w+\\)))*\\s+${RGV_NUM_OR_SLASHEDNUM.source}((\\s+\\([A-Z]\\w+\\)))*)`);
+const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}\\s+(${RGX_COURT_ABBV.source}*${RGX_DIVISION.source}*\\s+${RGX_NUM_OR_SLASHEDNUM.source}${RGX_DIVISION.source}*)`);
 const RGX_REPORT = new RegExp(`${RGX_YEAR.source}\\s+(\\d+\\s(\\w+\\s){1,4}\\d+(\\s\\([A-Z]\\w+\\))*)`);
-const RGX_UNUSUAL_1 = new RegExp("([A-Z]+\\/\\d+\\/\\d+\\/[A-Z]+)");
-const RGX_UNUSUAL_2 = new RegExp("((\\(\\w+\\/\\d+\\/\\d+\\)))");
-
+const RGX_UNUSUAL_1 = new RegExp("([A-Z]+(\\/\\d+)+\\/[A-Z]+)");
+const RGX_UNUSUAL_2 = new RegExp("((\\(\\w+(\\/\\d+)+\\)))");
 
 const RGX_CITEND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source})`, "g");
 const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source}${RGX_STOPPER.source})(\\;|\\,|(\\s+and\\s+))`, "gm");
 
 function rule1(text) {
     const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s+${RGX_CITEND.source}(\\s+${RGX_PINPOINT.source})?`, "gm");
-    const RGX_NOPARTY_FULL = new RegExp(`.\\s+${RGX_CITEND.source}`, "gm");
+    const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX_CITEND.source}`, "gm");
     const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX_FULL_COURTNAME.source},\\s+${RGX_DATE_DDMMMMYYYY.source}`, "gm");
-
+  
     function apply(RGX) {
         let citations = [];
         cit_matches = Array.from(text.matchAll(RGX));
-       
         prefix_match = Array.from(text.matchAll(RGX_PREFIX));
-        
         if (cit_matches && prefix_match) {
             const candidates = cit_matches.map(cit => {
                 const candidate = prefix_match.filter(pre => pre.index < cit.index);
@@ -132,5 +132,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-// const test = "That text cites Philips v Pearce [1996] 2 FLR 230, where Johnson J held that he was unable to make a maintenance order";
+const test = "see Scott v London Borough of Hillingdon 2001 ER All (D) 265";
+console.log(annotate(test));
 module.exports = annotate;
