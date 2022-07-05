@@ -68,16 +68,17 @@ const RGX_PREFIX = new RegExp(`((\\. +|\:|\\(|\\s|^)(${DICT.prefix.map(t => `(${
 const RGX_YEAR = new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})");
 const RGX_V = new RegExp("(\\sv\\.?\\s)");
 const RGX_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
-const RGX_PINPOINT = new RegExp(`(((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\]((\\s*-\\s*)\\[\\d+\\])*))`);
+const RGX_PINPOINT = new RegExp(`(((at)|(at pp))\\s+(\\d+(-\\d+)*)|(\\[\\d+\\]((\\s*-\\s*)\\[\\d+\\])*))`);
 const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
 const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))\\s+(${DICT.month.join('|')})\\s+\\d{4}`);
 const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
-const RGX_DIVISION = new RegExp(`((\\s+\\([A-Z]\\w*\\)))`);
-const RGX_COURT_ABBV = new RegExp(`[A-Z]+(\\s+([A-Z]\\w+))`);
+const RGX_DIVISION = new RegExp(`((\\([A-Z]\\w*\\)))`);
+const RGX_COURT_ABBV = new RegExp(`((([A-Z]+(\\s+([A-Z]\\w+)))|([A-Z]\\w+(\\s+([A-Z]+))|([A-Z]+))))`);
+const RGX_PARTY_NAME = new RegExp(`(((\\s|^)+([A-Z]\\w+)(\\s+(of|for|and|the))?)+)`);
 
 //(([A-Z]+(\\s+[A-Z]\\w+))|([A-Z]\w+(\\s+[A-Z]+)))
 // Various Citation
-const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}\\s+(${RGX_COURT_ABBV.source}*${RGX_DIVISION.source}*\\s+${RGX_NUM_OR_SLASHEDNUM.source}${RGX_DIVISION.source}*)`);
+const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}(\\s*${RGX_NUM_OR_SLASHEDNUM.source}?\\s*${RGX_COURT_ABBV.source}?\\s*${RGX_DIVISION.source}?\\s*${RGX_NUM_OR_SLASHEDNUM.source}\\s*${RGX_DIVISION.source}?)`);
 const RGX_REPORT = new RegExp(`${RGX_YEAR.source}\\s+(\\d+\\s(\\w+\\s){1,4}\\d+(\\s\\([A-Z]\\w+\\))*)`);
 const RGX_UNUSUAL_1 = new RegExp("([A-Z]+(\\/\\d+)+\\/[A-Z]+)");
 const RGX_UNUSUAL_2 = new RegExp("((\\(\\w+(\\/\\d+)+\\)))");
@@ -85,8 +86,16 @@ const RGX_UNUSUAL_2 = new RegExp("((\\(\\w+(\\/\\d+)+\\)))");
 const RGX_CITEND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source})`, "g");
 const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source}${RGX_STOPPER.source})(\\;|\\,|(\\s+and\\s+))`, "gm");
 
+
+function rule2(text) {
+    const RGX_PARTY_ONLY = new RegExp(`${RGX_PARTY_NAME.source}(\\sv\\.?)${RGX_PARTY_NAME.source}`, 'gm');
+    const matched = Array.from(text.matchAll(RGX_PARTY_ONLY));
+    const result = matched.map(m => m[0].trim()).map(m => m.replace(/\s(of|for|and|the)$/gm), '');
+    return result
+}
+
 function rule1(text) {
-    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s+${RGX_CITEND.source}(\\s+${RGX_PINPOINT.source})?`, "gm");
+    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s+${RGX_CITEND.source}(\\s*${RGX_PINPOINT.source})?`, "gm");
     const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX_CITEND.source}`, "gm");
     const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX_FULL_COURTNAME.source},\\s+${RGX_DATE_DDMMMMYYYY.source}`, "gm");
   
@@ -123,7 +132,7 @@ function annotate(text) {
     // normalize text
     text = normalize(text);
     text
-    const rules = [rule1];
+    const rules = [rule1, rule2];
     let citations = [];
     rules.forEach(apply => {
         citations = citations.concat(apply(text));
@@ -132,6 +141,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-const test = "see Scott v London Borough of Hillingdon 2001 ER All (D) 265";
+const test = "No question of proof on the civil or criminal standard arises in that context: Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563 per French J;";
 console.log(annotate(test));
 module.exports = annotate;
