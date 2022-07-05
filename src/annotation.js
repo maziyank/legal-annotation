@@ -89,7 +89,7 @@ function rule1(text) {
     function apply(RGX) {
         let citations = [];
         cit_matches = Array.from(text.matchAll(RGX));
-        cit_matches
+        
         prefix_match = Array.from(text.matchAll(RGX_PREFIX));
         if (cit_matches && prefix_match) {
             const candidates = cit_matches.map(cit => {
@@ -129,6 +129,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-// const test = "A v B [2009] 1 AC 92 [24]-[31]";
-// console.log(annotate(test));
+const test = "A v B [2009] 1 AC 92 [24]-[31]";
+console.log(annotate(test));
 module.exports = annotate;
