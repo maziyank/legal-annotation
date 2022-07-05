@@ -29,7 +29,8 @@ const DICT = {
             "from": "\\;",
             "to": "\n"
         }
-    ]
+    ],
+    "month": ["January","February","March","April","May","June","July","August","September","Octiber","November","December"]
 }
 
 const normalize = (txt) => {
@@ -69,7 +70,7 @@ const RGX_V = new RegExp("(\\sv\\.?\\s)");
 const RGV_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
 const RGX_PINPOINT = new RegExp(`(((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\]((\\s*-\\s*)\\[\\d+\\])*))`);
 const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
-const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))\\s+(January|February|March|April|May|June|July|August|September|Octiber|November|December)\\s+\\d{4}`);
+const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))\\s+(${DICT.month.join('|')})\\s+\\d{4}`);
 const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
 
 // Various Citation
