@@ -67,7 +67,7 @@ const RGX_PREFIX = new RegExp(`((\\. +|\:|\\(| |^)(${DICT.prefix.map(t => `(${t}
 const RGX_YEAR = new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})");
 const RGX_V = new RegExp("(\\sv\\.?\\s)");
 const RGV_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
-const RGX_PINPOINT = new RegExp(`(\\s+((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\](-\\[\\d+\\])))`);
+const RGX_PINPOINT = new RegExp(`(((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\](-\\[\\d+\\])))`);
 const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
 const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))\\s+(January|February|March|April|May|June|July|August|September|Octiber|November|December)\\s+\\d{4}`);
 const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
@@ -82,14 +82,14 @@ const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UN
 const RGX_CITEND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source})`, "g");
 
 function rule1(text) {
-    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s+${RGX_CITEND.source}${RGX_PINPOINT.source}?`, "gm");
+    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s+${RGX_CITEND.source}\\s+${RGX_PINPOINT.source}?`, "gm");
     const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX_CITEND.source}`, "gm");
     const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX_FULL_COURTNAME.source},\\s+${RGX_DATE_DDMMMMYYYY.source}`, "gm");
-    RGX_UNUSUAL_FULLDATE
+
     function apply(RGX) {
         let citations = [];
         cit_matches = Array.from(text.matchAll(RGX));
-        cit_matches
+
         prefix_match = Array.from(text.matchAll(RGX_PREFIX));
         if (cit_matches && prefix_match) {
             const candidates = cit_matches.map(cit => {
@@ -129,6 +129,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-// const test = "please see in Northern Ireland v Information Commissioner and Collins, First-tier Tribunal, 3 June 2011 and on Public Prosecution Service for Northern Ireland v Information Commissioner and Collins, First-tier Tribunal, 3 June 2011";
-// annotate(test);
+// const test = "R v G [2008] UKHL 3 [2009] 1 AC 92 [24]-[31].";
+// console.log(annotate(test));
 module.exports = annotate;
