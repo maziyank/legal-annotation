@@ -1,9 +1,3 @@
-const rgx_prefix = new RegExp("((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(on appeal)|(accord)|(cites)|(cite)|(cited)|(on)|(by)|(at)|(with)|(to)) )|\\(|^|\\n", "gm");
-const rgx_year = new RegExp("((\[\d{4}\])|(\(\d{4}\))|\d{4})", "g");
-const rgx_end = new RegExp(/((.*((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|(.*[A-Z]+\/\d+\/\d+\/[A-Z]+)|(.*(\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\)|)/, "g");
-const rgx_end2 = new RegExp(/((((\[\d{4}\])|(\(\d{4}\))|\d{4}).*([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(?=\s|$|\n|\.|\,|\;|\:|\))/, "g");
-const rgx_and_ = new RegExp(/(((|\[|\\(\d{4}\]|\\|))([A-Z]\w+)*\s(\d+\/\d+|\d+))|([A-Z]+\/\d+\/\d+\/[A-Z]+)|((\(\w+\/\d+\/\d+\))))(\s+and\s+)/, "g");
-
 const normalize = (txt) => {
     txt = txt.replace("see, generally,", "see");
     txt = txt.replace("See, generally,", "see");
@@ -12,11 +6,13 @@ const normalize = (txt) => {
     txt = txt.replace("see also ", "see ");
     txt = txt.replace("See also ", "see ");
     txt = txt.replace(/\,?\sand\s/gm, " and ");
+    txt = txt.replace(/and on/gm, '\n');
+    txt = txt.replace(/and in/gm, '\n');
     txt = txt.replace(/\:\s*/gm, '\n');
     txt = txt.replace(/;/gm, '\n');
 
     // split if `and` found 
-    match_and_ = Array.from(txt.matchAll(rgx_and_));
+    match_and_ = Array.from(txt.matchAll(RGX_AND));
     if (match_and_) {
         match_and_.forEach(ma => {
             index_and_ = ma.index + ma[0].length;
@@ -42,69 +38,58 @@ const denormalize = (txt) => {
     return txt;
 }
 
-function detector1(text) {
-    // find v position
-    v_matches = Array.from(text.matchAll(/\sv\.?\s/gm), match => match.index);
+// General Part
+const RGX_PREFIX = new RegExp("((\\. +|\:|\\(| |^)((see)|(but)|(in)|(of)|(applied)|(appeal)|(accord)|(cites)|(cite)|(cited)|(on)|(by)|(at)|(with)|(to)) )|\\(|^|\\n", "gm");
+const RGX_YEAR = new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})");
+const RGX_V = new RegExp("(\\sv\\.?\\s)");
+const RGV_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
+// Various Citation
+const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}\\s([A-Z]+(\\s+([A-Z]\\w+))*((\\s+\\([A-Z]\\w+\\)))*\\s+${RGV_NUM_OR_SLASHEDNUM.source}((\\s+\\([A-Z]\\w+\\)))*)`);
+const RGX_REPORT = new RegExp(`${RGX_YEAR.source}\\s(\\d+\\s(\\w+\\s){1,4}\\d+(\\s\\([A-Z]\\w+\\))*)`);
+const RGX_UNUSUAL_1 = new RegExp("([A-Z]+\\/\\d+\\/\\d+\\/[A-Z]+)");
+const RGX_UNUSUAL_2 = new RegExp("((\\(\\w+\\/\\d+\\/\\d+\\)))");
 
-    if (!v_matches)
-        return []
+const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
+const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source}${RGX_STOPPER.source})(\\s+and\\s+)`, "gm");
+const RGX_CITEND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source})`, "g");
 
-    prefix_match = Array.from(text.matchAll(rgx_prefix), match => match);
+function rule1(text) {
+    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s${RGX_CITEND.source}`, "g");
+    let citations = [];
+    cit_matches = Array.from(text.matchAll(RGX_NEUTRAL_FULL));
+    prefix_match = Array.from(text.matchAll(RGX_PREFIX), match => match);
 
-    const start = v_matches.map(v => {
-        const candidate = prefix_match.filter(item => item.index < v);
-        if (!candidate) {
-            return -1
+    if (cit_matches) {
+        const candidates = cit_matches.map(cit => {
+            const candidate = prefix_match.filter(pre => pre.index < cit.index);
+            if (!candidate) {
+                return false
+            }
+            const final_candidate = candidate[candidate.length - 1]
+            return [final_candidate.index + final_candidate[0].length, cit.index + cit[0].length];
+        });
+  
+        if (candidates) {
+            citations = candidates.map(s => text.slice(s[0], s[1]));
+            citations = citations.map(item => denormalize(item));
         }
-
-        const final_candidate = candidate[candidate.length - 1]
-        return final_candidate.index + final_candidate[0].length;
-    })
-    if (!start) return []
-
-    let citations = start.map((s, i) => Array.from(text.slice(s, v_matches[i + 1]).matchAll(rgx_end), match => match[0])[0]);
-
-    // revert text to original
-    citations = citations.map(item => denormalize(item))
+    }
 
     return citations;
-}
-
-function detector2(text) {
-    const end_matches = Array.from(text.matchAll(rgx_end2), match => match);
-    if (!end_matches)
-        return []
-
-    prefix_match = Array.from(text.matchAll(rgx_prefix), match => match);
-    const start = end_matches.map(e => {
-        const candidate = prefix_match.filter(item => item.index < e.index);
-        if (!candidate) {
-            return -1
-        }
-        const final_candidate = candidate[candidate.length - 1]
-        return [final_candidate.index + final_candidate[0].length, e.index + e[0].length];
-    })
-    if (!start) return
-
-    //  construct text and exclude citation with v
-    let citations = start.map(s => text.slice(s[0], s[1])).filter(s => s.indexOf(' v ') == -1 && s.indexOf(' v. ') == -1);
-    // revert text to original
-    citations = citations.map(item => denormalize(item))
-    return citations
 }
 
 function annotate(text) {
     // normalize text
     text = normalize(text);
 
-    const detectors = [detector1, detector2];
+    const rules = [rule1];
     let citations = [];
-    detectors.forEach(detector => {
-        citations = citations.concat(detector(text));
+    rules.forEach(apply => {
+        citations = citations.concat(apply(text));
     });
 
     return [...new Set(citations)];
 }
 
-// console.log(annotate("In Scott v London Borough of Hillingdon 2001 All ER (D) 265 the Court of Appeal held that knowledge of the protected act on the part of the alleged discriminator was a precondition"));
+console.log(annotate("No question of proof on the civil or criminal standard arises in that context: Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563 per French J; Ovcharuk v Minister for Immigration and Multicultural Affairs (1998) 153 ALR 385 at 388 per Marshall J and on appeal Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179; 158 ALR 289 at 294–5; 51 ALD 549 at 554 per Whitlam J. See also Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476; 63 ALD 321 at 331–2 where Weinberg J reviewed the authorities"));
 module.exports = annotate;
