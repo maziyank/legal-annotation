@@ -10,6 +10,10 @@ const DICT = {
             "to": "see"
         },
         {
+            "from": "[sS]ee (in|on)",
+            "to": "see"
+        },
+        {
             "from": "\\,?\\sand\\s",
             "to": " and "
         },
@@ -63,6 +67,10 @@ const RGX_PREFIX = new RegExp(`((\\. +|\:|\\(| |^)(${DICT.prefix.map(t => `(${t}
 const RGX_YEAR = new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})");
 const RGX_V = new RegExp("(\\sv\\.?\\s)");
 const RGV_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
+const RGX_PINPOINT = new RegExp(`(\\s+((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\](-\\[\\d+\\])))`);
+const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
+const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))\\s+(January|February|March|April|May|June|July|August|September|Octiber|November|December)\\s+\\d{4}`);
+const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
 
 // Various Citation
 const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}\\s+([A-Z]+(\\s+([A-Z]\\w+))*((\\s+\\([A-Z]\\w+\\)))*\\s+${RGV_NUM_OR_SLASHEDNUM.source}((\\s+\\([A-Z]\\w+\\)))*)`);
@@ -70,21 +78,19 @@ const RGX_REPORT = new RegExp(`${RGX_YEAR.source}\\s+(\\d+\\s(\\w+\\s){1,4}\\d+(
 const RGX_UNUSUAL_1 = new RegExp("([A-Z]+\\/\\d+\\/\\d+\\/[A-Z]+)");
 const RGX_UNUSUAL_2 = new RegExp("((\\(\\w+\\/\\d+\\/\\d+\\)))");
 
-const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
 const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source}${RGX_STOPPER.source})((\\s+and\\s+))`, "gm");
 const RGX_CITEND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source})`, "g");
 
-const RGX_PINPOINT = new RegExp(`(\\s+((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\](-\\[\\d+\\])))`);
-
 function rule1(text) {
-    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s+${RGX_CITEND.source}${RGX_PINPOINT.source}?`, "g");
-    const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX_CITEND.source}`, "g");
-
+    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s+${RGX_CITEND.source}${RGX_PINPOINT.source}?`, "gm");
+    const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX_CITEND.source}`, "gm");
+    const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX_FULL_COURTNAME.source},\\s+${RGX_DATE_DDMMMMYYYY.source}`, "gm");
+    RGX_UNUSUAL_FULLDATE
     function apply(RGX) {
         let citations = [];
         cit_matches = Array.from(text.matchAll(RGX));
+        cit_matches
         prefix_match = Array.from(text.matchAll(RGX_PREFIX));
-
         if (cit_matches && prefix_match) {
             const candidates = cit_matches.map(cit => {
                 const candidate = prefix_match.filter(pre => pre.index < cit.index);
@@ -105,8 +111,9 @@ function rule1(text) {
 
     const with_party = apply(RGX_NEUTRAL_FULL);
     const without_party = apply(RGX_NOPARTY_FULL).filter(cit => !RGX_V.test(cit));
+    const unusual_full_date = apply(RGX_UNUSUAL_FULLDATE);
 
-    return [...new Set([...with_party, ...without_party])];
+    return [...new Set([...with_party, ...without_party, ...unusual_full_date])];
 }
 
 function annotate(text) {
@@ -122,5 +129,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-// console.log(annotate("No question of proof on the civil or criminal standard arises in that context: Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563 per French J; Ovcharuk v Minister for Immigration and Multicultural Affairs (1998) 153 ALR 385 at 388 per Marshall J and on appeal Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179; 158 ALR 289 at 294–5; 51 ALD 549 at 554 per Whitlam J. See also Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476; 63 ALD 321 at 331–2 where Weinberg J reviewed the authorities"));
+// const test = "please see in Northern Ireland v Information Commissioner and Collins, First-tier Tribunal, 3 June 2011 and on Public Prosecution Service for Northern Ireland v Information Commissioner and Collins, First-tier Tribunal, 3 June 2011";
+// annotate(test);
 module.exports = annotate;
