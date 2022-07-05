@@ -1,5 +1,5 @@
 const DICT = {
-    prefix: [ "on", "see", "appendix to", "in", "applied", "appeal", "accord", "cites", "cite", "cited", "on", "by", "at", "with", "to", "of" ],
+    prefix: ["on", "see", "appendix to", "in", "applied", "appeal", "accord", "cites", "cite", "cited", "on", "by", "at", "with", "to", "of"],
     normalizer: [
         {
             "from": "[sS]ee,? generally,",
@@ -30,7 +30,7 @@ const DICT = {
             "to": "\n"
         }
     ],
-    "month": ["January","February","March","April","May","June","July","August","September","Octiber","November","December"]
+    "month": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octiber", "November", "December"]
 }
 
 const normalize = (txt) => {
@@ -88,9 +88,14 @@ const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UN
 
 
 function rule2(text) {
+    const RGX_TEST = new RegExp(`${RGX_PARTY_NAME.source}(\\sv\\.?)${RGX_PARTY_NAME.source}\\s+.{0,6}`, 'gm');
     const RGX_PARTY_ONLY = new RegExp(`${RGX_PARTY_NAME.source}(\\sv\\.?)${RGX_PARTY_NAME.source}`, 'gm');
-    const matched = Array.from(text.matchAll(RGX_PARTY_ONLY));
-    const result = matched.map(m => m[0].trim()).map(m => m.replace(/\s(of|for|and|the)$/gm), '');
+    const matched = Array.from(text.matchAll(RGX_TEST));
+    const result = matched.filter(m => !RGX_YEAR.test(m))
+        .map(m=> RGX_PARTY_ONLY.exec(m))
+        .map(m => m[0].trim())
+        .map(m => m.replace(/\s(of|for|and|the)$/gm), '');
+
     return result
 }
 
@@ -98,7 +103,7 @@ function rule1(text) {
     const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.*\\s+${RGX_CITEND.source}(\\s*${RGX_PINPOINT.source})?`, "gm");
     const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX_CITEND.source}`, "gm");
     const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX_FULL_COURTNAME.source},\\s+${RGX_DATE_DDMMMMYYYY.source}`, "gm");
-  
+
     function apply(RGX) {
         let citations = [];
         cit_matches = Array.from(text.matchAll(RGX));
@@ -131,7 +136,6 @@ function rule1(text) {
 function annotate(text) {
     // normalize text
     text = normalize(text);
-    text
     const rules = [rule1, rule2];
     let citations = [];
     rules.forEach(apply => {
