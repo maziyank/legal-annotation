@@ -67,7 +67,7 @@ const RGX_PREFIX = new RegExp(`((\\. +|\:|\\(| |^)(${DICT.prefix.map(t => `(${t}
 const RGX_YEAR = new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})");
 const RGX_V = new RegExp("(\\sv\\.?\\s)");
 const RGV_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
-const RGX_PINPOINT = new RegExp(`(((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\](-\\[\\d+\\])))`);
+const RGX_PINPOINT = new RegExp(`(((at)|(at pp))\\s+(\\d+(-\\d+))|(\\[\\d+\\]((\\s+-\\s+)\\[\\d+\\])*))`);
 const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
 const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))\\s+(January|February|March|April|May|June|July|August|September|Octiber|November|December)\\s+\\d{4}`);
 const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
@@ -89,7 +89,7 @@ function rule1(text) {
     function apply(RGX) {
         let citations = [];
         cit_matches = Array.from(text.matchAll(RGX));
-
+        cit_matches
         prefix_match = Array.from(text.matchAll(RGX_PREFIX));
         if (cit_matches && prefix_match) {
             const candidates = cit_matches.map(cit => {
@@ -129,6 +129,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-// const test = "R v G [2008] UKHL 3 [2009] 1 AC 92 [24]-[31].";
+// const test = "A v B [2009] 1 AC 92 [24]-[31]";
 // console.log(annotate(test));
 module.exports = annotate;
