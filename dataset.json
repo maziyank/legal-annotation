@@ -54,7 +54,8 @@
         {
             "text": "In R v Kansal (No 2) [2002] 2 AC 69, 105-106 I said that section 7(1)(a) and section 7(1)(b) are designed to provide two quite different remedies. Section 7(1)(a) enables the victim of the unlawful act to bring proceedings under the Act against the authority. It is intended to cater for free-standing claims made under the Act where there are no other proceedings in which the claim can be made. It does not apply where the victim wishes to rely on his Convention rights in existing proceedings which have been brought against him by a public authority. His remedy in those proceedings is that provided by section 7(1)(b), which is not subject to the time limit on proceedings under section 7(1)(a) prescribed by section 7(5); see also Wilson v First County Trust Ltd (No 2) [2004] 1 AC 816, para 90. The purpose of section 7(1)(b) is to enable persons against whom proceedings have been brought by a public authority to rely on the Convention rights for their protection.",
             "expected": [
-                "R v Kansal (No 2) [2002] 2 AC 69"
+                "R v Kansal (No 2) [2002] 2 AC 69",
+                "Wilson v First County Trust Ltd (No 2) [2004] 1 AC 816, para 90"
             ]
         },
         {
@@ -341,6 +342,110 @@
                 "Cardenas v Canada (1994) 23 Imm LR (2d) 244",
                 "Re W97/164 and Minister for Immigration and Multicultural Affairs (1998) 51 ALD 432 at 441; 27 AAR 482 at 491"
             ]
-        }
+        },
+        {
+            "text": "The claimant did refer to the FRS grade C role in her first witness statement at paragraph 110 o, whereas the allegation is made in the second claim. The claimant referred to a vacancy in the IT department from October 2014; and then from July 2015 onwards. A failure to offer the claimant a vacancy in October 2014 pleaded in the second claim is subject to issue estoppel or Henderson v Henderson. The claimant therefore cannot pursue that allegation",
+            "expected": [
+                "Henderson v Henderson"
+            ]
+        },
+        {
+            "text": "The claimant did refer to the FRS grade C role in her first witness statement at paragraph 110 o, whereas the allegation is made in the second claim. The claimant referred to a vacancy in the IT department from October 2014; and then from July 2015 onwards. A failure to offer the claimant a vacancy in October 2014 pleaded in the second claim is subject to issue estoppel or Henderson v Henderson. The claimant therefore cannot pursue that allegation",
+            "expected": [
+                "Henderson v Henderson"
+            ]
+        },
+        {
+            "text": "In respect of harassment under s. 26 EQA, in Richmond Pharmacology v Dhaliwal 2009 IRLR 336 the EAT set out a three step test for establishing whether harassment has occurred: (i) was there unwanted conduct; (ii) did it have the purpose or effect of violating a person's dignity, or creating an intimidating, hostile, degrading, humiliating or offensive environment for that person and (iii) was it related to a protected characteristic?",
+            "expected": [
+                "Richmond Pharmacology v Dhaliwal 2009 IRLR 336"
+            ]
+        },
+        {
+            "text": "In Hewage v Grampian Health Board 2012 IRLR 870 the Supreme Court endorsed the approach of the Court of Appeal in Igen Ltd v Wong and Madarassy v Nomura International plc. Which said that it is important not to make too much of the role of the burden of proof provisions. They require careful attention where there is room for doubt as to the facts necessary to establish discrimination, but have nothing to offer where the tribunal is in a position to make positive findings on the evidence one way or the other",
+            "expected": [
+                "Hewage v Grampian Health Board 2012 IRLR 870"
+            ]
+        },
+        {
+            "text": "The Court of Appeal in Ayodele v Citylink Ltd 2017 EWCA Civ 1913 confirmed that the line of authorities including Igen and Hewage remain good law and that the interpretation of the burden of proof by the EAT in Efobi v Royal Mail Group Ltd EAT/0203/16 was wrong and should not be followed.",
+            "expected": [
+                "Ayodele v Citylink Ltd 2017 EWCA Civ 1913",
+                "Efobi v Royal Mail Group Ltd EAT/0203/16"
+            ]
+        },
+        {
+            "text": "A detriment has been held to be ‘putting under a disadvantage’ and ‘exists if a reasonable worker would or might take the view that [the action of the employer] was in all the circumstances to his detriment’ (MoD v Jeremiah 1980 ICR 13), ‘disadvantaged in the circumstances and conditions of work’ (De Souza v AA 1986 ICR 513 CA, or simply a ‘disadvantage’ (Porcelli v Strathclyde Regional Council 1986 ICR 564)",
+            "expected": [
+                "MoD v Jeremiah 1980 ICR 13",
+                "De Souza v AA 1986 ICR 513 CA",
+                "Porcelli v Strathclyde Regional Council 1986 ICR 564"
+            ]
+        },
+        {
+            "text": "Mr Tinnion drew our attention to those passages in paragraphs 122 and 123 and suggested that they were not an accurate statement of the law. More particularly, Mr Tinnion submitted that the law had moved on and had been developed in a series of recent authorities. He took us in turn to three such authorities. First, the decision of this Employment Appeal Tribunal in Samsung Electronics v Monte-D’Cruz UKEAT/0039/11/DM. The Judgment in that case was handed down by this Appeal Tribunal on 1 March 2012. Second, to the decision in Mitchells of Lancaster (Brewers) Ltd v Tattersall UKEAT/0605/11/SM, another decision",
+            "expected": [
+                "Mitchells of Lancaster (Brewers) Ltd v Tattersall UKEAT/0605/11/SM",
+                "Samsung Electronics v Monte-D’Cruz UKEAT/0039/11/DM"
+            ]
+        },
+        {
+            "text": "The first of the grounds of appeal set out in the Notice of Appeal contends that the Tribunal engaged in an impermissible re-marking/re-assessment exercise of the scores of those in the pool. Again, we were taken to a series of examples, but in the context of Mr Tinnion’s reminding us of the relevant authorities. He took us, in particular, to the decision of the Court UKEAT/0551/12/LA",
+            "expected": [
+                "UKEAT/0551/12/LA"
+            ]
+        },      
+        {
+            "text": "We need only refer to the well-known authorities of Meek v City of Birmingham DC [1987] IRLR 250 and English v Emery Reimbold and Strick [2003] IRLR 710 for the proposition that the Tribunal was required to explain to the parties in its written Reasons, in a fair and sufficient manner, precisely why it had reached the conclusions it had reached and, from each party’s point of view, why it had won or lost. We apply that approach to what the Tribunal has done here. Paragraph 160 self-evidently comes at the end of a very full and lengthy set of Reasons. The written Reasons are extremely well-structured, ample and well- written. The passage at paragraph 160 must be seen in the context of the Tribunal’s earlier findings of fact and, in particular, in the context of the adverse finding of age discrimination. The Tribunal, in our judgment, have sufficiently explained why the dismissal of this particular Claimant was found unfair. It has explained why the process was unfair and it has set out sufficient as to the background context for one to understand why it was able to conclude, as it did, that the exercise here was designed solely to produce the result that it was Ms Simpson who would be the one person made redundant from amongst those who faced potential redundancy.",
+            "expected": [
+                "Meek v City of Birmingham DC [1987] IRLR 250",
+                "English v Emery Reimbold and Strick [2003] IRLR 710"
+            ]
+        },    
+        {
+            "text": "In Qua v John Ford Morrison Solicitors 2003 EAT/884/01 the Employment Appeal Tribunal considered what was then the new section 57A and 57B Employment Rights Act 1996 which was introduced to give effect to the Parental Leave Directive 96/34/EC. The EAT considered that the right to time off to provide assistance does not enable employees to have time off in order to provide care themselves beyond the reasonable amount necessary to enable them to deal with the immediate crisis.",
+            "expected": [
+                "Qua v John Ford Morrison Solicitors 2003 EAT/884/01"
+            ]
+        },    
+        {
+            "text": "I have identified the EAT judgment by Mr Justice Kerr in First Greater Western Ltd & Anor v Waiyego [2018] UKEAT 0056/18; [2019] 5 WLR(D) 290. On the facts and circumstances of that case, the EAT held that the ET had rightly rejected the claimant's invitation to impose a financial penalty on the first respondent for deliberate and repeated breaches of employment law.",
+            "expected": [
+                "First Greater Western Ltd & Anor v Waiyego [2018] UKEAT 0056/18; [2019] 5 WLR(D) 290"
+            ]
+        },    
+        {
+            "text": "Sub-section 139(1)(b) of the Employment Rights Act 1996 refers to the ‘requirements’ of the employer. Where the employer has taken the decision to reduce the numbers of employees for a genuine business reason it is not open to a tribunal to investigate whether that decision was sensible see James W Cook & Co (Wivenhoe) Ltd v Tipper [1990] IRLR 386. That does not preclude a tribunal from investigating whether the employer held a genuine belief in the facts relied upon to conclude that employees needed to be made redundant. In forming that belief, it was said by Slynn J in Orr v Vaughan [1981] IRLR 63, that the employer must act on reasonable information reasonably acquired",
+            "expected": [
+                "James W Cook & Co (Wivenhoe) Ltd v Tipper [1990] IRLR 386",
+                "Orr v Vaughan [1981] IRLR 63"
+            ]
+        },    
+        {
+            "text": "Whilst the focus of the EAT in Williams v Compair Maxam was towards collective consultation the importance of consultation in general but also with individual employees was emphasised in Mugford v Midland Bank plc 1997 ICR 399, EAT where HHJ Clarke giving the judgment of the tribunal said:",
+            "expected": [
+                "Williams v Compair Maxam",
+                "Mugford v Midland Bank plc 1997 ICR 399"
+            ]
+        },    
+        {
+            "text": "The correct test is whether the employer acted reasonably, not whether the tribunal would have come to the same decision itself. In many cases there will be a 'range of reasonable responses', so that, provided that the employer acted as a reasonable employer could have acted, the dismissal will be fair: Iceland Frozen Foods Ltd v Jones [1982] IRLR 439. That test recognises that two employers faced with the same circumstances may arrive at different decisions, but both of those decisions might be reasonable.",
+            "expected": [
+                "Iceland Frozen Foods Ltd v Jones [1982] IRLR 439"
+            ]
+        },    
+        {
+            "text": "When choosing who should be made redundant and who should be retained an employer may need to identify a pool of employees from which the redundancies will be made. There is no requirement that the pool be limited to employees doing the same work see Taymech v Ryan [1994] EAT/663/94. The question will be whether the employer has genuinely applied its’ mind to the question and whether its conclusions fell within a band of reasonable options see Capita Hartshead Ltd v Byard [2012] IRLR 814.",
+            "expected": [
+                "Taymech v Ryan [1994] EAT/663/94",
+                "Capita Hartshead Ltd v Byard [2012] IRLR 814"
+            ]
+        },    
+        {
+            "text": "In the hundred years before the case of Duncan v. Cammell, Laird & Co. was decided, there can be no doubt that the Scottish Courts were satisfied that they possessed the inherent power I am now discussing. In the present case the Lord Ordinary and Lord Russell were of opinion that the Scottish Courts retain that power. Lord Carmont was, I think, disposed to agree with that opinion but he felt constrained to bow to the decision in Duncan v. Cammell, Laird & Co. Lord Sorn also held that the rule of law laid down in Duncan v. Cammell, Laird & Co. was binding on the Court of Session in any situation contemplated in the judgment of the Lord Chancellor in Duncan v. Cammell, Laird & Co., but not in other cases.",
+            "expected": [
+                "Duncan v. Cammell, Laird & Co"
+            ]
+        }    
     ]
 }
