@@ -76,7 +76,6 @@ const RGX_DIVISION = new RegExp(`((\\([A-Z]\\w*\\)))`);
 const RGX_COURT_ABBV = new RegExp(`((\\s[A-Z]\\w+)){1,2}`);
 const RGX_PARTY_NAME = new RegExp(`(((\\s|^)+([A-Z]\\w+)(\\s+(of|for|%OF%|and|the))?)+)`);
 
-console.log(RGX_COURT_ABBV.source)
 //(([A-Z]+(\\s+[A-Z]\\w+))|([A-Z]\w+(\\s+[A-Z]+)))
 // Various Citation
 const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}(\\s*${RGX_NUM_OR_SLASHEDNUM.source}?\\s*${RGX_COURT_ABBV.source}?\\s*${RGX_DIVISION.source}?\\s*${RGX_NUM_OR_SLASHEDNUM.source}\\s*${RGX_DIVISION.source}?)`);
@@ -85,7 +84,7 @@ const RGX_UNUSUAL_1 = new RegExp("([A-Z]+(\\/\\d+)+\\/[A-Z]+)");
 const RGX_UNUSUAL_2 = new RegExp("((\\(\\w+(\\/\\d+)+\\)))");
 
 const RGX_CITEND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source})`, "g");
-const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source}${RGX_STOPPER.source})(\\;|\\,|(\\s+and\\s+))`, "gm");
+const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source}${RGX_STOPPER.source})((\\s+and\\s+))`, "gm");
 
 
 function rule2(text) {
@@ -146,6 +145,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-const test = "this view by observations in the decisions of Ball v. Balfour Kilpatrick Limited (EAT/823/95)";
+const test = "[1972] NI 91 (DC)";
 console.log(annotate(test));
 module.exports = annotate;
