@@ -145,6 +145,4 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-const test = "[1972] NI 91 (DC)";
-console.log(annotate(test));
 module.exports = annotate;
