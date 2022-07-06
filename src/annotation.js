@@ -73,9 +73,10 @@ const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
 const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))\\s+(${DICT.month.join('|')})\\s+\\d{4}`);
 const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
 const RGX_DIVISION = new RegExp(`((\\([A-Z]\\w*\\)))`);
-const RGX_COURT_ABBV = new RegExp(`((([A-Z]+(\\s+([A-Z]\\w+)))|([A-Z]\\w+(\\s+([A-Z]+))|([A-Z]+))))`);
-const RGX_PARTY_NAME = new RegExp(`(((\\s|^)+([A-Z]\\w+)(\\s+(of|for|and|the))?)+)`);
+const RGX_COURT_ABBV = new RegExp(`((\\s[A-Z]\\w+)){1,2}`);
+const RGX_PARTY_NAME = new RegExp(`(((\\s|^)+([A-Z]\\w+)(\\s+(of|for|%OF%|and|the))?)+)`);
 
+console.log(RGX_COURT_ABBV.source)
 //(([A-Z]+(\\s+[A-Z]\\w+))|([A-Z]\w+(\\s+[A-Z]+)))
 // Various Citation
 const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}(\\s*${RGX_NUM_OR_SLASHEDNUM.source}?\\s*${RGX_COURT_ABBV.source}?\\s*${RGX_DIVISION.source}?\\s*${RGX_NUM_OR_SLASHEDNUM.source}\\s*${RGX_DIVISION.source}?)`);
@@ -88,10 +89,10 @@ const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UN
 
 
 function rule2(text) {
-    const RGX_TEST = new RegExp(`${RGX_PARTY_NAME.source}(\\sv\\.?)${RGX_PARTY_NAME.source}\\s+.{0,6}`, 'gm');
+    const RGX_TEST = new RegExp(`${RGX_PARTY_NAME.source}(\\sv\\.?)${RGX_PARTY_NAME.source}\\s+.{0,20}`, 'gm');
     const RGX_PARTY_ONLY = new RegExp(`${RGX_PARTY_NAME.source}(\\sv\\.?)${RGX_PARTY_NAME.source}`, 'gm');
     const matched = Array.from(text.matchAll(RGX_TEST));
-    const result = matched.filter(m => !RGX_YEAR.test(m))
+    const result = matched.filter(m => !RGX_YEAR.test(m) && !RGX_UNUSUAL_1.test(m) && !RGX_UNUSUAL_2.test(m))
         .map(m=> RGX_PARTY_ONLY.exec(m))
         .map(m => m[0].trim())
         .map(m => m.replace(/\s(of|for|and|the)$/gm), '');
@@ -136,7 +137,7 @@ function rule1(text) {
 function annotate(text) {
     // normalize text
     text = normalize(text);
-    const rules = [rule1, rule2];
+    const rules = [rule2, rule1];
     let citations = [];
     rules.forEach(apply => {
         citations = citations.concat(apply(text));
@@ -145,6 +146,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-const test = "No question of proof on the civil or criminal standard arises in that context: Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563 per French J;";
+const test = "this view by observations in the decisions of Ball v. Balfour Kilpatrick Limited (EAT/823/95)";
 console.log(annotate(test));
 module.exports = annotate;
