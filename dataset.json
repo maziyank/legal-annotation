@@ -23,7 +23,7 @@
         {
             "text": "As, however, already explained (at para 14), claims against the intelligence services inevitably raise special problems and simply cannot be dealt with in the same way as other claims. This, indeed, has long since been recognised both domestically and in Strasbourg. It is sufficient for present purposes to cite a single paragraph from the speech of Lord Bingham of Cornhill in R v Shayler [2003] 1 AC 247, para 26 (another case raising article 10 considerations)",
             "expected": [
-                "R v Shayler [2003] 1 AC 247"
+                "R v Shayler [2003] 1 AC 247, para 26"
             ]
         },
         {
@@ -185,8 +185,8 @@
         {
             "text": "Following enactment of the 1985 Act, the courts were more than once called upon to consider whether evidence on which it was sought to rely was the product of interception of a public or private telecommunications system: see R v Ahmed (Court of Appeal, 29 March 1994, unreported); R v Effik [1995] 1 AC 309, 314. The focus of the enquiry in the latter of these cases is shown by the ruling of Lord Oliver of Aylmerton, with which all members of the committee agreed (page 317):",
             "expected": [
-                "R v Effik [1995] 1 AC 309, 314",
-                "R v Ahmed (Court of Appeal, 29 March 1994, unreported)"
+                "R v Ahmed (Court of Appeal, 29 March 1994, unreported)",
+                "R v Effik [1995] 1 AC 309, 314"
             ]
         },
         {
@@ -216,13 +216,13 @@
             "text": "Against the background of the guidance given by s8(3) and (4) of the HRA, and Anufrijeva and Greenfield, the Tribunal has considered, in the absence of any evidenced or proven financial loss, the Strasbourg authorities in respect of non-pecuniary loss, such as distress and frustration. No award was made for non-pecuniary loss in respect of a violation of Article 8 in the cases of Niemietz v Germany [1993] 16 EHRR 97 (1½ hours search and removal of documents, including privilege documents), Cremieux v France [1993] 16 EHRR 357 (a lengthy search and seizure at the claimant’s house)",
             "expected": [
                 "Niemietz v Germany [1993] 16 EHRR 97",
-                " Cremieux v France [1993] 16 EHRR 357"
+                "Cremieux v France [1993] 16 EHRR 357"
             ]
         },
         {
             "text": "Mr Coppel has drawn attention to two cases in which damages have been awarded for what he calls distress caused by a one-off intrusion into the home, Taner Kilic v Turkey ECtHR 70845/01 of 24 October 2006, and Keegan v UK [2007] 44 EHRR 33. In the Taner Kilic case, the violation of Article 8 consisted of a substantial search of the applicant’s home and office and seizure of documents or copy documents and video tapes.",
             "expected": [
-                "Kilic v Turkey ECtHR 70845/01",
+                "Kilic v Turkey ECtHR 70845/01 of 24 October 2006",
                 "Keegan v UK [2007] 44 EHRR 33"
             ]
         },
@@ -236,7 +236,7 @@
         {
             "text": "The Judge then went on to say that it was of significance that there is no question in this case of publication being necessary to correct a false impression created by BHAM, to reveal any illegal or immoral dealing, to expose hypocrisy or to expose some improper practice or concealment, nor even to demonstrate incompetence. He referred to Lion Laboratories Ltd v Evans [1985] 1 Q.B. 526 as establishing that there is no bright line rule that it is necessary to demonstrate iniquity in order to justify a breach of confidence and that a balancing exercise falls to be performed. He said that in some cases the balance may come down in favour of permitting publication even in the absence of iniquity. The Judge then quoted two passages in the judgment of Griffiths LJ in Lion Laboratories at page 550 C-D and page 551",
             "expected": [
-                "Aion Laboratories Ltd v Evans [1985] 1 Q.B. 526"
+                "Lion Laboratories Ltd v Evans [1985] 1 Q.B. 526"
             ]
         },
         {
