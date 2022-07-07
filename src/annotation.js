@@ -1,5 +1,5 @@
 const DICT = {
-    prefix: ["on", "see", "appendix to", "in", "applied", "appeal", "accord", "cites", "cite", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for"],
+    prefix: ["on", "see", "appendix to", "in", "applied", "appeal", "accord", "cites", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for"],
     normalizer: [
         {
             "from": "[sS]ee,? generally,",
@@ -22,8 +22,12 @@ const DICT = {
             "to": "see"
         },
         {
-            "from": ".\\s+In",
+            "from": "(\\.\\s+)In",
             "to": ". in"
+        },
+        {
+            "from": "^In",
+            "to": "in"
         },
         {
             "from": "\\,?\\sand\\s",
@@ -48,6 +52,10 @@ const DICT = {
         {
             "from": "\\s+–\\s+",
             "to": "\n"
+        },
+        {
+            "from": "refer to the decision of the \\w+ in",
+            "to": "refer to"
         }
     ],
     "month": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octiber", "November", "December"]
@@ -62,9 +70,9 @@ const normalize = (txt) => {
     // split if `and` found 
     match_and_ = Array.from(txt.matchAll(RGX_AND));
     if (match_and_) {
-        match_and_.forEach(ma => {
+        match_and_.forEach((ma,i) => {
             index_and_ = ma.index + ma[0].length;
-            txt = txt.substring(0, index_and_) + '\n' + txt.substring(index_and_);
+            txt = txt.substring(0, index_and_+i) + '\n' + txt.substring(index_and_+i);
         })
     }
 
@@ -72,6 +80,7 @@ const normalize = (txt) => {
     txt = txt.replace(/(\(\S+\))(?=.*\sv\.?\s)/gm, x => x.replace(/\(|\)/g, '-'));
     txt = txt.replace(/(\(\S+\))(?=.*((\[\d{4}\])|(\(\d{4}\))|(\d{4})))/gm, x => x.replace(/\(|\)/g, '-'));
     txt = txt.replace(/(?<=[A-Z]\w+)(\sof\s)(?=[A-Z])/gm, x => x.replace(' of ', ' %OF% '));
+    txt = txt.replace(/(?<=[A-Z]\w+)(\sfor\s)(?=[A-Z])/gm, x => x.replace(' for ', ' %FOR% '));
     return txt;
 }
 
@@ -79,6 +88,7 @@ const denormalize = (txt) => {
     if (!txt) return
     txt = txt.replace(/\-\S+\-/gm, x => `(${x.slice(1, x.length - 1)})`);
     txt = txt.replace(' %OF% ', ' of ');
+    txt = txt.replace(' %FOR% ', ' for ');
     txt = txt.trim();
     txt = txt.replace(/,$/, "");
     return txt;
@@ -87,15 +97,16 @@ const denormalize = (txt) => {
 // General Part
 const RGX_PREFIX = new RegExp(`((\\. +|\:|\\(|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|\\(|^|\\n|\\.\\s+`, "gm");
 const RGX_YEAR = new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})");
-const RGX_V = new RegExp("(\\sv\\.?\\s)");
+const RGX_V = new RegExp("(\\s[\\–\\-]?v[\\-\\.]?\\s)");
 const RGX_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*)");
 const RGX_PINPOINT = new RegExp(`(((at)|(at pp))\\s+(\\d+(-\\d+)*)|(\\[\\d+\\]((\\s*-\\s*)\\[\\d+\\])*))`);
 const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
-const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])(rd|th|st)?|([0-2][0-9])|([3][0-1]))\\s+(${DICT.month.join('|')})\\s+\\d{4}`);
+const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\s+(${DICT.month.join('|')})\\s+\\d{4}`);
 const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
-const RGX_DIVISION = new RegExp(`((\\([A-Z]\\w*\\)))`);
+const RGX_DIVISION = new RegExp(`((\\([\\w\\d]*\\)))`);
 const RGX_COURT_ABBV = new RegExp(`((\\s[A-Z]\\w+)){1,2}`);
-const RGX_PARTY_NAME = new RegExp(`(((\\s|^)+([\\\(\\-]?[A-Z][a-z\\,\\-]*[\\\)\\-]?)(\\s+(of|for|%OF%|and|in|plc|&|the|Co\\.))?)+)`);
+const RGX_PARTY_NAME = new RegExp(`(((\\s|^)+([\\\(\\-]?[A-Z][a-z\\,\\-]*[\\\)\\-]?)(\\s+(of|for|%FOR%|%OF%|and|in|plc|&|the|Co\\.))?)+)`);
+const RGX_DATE_UNREPORTED = new RegExp(`(.+\\,\\s+${RGX_DATE_DDMMMMYYYY.source}\\,\\s+(unreported))`);
 
 // Various Citation
 const RGX_NEUTRAL = new RegExp(`${RGX_YEAR.source}(\\s*${RGX_NUM_OR_SLASHEDNUM.source}?\\s*${RGX_COURT_ABBV.source}?\\s*${RGX_DIVISION.source}?\\s*${RGX_NUM_OR_SLASHEDNUM.source}\\s*${RGX_DIVISION.source}?)`);
@@ -107,15 +118,22 @@ const RGX_CITEND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX
 const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_1.source}|${RGX_UNUSUAL_2.source}${RGX_STOPPER.source})(\\.|(\\s+and\\s+))`, "gm");
 
 function rule3(text) {
-    const RGX_PARTY_WITH_DATE = new RegExp(`${RGX_PARTY_NAME.source}(\\s+v\\.?)${RGX_PARTY_NAME.source}\\s+\\\(${RGX_DATE_DDMMMMYYYY.source}\\\)`, 'gm');
+    const RGX_PARTY_WITH_DATE = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}\\s+\\\(${RGX_DATE_DDMMMMYYYY.source}\\\)`, 'gm');
     const matched = Array.from(text.matchAll(RGX_PARTY_WITH_DATE));
     const result = matched.map(m => denormalize(m[0]));
     return result
 }
 
+function rule4(text) {
+    const RGX_PARTY_UNREPORTED = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}\\s+\\\(${RGX_DATE_UNREPORTED.source}\\\)`, 'gm');
+    const matched = Array.from(text.matchAll(RGX_PARTY_UNREPORTED));
+    const result = matched.map(m => denormalize(m[0]));
+    return result
+}
+
 function rule2(text) {
-    const RGX_TEST = new RegExp(`${RGX_PARTY_NAME.source}(\\sv\\.?)${RGX_PARTY_NAME.source}(.{0,20})`, 'gm');
-    const RGX_PARTY_ONLY = new RegExp(`${RGX_PARTY_NAME.source}(\\sv\\.?)${RGX_PARTY_NAME.source}`, 'gm');
+    const RGX_TEST = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}(.{0,25})`, 'gm');
+    const RGX_PARTY_ONLY = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}`, 'gm');
     const matched = Array.from(text.matchAll(RGX_TEST));
 
     const result = matched.filter(m => !RGX_YEAR.test(m) && !RGX_UNUSUAL_1.test(m) && !RGX_UNUSUAL_2.test(m))
@@ -164,7 +182,8 @@ function rule1(text) {
 function annotate(text) {
     // normalize text
     text = normalize(text);
-    const rules = [rule1, rule2, rule3];
+    console.log(text);
+    const rules = [rule1, rule2, rule3, rule4];
     let citations = [];
     rules.forEach(apply => {
         citations = citations.concat(apply(text));
@@ -173,5 +192,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-console.log(annotate("The claimant did refer to the FRS grade C role in her first witness statement at paragraph 110 o, whereas the allegation is made in the second claim. The claimant referred to a vacancy in the IT department from October 2014; and then from July 2015 onwards. A failure to offer the claimant a vacancy in October 2014 pleaded in the second claim is subject to issue estoppel or Henderson v Henderson. The claimant therefore cannot pursue that allegation "))
+console.log(annotate("Following enactment of the 1985 Act, the courts were more than once called upon to consider whether evidence on which it was sought to rely was the product of interception of a public or private telecommunications system: see R v Ahmed (Court of Appeal, 29 March 1994, unreported); R v Effik [1995] 1 AC 309, 314. The focus of the enquiry in the latter of these cases is shown by the ruling of Lord Oliver of Aylmerton, with which all members of the committee agreed (page 317):"))
 module.exports = annotate;
+
