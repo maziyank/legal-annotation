@@ -102,8 +102,8 @@ const denormalize = (txt) => {
 const RGX_PREFIX = new RegExp(`((\\. +|\:|\\(|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|\\(|^|\\n|\\.\\s+`, "gm");
 const RGX_YEAR = new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})");
 const RGX_V = new RegExp("(\\s[\\–\\-]?v[\\-\\.]?\\s)");
-const RGX_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*(\\,\\s\\d+)*)");
-const RGX_PINPOINT = new RegExp(`(((at)|(at pp)|(\\,\\s+para)|(para)|(at para)|(at paragraph))\\s+((\\d+((-\\d+)|(\\,\\s+\\d+))*)|(\\[\\d+\\]((\\s*-\\s*)\\[\\d+\\])*)))`);
+const RGX_NUM_OR_SLASHEDNUM = new RegExp("(\\d+(\\/\\d+)*(\\,\\s\\d+)*(\\-\\d+)*)");
+const RGX_PINPOINT = new RegExp(`(((at)|(at pp)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|(at par[a]?[s]?)|(at paragraph))\\s+((\\d+((-\\d+)|(\\,\\s+\\d+))*)|(\\[\\d+\\]((\\s*-\\s*)\\[\\d+\\])*)))`);
 const RGX_STOPPER = new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))");
 const RGX_DATE_DDMMMMYYYY = new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\s+(${DICT.month.join('|')})\\s+\\d{4}`);
 const RGX_FULL_COURTNAME = new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`);
@@ -179,7 +179,7 @@ function rule1(text) {
     const with_party = apply(RGX_NEUTRAL_FULL);
     const without_party = apply(RGX_NOPARTY_FULL).filter(cit => !RGX_V.test(cit));
     const unusual_full_date = apply(RGX_UNUSUAL_FULLDATE);
-    console.log(with_party)
+ 
     return [...new Set([...with_party, ...without_party, ...unusual_full_date])];
 }
 
@@ -195,6 +195,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-console.log(annotate("This guidance was approved in R (Greenfield) v Secretary of State for the Home Department [2005] 1 WLR 673 by the House of Lords per Lord Bingham at 9, and he gave three reasons why damages in such cases, if granted at all, were in a small compass"))
+// console.log(annotate("In Bankovic and Others v Belgium and Others (App. No. 52207/99) [11 BHRC 435] citizens of the Federal Republic of Yugoslavia ('FRY') sought to complain to the Strasbourg Court that deaths and injuries caused by air strikes carried out by members of Nato in the course of the conflict in Kosovo violated, among others, Article 2 of the Convention. The respondent governments contended that the applicants and their deceased relatives were not at the material time within their jurisdictions, within the meaning of Article 1. The applicants argued that the very act of carrying out the air strikes was an assertion of effective control, which brought the applicants within the jurisdiction of those carrying out the strikes. They further argued that the decision to carry out the air-strikes had been taken within the territories of the respondent governments, so that the principle in Soering v UK [1989] ECHR 14038/88 was applicable"))
 module.exports = annotate;
 
