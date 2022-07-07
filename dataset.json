@@ -222,7 +222,7 @@
         {
             "text": "Mr Coppel has drawn attention to two cases in which damages have been awarded for what he calls distress caused by a one-off intrusion into the home, Taner Kilic v Turkey ECtHR 70845/01 of 24 October 2006, and Keegan v UK [2007] 44 EHRR 33. In the Taner Kilic case, the violation of Article 8 consisted of a substantial search of the applicant’s home and office and seizure of documents or copy documents and video tapes.",
             "expected": [
-                "Kilic v Turkey ECtHR 70845/01 of 24 October 2006",
+                "Taner Kilic v Turkey ECtHR 70845/01 of 24 October 2006",
                 "Keegan v UK [2007] 44 EHRR 33"
             ]
         },
@@ -317,7 +317,7 @@
             "text": "And in Brinkley v Brinkley [1965] P 75, 78 Scarman J said that `for a court to take into consideration evidence which a party to the proceedings has had no opportunity during trial to see or hear, and thus to challenge, explain or comment upon, seems to us to strike at the very root of the judicial process`. In Pamplin v Express Newspapers Ltd [1985] 1 WLR 689 at 691 Hobhouse J expressed the principle in similarly forthright terms",
             "expected": [
                 "Brinkley v Brinkley [1965] P 75, 78",
-                "Pamplin v Express Newspapers Ltd [1985] 1 WLR 689"
+                "Pamplin v Express Newspapers Ltd [1985] 1 WLR 689 at 691"
             ]
         },
         {

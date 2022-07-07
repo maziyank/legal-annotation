@@ -58,7 +58,7 @@ const DICT = {
             "to": "refer to"
         },
         {
-            "from": "(\\[a-z]+\\s){2}(\\[a-z]+\\,)",
+            "from": "([a-z]+\\s){2}([a-z]+\\,)",
             "to": "see "
         }
     ],
@@ -136,7 +136,7 @@ function rule4(text) {
 }
 
 function rule2(text) {
-    const RGX_TEST = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}(.{0,25})`, 'gm');
+    const RGX_TEST = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}(.{0,30})`, 'gm');
     const RGX_PARTY_ONLY = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}`, 'gm');
     const matched = Array.from(text.matchAll(RGX_TEST));
 
@@ -150,13 +150,13 @@ function rule2(text) {
 }
 
 function rule1(text) {
-    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.{1,100}\\s+${RGX_CITEND.source}(\\s*${RGX_PINPOINT.source})?`, "gm");
-    const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX_CITEND.source}`, "gm");
+    const RGX_NEUTRAL_FULL = new RegExp(`${RGX_V.source}.{1,100}\\s+${RGX_CITEND.source}(\\s*${RGX_PINPOINT.source})?(\\s*of\\s+${RGX_DATE_DDMMMMYYYY.source})?`, "gm");
+    const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX_CITEND.source}(\\s*of\\s+${RGX_DATE_DDMMMMYYYY.source})?`, "gm");
     const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX_FULL_COURTNAME.source},\\s+${RGX_DATE_DDMMMMYYYY.source}`, "gm");
 
     function apply(RGX) {
         let citations = [];
-        cit_matches = Array.from(text.matchAll(RGX));
+        cit_matches = Array.from(text.matchAll(RGX)); 
         prefix_match = Array.from(text.matchAll(RGX_PREFIX));
         if (cit_matches && prefix_match) {
             const candidates = cit_matches.map(cit => {
@@ -179,7 +179,7 @@ function rule1(text) {
     const with_party = apply(RGX_NEUTRAL_FULL);
     const without_party = apply(RGX_NOPARTY_FULL).filter(cit => !RGX_V.test(cit));
     const unusual_full_date = apply(RGX_UNUSUAL_FULLDATE);
-    
+    console.log(with_party)
     return [...new Set([...with_party, ...without_party, ...unusual_full_date])];
 }
 
@@ -195,6 +195,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-console.log(annotate("Mr Tinnion drew our attention to those passages in paragraphs 122 and 123 and suggested that they were not an accurate statement of the law. More particularly, Mr Tinnion submitted that the law had moved on and had been developed in a series of recent authorities. He took us in turn to three such authorities. First, the decision of this Employment Appeal Tribunal in Samsung Electronics v Monte-D’Cruz UKEAT/0039/11/DM."))
+console.log(annotate("This guidance was approved in R (Greenfield) v Secretary of State for the Home Department [2005] 1 WLR 673 by the House of Lords per Lord Bingham at 9, and he gave three reasons why damages in such cases, if granted at all, were in a small compass"))
 module.exports = annotate;
 
