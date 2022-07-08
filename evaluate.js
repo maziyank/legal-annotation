@@ -24,6 +24,7 @@ const evaluate = () => {
     console.log("Heuristic Model Evaluation Result:");
     console.log("=================================");
     console.log("")
+    console.log("Total Docs\t\t:", test_case.scenarios.length);
     console.log("Total Citation\t\t:", total_citation);
     console.log("Total Prediction\t:", total_prediction);
     console.log("TP\t\t\t:", TP);

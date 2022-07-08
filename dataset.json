@@ -605,6 +605,246 @@
                 "Wimpy International Ltd v Warland",
                 "[1988] STC 149"
             ]
+        },
+        {
+            "text": "The judge refused an application by Mylan for a stay of the injunction pending the determination of an application by Mylan to this Court for permission to appeal. Even so, I am surprised that the judge did not see fit to grant Mylan a stay of, say, 14 or 21 days in order to enable Mylan to make an orderly application to this Court following receipt of the further judgment and the judge's determination of Mylan's renewed application for permission to appeal in the light of that judgment. As it was, Mylan was forced to make an urgent application to this Court on 8 March 2022 when neither of those things had happened. Also on 8 March 2022 the judge handed down his further judgment [2022] EWHC 512 (Pat) (\"the March Judgment\") in which he explained his reasons for rejecting the lay-patient argument and for refusing permission to appeal. This in turn led to Mylan filing further submissions in support of their application to this Court and amending their grounds of appeal.",
+            "expected": [
+                "[2022] EWHC 512 (Pat)"
+            ]
+        },
+        {
+            "text": "Reliance is placed by the appellant on the decision of this court in R (on the application of B) v. Ashworth Hospital Authority [2003] EWCA Civ 547. That was a case where B had been convicted of manslaughter and had been made the subject of a section 37 hospital order and a section 41 restriction order. The court specified \"mental illness\" in the hospital order as the form of mental disorder from which B was suffering. At no time did the court specify \"psychopathic disorder\" as the form of mental disorder, nor was he reclassified to that effect by an MHRT. The issue which arose was whether B could be compulsorily treated under section 63 for psychopathetic disorder which the clinicians subsequently diagnosed. There is no restriction in the wording of section 63, which merely refers to the patient's consent not being required for any treatment \"for the mental disorder from which he is suffering\", but this court concluded that the statutory context was such that the patient could only be treated compulsorily for the form of mental disorder for which he was being detained.",
+            "expected": [
+                "[2022] EWHC 512 (Pat)",
+                "R (on the application of B) v. Ashworth Hospital Authority [2003] EWCA Civ 547"
+            ]
+        },
+        {
+            "text": "The judge rejected all three submissions. As for the first, he applied Waller LJ's gloss in Canada Trust Co v. Stolzenberg (No2) [1998] 1 WLR 547 of the \"good arguable case\" test (ex Seaconsar Far East Ltd v. Bank Markazi [1994] 1 AC 438) in the context of a choice for founding jurisdiction as requiring that \"one side has a much better argument on the material available\" (at 555). He applied that test to the mirror context of declining jurisdiction, and found that the Reinsurers had failed to meet it. He said (at para 68):",
+            "expected": [
+                "Canada Trust Co v. Stolzenberg (No2) [1998] 1 WLR 547",
+                "Seaconsar Far East Ltd v. Bank Markazi [1994] 1 AC 438"
+            ]
+        },
+        {
+            "text": "On behalf of Coromin, Mr Steven Berry QC had three main themes. The first was that it is very difficult to upset on appeal the commercial judge's exercise of his discretion in such a matter, a fortiori in the context of a decision of case management. The leading authority in such a context is Reichold Norway ASA v. Goldman Sachs International [2000] 1 WLR 173, where Lord Bingham CJ said that \"stays are only granted in cases of this kind in rare and compelling circumstances\" (at 186). The second was that in any event the judge was right to exercise his discretion in the way he did for the reasons that he did. He had taken all relevant matters into account, in particular the (assumed good arguable case for the) application of the Zambian law and jurisdiction clause and the evidential centre of gravity of the \"collapse\" issue (at para 112). If his decision on discretion was good in the context of the application for a jurisdictional stay, it was all the more unassailable on the hypothesis of a case management stay unassisted by the jurisdictional arguments.",
+            "expected": [
+                "Reichold Norway ASA v. Goldman Sachs International [2000] 1 WLR 173"
+            ]
+        },
+        {
+            "text": "It seems to me that the issue of the right test to apply to this question is a difficult one. On the one hand, one would wish to avoid a test which sets up a trial on the merits, even if only a provisional one. On the other hand, where there is established Regulation or Convention jurisdiction subject to a jurisdiction clause, the choice is not merely between two competing jurisdiction clauses, but between the established jurisdiction and a jurisdiction clause derogating from that jurisdiction. Since an English jurisdiction clause does not here derogate from the established jurisdiction, the real competition in this case is between England as the established jurisdiction and the Zambian clause relied on by the Reinsurers. Moreover, there may be a difference between a jurisdiction established by mandatory international rules as under the Regulation and a jurisdiction merely accepted by the English courts as part of their national rules, including their long-arm statute, and always subject to their overriding and inherent discretion. Where the choice arises under the Regulation itself and article 23 is in question – which Colman J has held is not the case here in respect of the Zambian clause since that is not a clause giving jurisdiction to a court or the courts of a Member Stat  (article 23.1) – article 23 itself lays down the conditions for the clause in question, eg that it should be in or evidenced in writin  (article 23.1(a)); and ECJ jurisprudence has held that it is necessary for the applicability of the jurisdiction clause to be without doubt, in the sense that it should be established that the parties' consent has been clearly and precisely demonstrated: see Etsasis Salotti di Colzano Aimo e Gianmario Colzani v. Ruwa Polstereinaschinen GmbH [1976] ECR 1831 and Partenreederei MS Tilly Russ v. Haven & Vervoebedrijf Nova NV [1985] QB 931. By analogy, therefore, there is an argument for saying that the test for the applicability of the clause in this case should be a stringent one.",
+            "expected": [
+                "Colzano Aimo e Gianmario Colzani v. Ruwa Polstereinaschinen GmbH [1976] ECR 1831",
+                "Partenreederei MS Tilly Russ v. Haven & Vervoebedrijf Nova NV [1985] QB 931"
+            ]
+        },
+        {
+            "text": "The Parliamentary intention in making adjudication obligatory for construction contracts was described by Dyson J (as he then was) in Macob Civil Engineering Limited v Morrison Construction Limited (1999) BLR 93 at 97. It was to provide a speedy mechanism for settling disputes under construction contracts on a provisional interim basis. The statutory provisions have in general been salutary. But it is common experience that the policy of the statute is sometimes not achieved – as when a large dispute unrelated to immediate cash flow and not suitable for speedy resolution is oppressively squeezed into the short timetable required by the Act; or when what was intended to be an inexpensive procedure generates very large costs. It is not suggested that the first of these applies to Parkcare's reference to adjudication in the present case. But the reference certainly did generate very large costs.",
+            "expected": [
+                "Macob Civil Engineering Limited v Morrison Construction Limited (1999) BLR 93 at 97"
+            ]
+        },
+        {
+            "text": "The meaning which a document … would convey to a reasonable man is not the same thing as the meaning of its words. The meaning of words is a matter of dictionaries and grammar; the meaning of the document is what the parties using those words against the relevant background would reasonably have been understood to mean. The background may not merely enable the reasonable man to choose between the possible meanings of words which are ambiguous but even (as occasionally happens in ordinary life) to conclude that the parties must, for whatever reason, have used the wrong words or syntax: see Mannai Investments Co. Ltd v. Eagle Star Life Assurance Co. Ltd [1997] AC 749.",
+            "expected": [
+                "Mannai Investments Co. Ltd v. Eagle Star Life Assurance Co. Ltd [1997] AC 749"
+            ]
+        },
+        {
+            "text": "Mr Tregear then referred to the commentary on this passage in the judgment of Hoffmann LJ (as he then was) in Co-operative Wholesale Society Ltd v National Westminster Bank plc [1995] 1 EGLR 97 at 99F as follows: \"This robust declaration does not, however, mean that one can rewrite the language which the parties have used in order to make the contract conform to business commonsense. But language is a very flexible instrument and, if it is capable of more than one construction, one chooses that which seems most likely to give effect to the commercial purpose of the agreement.\" In the present case, says Mr Tregear, the language is not capable of more than one construction. All Antaios allows you to do is to choose between two viable meanings. Here there is only one. One of Mr Walker's submissions – that the words \"as part of his decision\" are unnecessary and can be notionally left out – is not a solution. That would be illegitimate rectification.",
+            "expected": [
+                "Co-operative Wholesale Society Ltd v National Westminster Bank plc [1995] 1 EGLR 97 at 99F"
+            ]
+        },
+        {
+            "text": "Where there has been no transfer of the reversion, it is clear that the tenant can in principle set off against its liability for rent, a claim for damages arising from a breach by the landlord of a term of the agreement from the lease, as well as any claim against the landlord for a breach of the provision of the lease itself. That point has been regarded as conclusively determined by the judgment of Forbes J in British Anzani (Felixstowe) Limited v International Marine Management (UK) Ltd [1977] 1 QB 137, a decision which has been approved on a number of occasions in this court, for example Connaught Restaurants v Indoor Leisure [1994] 1 WLR 501 at 505C and 511C, Mortgage Corporation v Ubah [1996] 73 P&CR at 500 and 507, and Muscat v Smith [2003] 1 WLR 2853 paragraph 9. Accordingly, it is common ground in this case that, had the WDA not assigned the reversion to the lease to Edlington, Fenner would be able to settle this claim for damages under the building agreement against its liability for rent.",
+            "expected": [
+                "British Anzani (Felixstowe) Limited v International Marine Management (UK) Ltd [1977] 1 QB 137",
+                "Connaught Restaurants v Indoor Leisure [1994] 1 WLR 501 at 505C and 511C",
+                "Mortgage Corporation v Ubah [1996] 73 P&CR at 500 and 507",
+                "Muscat v Smith [2003] 1 WLR 2853 paragraph 9"
+            ]
+        },
+        {
+            "text": "The effect of section 136 of the Law of Property Act 1925 (\"section 136\"), which reenacted with some amendments section 25(6) of the Supreme Court of Judicative Act 1873, was to do away with the common law requirement that the assignee of the right to recover the debt or of any other chose in action would have to sue in the assignor's name, provided that the assignment satisfied certain conditions. Section 136, like its statutory predecessor, by its terms preserves the equitable rule that the debtor can rely on any rights of set-off which arose before he had notice of assignment – see per Phillips J in Pfeiffer GmbH v Arbuthnot Factors Limited [1988] 1WLR 150 (1623).",
+            "expected": [
+                "Pfeiffer GmbH v Arbuthnot Factors Limited [1988] 1WLR 150 (1623)"
+            ]
+        },
+        {
+            "text": "However, as Mr Fancourt QC, who appears with Mr Peters for Edlington argues, the contention that a liability to pay damages from the accrued breach of covenant runs with the reversion (or with the term) is an entirely different notion, and it is one which appears to me to be contrary to principle. Indeed the contention is difficult to reconcile with the decision of Garland J in Duncliffe v Caerfelin Properties Ltd [1989] 2 EGLR 38. That decision, which is rightly accepted as correctly decided by Mr Lundie, and was also so treated by Buxton LJ in paragraphs 28 and 41 of Muscat, was to the effect that a transferee of the reversion could not be held liable by the tenant for breaches of a landlord's covenant committed by the transferor, even though the covenant in question bound the transferee, who would of course be liable for any breach of the covenant after the transfer. The decision was based on section 141 and 142 of the 1925 Act, but it applies equally in a case such as this where the relevant provisions are sections 3 and 23 of the 1995 Act.",
+            "expected": [
+                "Duncliffe v Caerfelin Properties Ltd [1989] 2 EGLR 38"
+            ]
+        },
+        {
+            "text": "High authority suggests that a purchaser of land and in particular for present purposes a reversion to a lease, will take an interest subject to an equitable right only (a) where he has notice, including of course a deemed notice, of the right; and (b) where that right is \"such that it creates a legal or equitable estate or interest in [that] land\" – per Lord Upjohn in National Provincial Bank Limited v Ainsworth [1965] AC 1175 at 1238 and also per Lord Wilberforce in the same case at 1253 to 1254. As is clear from that case, a purchaser of a legal estate in land is not bound by any personal obligation of the vendor even though it may fairly be said that the personal obligation relates to the land in question. By parity of reasoning, in the present case the right to claim a set-off against rent, while it can be said to relate to the lease in the sense that it is being invoked to impeach the tenant's liability to pay rent, is in reality a \"mere\" claim for money, not a right which can be said to be in anyway proprietary. Additionally, although not essential for present purposes, it is a claim which arises from a mere contractual right against the original landlord under an obligation which cannot, after the transfer of the reversion, be invoked against the successor of that landlord.",
+            "expected": [
+                "National Provincial Bank Limited v Ainsworth [1965] AC 1175 at 1238"
+            ]
+        },
+        {
+            "text": "By contrast in Re West Canadian Collieries Ltd [1962] Ch 370 notice of the general meeting was sent to members, but was not sent to a small number of members whose address details had been taken out of the mailing list arrangements that were set up on the occasion of a previous mailing, for entirely innocuous reasons, but should have been put back for the purposes of the notice of the meeting. That was inadvertently overlooked at the time of giving notice of the meeting and the details were not added back, so they did not get their notices. Plowman J held that that was an accidental omission.",
+            "expected": [
+                "Re West Canadian Collieries Ltd [1962] Ch 370"
+            ]
+        },
+        {
+            "text": "Against this background, Miss Rose submitted that we should apply the reasoning of this court as explained in paragraphs 41 to 46 of the judgment of Brooke LJ in Tanfern Limited v Cameron-MacDonald and another (Tanfern) [2000] 1 WLR 1311, a judgment with which Lord Woolf MR (as he then was) and Peter Gibson LJ agreed. Mr. Phipps had had a long and careful hearing in front of the PCC. He had had a full and careful hearing on appeal by Newman J in the Administrative Court. In these circumstances, she submitted, AJA 1999 section 55(1) applied.",
+            "expected": [
+                "Brooke LJ in Tanfern Limited v Cameron-MacDonald and another (Tanfern) [2000] 1 WLR 1311"
+            ]
+        },
+        {
+            "text": "There is no obligation on the PCC to give reasons for finding the facts in the charges proved (Gupta v GMC [2002] 1 WLR 1691 paras 10-14). The narrative form of the charges and the notice to the practitioner informs him or her of the facts in issue in connection with the chargers. But whilst the general rule is well established, this case demonstrates that a lack of specificity in the charges and consequently in the reasons can give rise to difficulty, in particular, in this court on appeal. The court has had to travel through the nine lever arch files to see whether unfairness had occurred.",
+            "expected": [
+                "Gupta v GMC [2002] 1 WLR 1691 paras 10-14"
+            ]
+        },
+        {
+            "text": "The position as to the duty of the Professional Conduct Committee to give reasons, as presently understood, is to be found in Selvanathan v General Medical Council. In that case the amended allegation against the practitioner was to the effect that he had knowingly given a false and misleading response to an inquiry by his local health authority in relation to a complaint by a patient. The evidence against the practitioner was all agreed and the committee's decision depended on the inferences drawn from that evidence and from the oral evidence given by the practitioner. After considering the evidence, the committee decided that particular heads of the charge had been proved. The committee gave no reasons for its decision. The practitioner appealed to this Board on the basis that the committee should have given its reasons for finding against the practitioner on the charge that he had known that his response to the health authority had been false and misleading. Giving the decision of the Board, Lord Hope of Craighead first drew attention to the nature and composition of the committee, comprising medical practitioners and lay members, acting with the legal advice of their assessor. The rules required the committee, as a committee, to reach a view on the matters for its determination and there was no provision for expressions of dissent. In these circumstances, said Lord Hope at p 7- Whilst I fully accept that the instant case is not a proper forum for the promulgation of guidelines, my provisional view is that paragraph 14 of the decision of the Privy Council in Gupta v GMC identifies an approach which reflects current norms of judicial behaviour. In every case, as it seems to me, every Tribunal (including the PCC of the GMC) needs to ask itself the elementary questions: is what we have decided clear? Have we explained our decision and how we have reached it in such a way that the parties before us can understand clearly why they have won or why they have lost?",
+            "expected": [
+                "Selvanathan v General Medical Council",
+                "Gupta v GMC "
+            ]
+        },
+        {
+            "text": "would in this instance respectfully draw attention to the following matters. First, it was not necessary for Miss Rose to develop any submissions on the points which my Lord makes in the paras. cited, and therefore we have not heard what she would have submitted, no doubt very helpfully, on this point. We do not know what the practical implications are: No-one would want to cause unnecessary delays in the delivery of decisions by the GMC. That would not be in the public interest. By contrast with this court, the Privy Council had enormous experience in dealing with these appeals and we should not lightly cast aside the benefit of that heritage. Indeed I would say that in this particular field the judge was right to treat the decision in Gupta as binding on him unless it could not stand with a decision of this court or of the House of Lords. If the relevant decision of the Privy Council was inconsistent with a decision of the House of Lords, this court would in turn have to take account of the what was recently decided by the Criminal Division of this court in R v James, R v Karimi [2006] 1All ER 759. Secondly, the decision in English v Emery Reimbold does not encourage appeals on the grounds of adequacy of reasons: see for example paras. 30 and 53 to 57 of the judgment of the court. In my judgment the English case establishes that a decision of a court does not infringe article 6 or the common law on the grounds that the reasons are not spelt out if the reasons can be deduced from other sources to which reference may properly be made: see the judgment in the English case at the paras already cited and para. 26. Applying that to this case, to the extent that the issue was for example whether Mr Phipps' explanations for his misstatements were accepted, it seems to me that Mr Phipps can have little doubt that the reason why he lost is that the GMC found his explanations incredible in the light of the evidence and general matters of practice of which both would be aware.",
+            "expected": [
+                "R v James",
+                "R v Karimi [2006] 1All ER 759",
+                "English v Emery Reimbold"
+            ]
+        },
+        {
+            "text": " It is elementary that a national measure purporting to implement a Directive must be interpreted \"as far as possible, in the light of the wording and the purpose of the Directive in order to achieve the result pursued by the latter\": Marleasing [1990] ECR 1-4135. I should refer also to the decision of their Lordships' House in Litster [1990] 1 AC 546, where Lord Oliver said this at 559: \"If the [domestic] legislation can reasonably be construed so as to conform with those obligations – obligations which are to be ascertained not only from the wording of the relevant Directive but from the interpretation placed upon it by the European Court of Justice at Luxembourg – such a purposive construction will be applied even though, perhaps, it may involve some departure from the strict and literal application of the words which the legislature has elected to use.\" In the same context I should cite Commissioners v IDT [2006] EWCA Civ 29, paragraph 82, per Arden LJ: 'In the context… of legislation which requires to be construed in a way which is compatible with European Union law or with the rights conferred by the European Convention on Human Rights, the English courts can adopt a construction which is not the natural one. The process, however, remains one of interpretation: the obligation imposed by the Court of Justice is only to interpret national law in conformity with a directive 'so far as possible'.",
+            "expected": [
+                "Marleasing [1990] ECR 1-4135",
+                "Litster [1990] 1 AC 546",
+                "Commissioners v IDT [2006] EWCA Civ 29"
+            ]
+        },
+        {
+            "text": "  27 April 2004 the application for judicial review was heard by Collins J on the basis of an amended claim form which sought the quashing of the assessment of 5 March. He granted the application and quashed the assessment. Slough now appeal against that order. The appeal requires consideration under two headings: (1) Was Collins J correct to find that this case fell within section 21 of the 1948 Act? (2) Even if he was, have subsequent events taken the case outside section 21? The subsequent events include the Secretary of State's refusal of the Article 3 claim on 12 November 2004, the issue of removal directions on 5 March 2005, M's successful appeal against the removal directions on asylum (not Article 3) grounds on 30 December 2005 and the Secretary of State's application for a statutory review of the decision of the Asylum and Immigration Tribunal dated 30 December 2005 (which application is currently stayed in the Administrative Court, pending judgment in the Court of Appeal in the case of AA, concerning involuntary return to Zimbabwe, which judgment was given, in the Secretary of State's favour on 12 April 2006: [2006] EWCA Civ 401 ). Before considering the present appeal under the two headings to which I have referred, it is necessary to summarise the judgment of Collins J [2004] EWHC 1109 (Admin).",
+            "expected": [
+                "[2006] EWCA Civ 401",
+                "Collins J [2004] EWHC 1109 (Admin)"
+            ]
+        },
+        {
+            "text": "This reflects the way in which the exclusion of late applicants from asylum support under section 55 is softened by section 55(5), as to which see R(Adam, Limbuela and Tesema) v Secretary of State for the Home Department [2005] UKHL 66 In AW (above), Lloyd-Jones J concluded that if, in the case of a failed asylum-seeker who otherwise satisfies the criteria of section 21(1) and (1A), the provision of support is necessary for the purpose of avoiding a breach of that person's Convention rights, that provision is to be made by the local authority pursuant to section 21 rather than by the Secretary of State pursuant to section 4 of the Immigration and Asylum Act 1999, which provides for \"hard cases\" support.",
+            "expected": [
+                "R(Adam, Limbuela and Tesema) v Secretary of State for the Home Department [2005] UKHL 66"
+            ]
+        },
+        {
+            "text": " There has been no detailed judicial consideration of section 97, though it has been referred to in passing in Kelly v BBC [2001] Fam 59 at 78f and HM Attorney General v Pelling [2005] EWHC 414 (Admin); [2006] 1 FLR 93 at para [28]. It was also briefly mentioned in the form in which the section was originally enacted in the Children Act 1989 (i.e. as relating only to proceedings in the Magistrates' Court) in Re: PB at 768 G-H. Referring to the question of privacy for proceedings in the magistrates' courts, Butler-Sloss LJ said:",
+            "expected": [
+                "Kelly v BBC [2001] Fam 59 at 78f ",
+                "HM Attorney General v Pelling [2005] EWHC 414 (Admin)"
+            ]
+        },
+        {
+            "text": "Like the President, I accept the joint submissions of Mr. Price and Mr. Jubb. I am, of course, conscious that we have not heard the alternative viewpoint argued. However, apart from the natural meaning of the words used in the section, I am, I think, particularly influenced by three factors. The first is the fact that the section creates a criminal offence (CA 1989, section 97(6)) and therefore needs to be construed strictly. The second is that the use of the phrase \"as being involved in any proceedings\" in CA 1989, section 97(2)(a) connotes the identification of a period when those proceedings are pending and not concluded. The third is that the thrust of the authorities - to which I will refer later in this judgment - is that there is no special privilege accorded to children who are the subject matter of proceeding save as is strictly necessary for their protection in the context of the proceedings themselves: see R v Central Independent Television PLC [1994] Fam 192 at 207 per Waite LJ",
+            "expected": [
+                "R v Central Independent Television PLC [1994] Fam 192 at 207"
+            ]
+        },
+        {
+            "text": "The President has, in his judgment, considered further the decision of the House of Lords in Re S (A Child) (Identification: Restrictions on Publication) [2005] 1 AC 593, (Re S) and his own decision in A Local Authority v W, L, W, T and R (by the Children's Guardian) [2006] 1 FLR 1. Whilst Re S is plainly a decision of considerable significance in its emphasis on the balance to be struck between Article 8 and Article 10 rights, it does not address either of the issues which, in my judgment are at the heart of this case, namely (1) the construction of CA 1989, section 97(2); and (2) the circumstances in which the court is properly seized of an issue in proceedings under CA 1989; in which the child's welfare requires the court to take action to prevent the child's exposure by one of her parents to a particular form of publicity which, in the view of the court, is inimical to her welfare. In my judgment, the principles applied in the case of Re Z (A minor) (Freedom of Publication [1997] Fam 1 (Re Z) which I examine below continue to apply in such a case.",
+            "expected": [
+                "Re S (A Child) (Identification: Restrictions on Publication) [2005] 1 AC 593",
+                "Re Z (A minor) (Freedom of Publication [1997] Fam 1"
+            ]
+        },
+        {
+            "text": "  As is also well known, the result of the analysis In re Z [1997] Fam 1 is that in relation to the media the exercise of the court's inherent parens patriae or wardship jurisdiction is divided into three parts: the first part, in which the jurisdiction is not exercisable at all and the child is left to whatever remedies against the media the law would give an adult in comparable circumstances; a second part in which the jurisdiction is exercisable, but in circumstances where, because the court is exercising only its \"protective\" jurisdiction, the child's interests are not paramount and where a so-called balancing exercise has to be performed; and the third part, in which, because the court is exercising its \"custodial\" jurisdiction, the child's interests are paramount. Well known examples of cases falling into the first category, where no injunction can be granted, are In re X (A Minor) (Wardship: Jurisdiction) [1975] Fam 47; R v Central Television plc [1994] Fam 192 and M v British Broadcasting Corporation [1997] 1 FLR 51. Familiar examples of cases falling into the second category, where there is a so-called balancing exercise, are In re M and N (Minors) (Wardship: Publication of Information) [1990] Fam 211 and In re W (A Minor) (Wardship: Restrictions on Publication) [1992] 1 WLR 100. So far as I am aware, and none of the counsel appearing before me was able to identify any other example, In re Z [1997] Fam 1 is the only reported case falling within the third category.",
+            "expected": [
+                "In re Z [1997] Fam 1",
+                "In re X (A Minor) (Wardship: Jurisdiction) [1975] Fam 47",
+                "R v Central Television plc [1994] Fam 192",
+                "M v British Broadcasting Corporation [1997] 1 FLR 51",
+                "[1990] Fam 211",
+                "In re W (A Minor) (Wardship: Restrictions on Publication) [1992] 1 WLR 100",
+                "In re Z [1997] Fam 1"
+            ]
+        },
+        {
+            "text": "The decision of the Divisional Court in Her Majesty's Attorney-General v Pelling [2006] 1 FLR 93 is also plainly relevant, although in my judgment equally plainly distinguishable from the facts of the instant case. In that case, the contempt with which Dr. Pelling was charged was the deliberate publication of a judgment which had been (equally deliberately) delivered in private. Dr Pelling's argument that the common law, combined with ECHR entitled him to publish the judgment has been concluded against him both by this court and by the European Court of Human Rights – see Re PB (Hearings in Open Court) [1996] 2 FLR 765 and B v United Kingdom; P v United Kingdom [2001] 2 FLR 261. It was not accordingly open to Dr Pelling to reopen the question. The Divisional Court, unsurprisingly in my view, concluded that in proceedings under CA 1989, the protection of the interests of the child concerned was a function of the administration of justice, and that the publication of a judgment, which the court had determined should be kept private, was an interference with the course of justice. In my judgment that is plainly correct, but it is equally not determinative of the issues in the present case.",
+            "expected": [
+                "Her Majesty's Attorney-General v Pelling [2006] 1 FLR 93",
+                "Re PB (Hearings in Open Court) [1996] 2 FLR 765",
+                "B v United Kingdom",
+                "P v United Kingdom [2001] 2 FLR 261"
+            ]
+        },
+        {
+            "text": "In Re W, L, W, T and R the President granted an injunction restraining the identification of the parents of children whose mother was the subject of criminal proceedings for (and had pleaded guilty to) having knowingly infected the father of one of the children with HIV. He held that the balance between the Article 8 rights of the children and the Article 10 right to freedom of expression fell in favour of the children's Article 8 rights. He did so for the reasons set out in the judgment, which I need not repeat.",
+            "expected": []
+        },
+        {
+            "text": "In relation to costs, even if the proceedings below had been a pure permission application, the judge could have awarded the PCT its costs if successful: see Mount Cook v Westminster CC [2003] EWCA Civ 1346. The PCT were obliged to attend in view of the nature of the application made. They were wholly successful and there was no reason why they should not have been entitled to their costs; the fact that the PCT decided at its meeting not to suspend him showed how misconceived the application was; indeed all the materials suggest that the PCT had acted entirely reasonably. There is no prospect of the applicant persuading a court that the judge was wrong in the exercise of his discretion as to costs. We have before us applications by the first and second, and third and fourth defendants. Each pair seek an order that the appeal be struck out, either now, or if the interim orders costs are not paid, within 21 days. There seems to be no doubt that he has been served with these applications, at least he has been served with these applications at the addresses he gave to the Appeals Office. There is equally no doubt that the court has jurisdiction to make the orders sought; see Hammond Suddard Solicitors v Agrichem International Holdings Ltd [2001] EWCA Civ 2065, where the relevant rules are discussed and it is held that there is a jurisdiction.",
+            "expected": [
+                "Mount Cook v Westminster CC [2003] EWCA Civ 1346",
+                "Hammond Suddard Solicitors v Agrichem International Holdings Ltd [2001] EWCA Civ 2065"
+            ]
+        },
+        {
+            "text": "I pause there; the criticism made of that observation in Igen v Wong was that section 63A had, or may have, reversed some observations of Neal LJ in King v Great Britain – China Centre [1992] ICR 516, to the effect that it was permissible, not obligatory, as section 63A seemed to make it obligatory, to infer discrimination in the absence of an explanation. Simon Brown LJ then went on to say:",
+            "expected": [
+                "King v Great Britain – China Centre [1992] ICR 516"
+            ]
+        },
+        {
+            "text": "The basis of the criticism of the Employment Tribunal is that the tribunal simply misunderstood the implications of section 63A, with the result that its whole view of the case, and its whole approach to the evidence, was distorted. At the time at which the tribunal heard this case, the applicable guidance as to interpretation and application to section 63A had given by the Employment Appeal Tribunal in a case called Barton v Investec Henderson Crossthwaite Securities Ltd [2003] IRLR 332. A week after the Employment Appeal Tribunal determined the case with which we are concerned, this court addressed that matter in the case of Igen v Wong [2005] EWCA Civ 142. The Employment Appeal Tribunal in Barton had set out a number of guidelines for the attention of Employment Tribunals and others who had to apply section 63A. In Igen v Wong those guidelines were repeated and largely approved, with one or two small additions; this court however at the same time emphasising two elementary points, the first being that guidelines are indeed only guidelines, and the second being that what courts must apply is, at the end of the day, the words of the statute and not glosses upon or attempts to explain those words by other tribunals. It will be necessary in dealing with the arguments advanced in this case, for me to say something about the Barton and Igen guidelines, because a complaint is made that the Employment Tribunal in our case failed to follow them to the extent that its determination was, as I have said, irrevocably damaged. I wish however to emphasise that we have not heard a focused argument, I fear I have to say, about the status of the Igen v Wong guidelines; nor have we heard, or is it necessary to hear, adversary argument about them. I am aware it is likely that that question may return to this court in a more formal way in the coming months, and nothing that I say about the content of the guidelines should be regarded as in any way authoritative, if only for this reason: that I go into them for the purpose of explanation only, because as will rapidly become clear, and was clear to both tribunals below, this case does not even meet the preliminary requirement for the application of section 63A.",
+            "expected": [
+                "Barton v Investec Henderson Crossthwaite Securities Ltd [2003] IRLR 332",
+                "Igen v Wong [2005] EWCA Civ 142",
+                "Igen v Wong"
+            ]
+        },
+        {
+            "text": "The five year period ended on 22nd September l987. By that date, when all swaps had been effected, the Council had received from the Bank £384,409 more than it had paid. There matters might have rested but for the fact that on lst November l989 the Divisional Court declared, as subsequently upheld in the House of Lords in Hazell v Hammersmith and Fulham London BC [1992] 2 A.C. l, that such an agreement as the Council had apparently concluded with the Bank was ultra vires the Council and so void from the start.",
+            "expected": [
+                "House of Lords in Hazell v Hammersmith and Fulham London BC [1992] 2 A.C."
+            ]
+        },
+        {
+            "text": "In section (2) Hobhouse J analysed the restitutionary claim of money had and received under five headings of which only the second “void contracts and absence of consideration” is directly material. He recorded two arguments for the banks; first that payments made under a void contract do not amount to consideration for the purposes of the law of restitution; second, that the banks did not get the benefit for which they had bargained, sc. payments which would discharge a legal obligation and which, therefore, the banks might lawfully retain, but, by contrast, obtained under a void contract money which the local authority was prima facie entitled to recover. After referring to Rowland v Divall [1923] 2 K.B. 500, Linz v Electric Wire Co. of Palestine Ltd [1948] A.C. 371 and Rover International Ltd v Cannon Film Sales Ltd (No.3) [1989] l W.L.R. 912 he said “In my judgment, the correct analysis is that any payments made under a contract which is void ab initio, in the way that an ultra vires contract is void, are not contractual payments at all. They are payments in which the legal property in the money passes to the recipient, but in equity the property in the money remains with the payer. The recipient holds the money as a fiduciary for the payer and is bound to recognise his equity and repay the money to him. This relationship and the consequent obligation have been recognised both by courts applying the common law and by Chancery courts. The principle is the same in both cases: it is unconscionable that the recipient should retain the money. Neither mistake nor the contractual principle of total failure of consideration are the basis for the right of recovery.”",
+            "expected": [
+                "Rowland v Divall [1923] 2 K.B. 500",
+                "Linz v Electric Wire Co. of Palestine Ltd [1948] A.C. 371",
+                "Rover International Ltd v Cannon Film Sales Ltd (No.3) [1989] l W.L.R. 912"
+            ]
+        },
+        {
+            "text": "This view is, in my opinion, consistent with the decision of this court in Dendy v. Evans [1910] 1 KB 263. A lessor had claimed to forfeit a lease in breach of covenant to keep in repair. He had issued proceedings and served them upon the lessee who had sub-let the premises to the defendant with a similar covenant to keep the premises in repair. After the proceedings had been served upon the lessor, he assigned the lease to the plaintiff who having obtained relief from forfeiture under s.14(2) of the Conveyancing and Law of Property Act 1881 on terms that he should hold the premises according to the old lease without any new lease brought an action against the defendant for rent due upon the underlease subsequent to the issue and service of the writ to recover possession. The defendant argued that the issue of the writ for possession by the lessor was an irrevocable election by him to treat the lease as void and made the lease void thus putting an end to the underlease. Cozens-Hardy M.R. rejected this argument. He held that the order relieving the plaintiff from forfeiture of the lease and ordering that she held the demised premises according to the lease without any new lease meant that the right of re-entry for forfeiture was got rid of. He said at page 269:",
+            "expected": [
+                "Dendy v. Evans [1910] 1 KB 263"
+            ]
+        },
+        {
+            "text": "A further consideration is the general purpose of the legislative scheme. In O'Rourke v Camden LBC [1990] 3 WLR 86 at p.90, Lord Hoffmann said: \".... the Act is a scheme of social welfare, intended to confer benefits at the public expense on grounds of public policy. Public money is spent on housing the homeless not merely for the private benefit of people who find themselves homeless but on grounds of general public interest; because, for example, proper housing means that people will be less likely to suffer illness, turn to crime or require the attention of other social services.\" In Ex parte Puhlhofer [1986] AC 484 at p.517, Lord Brightman said:",
+            "expected": [
+                "O'Rourke v Camden LBC [1990] 3 WLR 86 at p.90",
+                "Ex parte Puhlhofer [1986] AC 484 at p.517"
+            ]
+        },
+        {
+            "text": "Stuart-Smith LJ distinguished between three types of situation. In his first category fell cases in which the defendant's negligence consisted of some positive act or misfeasance and the question of causation was one of historical fact, in which event proof on the balance of probability prevailed. In the second category fell cases in which the defendant's negligence consisted of an omission where causation depended not upon a question of historical fact but upon the answer to the hypothetical question 'what would the plaintiff have done if there had been no negligence?'; here the answer is provided by the application of proof on the balance of probabilities. In the third category fell cases in which the plaintiff's loss depended upon the hypothetical action of a third party, whether in addition to action by the plaintiff or independently of it; here the plaintiff need only show that he had a substantial chance of the third party acting in such a way as to benefit him. The Court of Appeal held that the plaintiffs needed to show only that there was a significant chance, which could be less than likely, that the third party would have been prepared to offer them this protection and held that the loss of such a chance had been made out and it was assessed at 50%. This Court adopted a similar approach to the valuation of a chance in Stovold v Barlows (The Times, 30 October 1995), Stuart-Smith LJ presiding). The Court evaluated the chance as 50% on the ground that a successful sale depended on two contingencies, first that, if the deeds had been posted as instructed, they would in fact have arrived by the stipulated date, and secondly, that even if they had arrived by then, the prospective purchaser would not have decided to buy another house. A similar test in a personal injury award was adopted by Mr Roger Bell QC (now Bell J) in Anderson v Davis [1993] PIQR Q87, when he held that the plaintiff, had it not been for his injuries, would have had a two-thirds chance of obtaining promotion as a principal lecturer. He said at p293:",
+            "expected": [
+                "Stovold v Barlows",
+                "Anderson v Davis [1993] PIQR Q87"
+            ]
+        },
+        {
+            "text": "It is for the plaintiff to prove both the fact of the loss and the quantum of damage (McGregor on Damages 16th Ed. para.357). Moreover, the assessment of damages is subjective in the sense that the loss is loss sustained by the actual plaintiff, not some hypothetical plaintiff (see per Phillimore J. in Thomas McGhie & Sons Ltd v British Transport Commission [1962] 2 All ER 646.656G).This case lasted for 30 days and many complex issues arose, many of which have not concerned this Court. Counsel have to direct the evidence, cross-examination and their submissions to the live issues in the case. They should not waste time tilting at windmills. It is important, if the judge has it in mind to adopt an approach to some important issue which has not been canvassed at trial that he should give the parties a proper opportunity to deal with it. In Hoecheong Products Ltd v Cargill Ltd [1995] 1 WLR 404 at 409A-C, Lord Mustill said: Mr Field submitted that this Court should not interfere with the judge's assessment. He had the feel of the case and was in a better position after a long hearing to judge the effect of the overstated profit than this Court. We cannot accept this submission. A similar submission was made to the Court of Appeal in Jade Tower Ltd v NM Schroder Financial Management Ltd (unreported transcript 6 April 1995). In his judgment agreeing with Nourse and Kennedy LJJ, Evans LJ said :",
+            "expected": [
+                "Thomas McGhie & Sons Ltd v British Transport Commission [1962] 2 All ER 646.656G",
+                "Hoecheong Products Ltd v Cargill Ltd [1995] 1 WLR 404 at 409A-C",
+                "Jade Tower Ltd v NM Schroder Financial Management Ltd (unreported transcript 6 April 1995)"
+            ]
         }
     ]
 }

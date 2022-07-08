@@ -121,6 +121,12 @@ const RGX_UNUSUAL_2 = new RegExp(`((\\(?\\w+(\\/\\w+)+\\)?))(\\s+of\\s+${RGX_DAT
 const RGX_CITEND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_2.source}|(\\\(${RGX_DATE_UNREPORTED.source}\\\)))`, "g");
 const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UNUSUAL_2.source}${RGX_STOPPER.source})(\\.|(\\s+and\\s+))`, "gm");
 
+function rule5(text) {
+    const RGX_UNUSUAL = new RegExp("R\\s*\\(.*\\)\\d+\\/\\d+", "gm");
+    const matched = Array.from(text.matchAll(RGX_UNUSUAL), m=> m[0]);
+    return matched
+
+}
 function rule3(text) {
     const RGX_PARTY_WITH_DATE = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}\\s+\\\(${RGX_DATE_DDMMMMYYYY.source}\\\)`, 'gm');
     const matched = Array.from(text.matchAll(RGX_PARTY_WITH_DATE));
@@ -186,7 +192,7 @@ function rule1(text) {
 function annotate(text) {
     // normalize text
     text = normalize(text);
-    const rules = [rule1, rule2, rule3, rule4];
+    const rules = [rule1, rule2, rule3, rule4, rule5];
     let citations = [];
     rules.forEach(apply => {
         citations = citations.concat(apply(text));
@@ -195,6 +201,6 @@ function annotate(text) {
     return [...new Set(citations)];
 }
 
-// console.log(annotate("In Bankovic and Others v Belgium and Others (App. No. 52207/99) [11 BHRC 435] citizens of the Federal Republic of Yugoslavia ('FRY') sought to complain to the Strasbourg Court that deaths and injuries caused by air strikes carried out by members of Nato in the course of the conflict in Kosovo violated, among others, Article 2 of the Convention. The respondent governments contended that the applicants and their deceased relatives were not at the material time within their jurisdictions, within the meaning of Article 1. The applicants argued that the very act of carrying out the air strikes was an assertion of effective control, which brought the applicants within the jurisdiction of those carrying out the strikes. They further argued that the decision to carry out the air-strikes had been taken within the territories of the respondent governments, so that the principle in Soering v UK [1989] ECHR 14038/88 was applicable"))
+console.log(annotate("The second ground of appeal advanced was that the tribunal had erred in law in failing to explain why the previous award was no longer merited: per R(M)1/96 and "))
 module.exports = annotate;
 
