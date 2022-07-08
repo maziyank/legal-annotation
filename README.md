@@ -22,5 +22,11 @@ We also collect some piece ow law text as test case.
 For evaluating precision and recall please run
 
 ```
+npm run eval
+```
+
+or
+
+```
 node evaluate.js
 ```
