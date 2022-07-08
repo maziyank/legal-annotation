@@ -74,9 +74,9 @@ const normalize = (txt) => {
     // split if `and` found 
     match_and_ = Array.from(txt.matchAll(RGX_AND));
     if (match_and_) {
-        match_and_.forEach((ma,i) => {
+        match_and_.forEach((ma, i) => {
             index_and_ = ma.index + ma[0].length;
-            txt = txt.substring(0, index_and_+i) + '\n' + txt.substring(index_and_+i);
+            txt = txt.substring(0, index_and_ + i) + '\n' + txt.substring(index_and_ + i);
         })
     }
 
@@ -123,8 +123,8 @@ const RGX_AND = new RegExp(`(${RGX_NEUTRAL.source}|${RGX_REPORT.source}|${RGX_UN
 
 function rule5(text) {
     const RGX_UNUSUAL = new RegExp("R\\s*\\(.*\\)\\d+\\/\\d+", "gm");
-    const matched = Array.from(text.matchAll(RGX_UNUSUAL), m=> m[0]);
-    return matched
+    const matched = Array.from(text.matchAll(RGX_UNUSUAL), m => m[0]);
+    return matched.map(m => m.trim())
 
 }
 function rule3(text) {
@@ -147,8 +147,8 @@ function rule2(text) {
     const matched = Array.from(text.matchAll(RGX_TEST));
 
     const result = matched.filter(m => !RGX_YEAR.test(m) && !RGX_UNUSUAL_2.test(m))
-        .map(m=> RGX_PARTY_ONLY.exec(m))
-        .filter(m=> m)
+        .map(m => RGX_PARTY_ONLY.exec(m))
+        .filter(m => m)
         .map(m => denormalize(m[0].trim()))
         .map(m => m.replace(/\s(of|for|and|&|in|plc|the)$/gm), '');
 
@@ -162,7 +162,7 @@ function rule1(text) {
 
     function apply(RGX) {
         let citations = [];
-        cit_matches = Array.from(text.matchAll(RGX)); 
+        cit_matches = Array.from(text.matchAll(RGX));
         prefix_match = Array.from(text.matchAll(RGX_PREFIX));
         if (cit_matches && prefix_match) {
             const candidates = cit_matches.map(cit => {
@@ -185,7 +185,7 @@ function rule1(text) {
     const with_party = apply(RGX_NEUTRAL_FULL);
     const without_party = apply(RGX_NOPARTY_FULL).filter(cit => !RGX_V.test(cit));
     const unusual_full_date = apply(RGX_UNUSUAL_FULLDATE);
- 
+
     return [...new Set([...with_party, ...without_party, ...unusual_full_date])];
 }
 
