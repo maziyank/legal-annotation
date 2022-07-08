@@ -125,7 +125,7 @@ function rule5(text) {
     const RGX_UNUSUAL = new RegExp("R\\s*\\(.*\\)\\d+\\/\\d+", "gm");
     const matched = Array.from(text.matchAll(RGX_UNUSUAL), m => m[0]);
     return matched.map(m => m.trim())
-
+9
 }
 function rule3(text) {
     const RGX_PARTY_WITH_DATE = new RegExp(`${RGX_PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX_PARTY_NAME.source}\\s+\\\(${RGX_DATE_DDMMMMYYYY.source}\\\)`, 'gm');
