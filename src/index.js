@@ -36,5 +36,3 @@ const annotate = (text, rules) => {
 
 // console.log(annotate("in Anderson v Davis [1993] PIQR Q87, when he"));
 module.exports = annotate;
-
-annotate()
