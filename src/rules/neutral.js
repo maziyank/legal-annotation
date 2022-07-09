@@ -1,6 +1,13 @@
 const RGX  = require("./../utils/_general_regex");
 const { denormalize } = require("./../utils/_normalize");
 
+/**
+* Given text as input, capture neutral citation (i.e. SWP v Deane [2010] EWCA Civ 699)
+* @function cit_neutral
+* @param {String} text input raw text
+* @return {[String]} list of captured citation
+*/
+
 const cit_neutral = (text) => {
     const RGX_NEUTRAL_FULL = new RegExp(`${RGX.V.source}.{1,100}\\s+${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?`, "gm");
     const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX.CITEND.source}(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?`, "gm");

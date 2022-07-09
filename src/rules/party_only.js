@@ -2,10 +2,10 @@ const RGX = require("./../utils/_general_regex");
 const { denormalize } = require("./../utils/_normalize");
 
 /**
-* @description  Given text as input, capture citation which has party with date  (i.e. Henderson vs Ronaldo (23 July 2020))
+* Given text as input, capture citation which has party with date  (i.e. Henderson vs Ronaldo (23 July 2020))
 * @function cit_party_date
 * @param {String} text input raw text
-* @return {[String]}    list of captured citation
+* @return {[String]} list of captured citation
 */
 
 const cit_party_date = (text) => {
@@ -16,10 +16,10 @@ const cit_party_date = (text) => {
 }
 
 /**
-* @description Given text as input, capture citation which has party and unreported date (i.e. Henderson vs Ronaldo (23 July 2020, unreported))
+* Given text as input, capture citation which has party and unreported date (i.e. Henderson vs Ronaldo (23 July 2020, unreported))
 * @function cit_party_unreported
-* @param {String} text 
-* @return {[String]}    list of captured citation
+* @param {String} text input raw text
+* @return {[String]} list of captured citation
 */
 
 const cit_party_unreported = (text) => {
@@ -30,10 +30,10 @@ const cit_party_unreported = (text) => {
 }
 
 /**
-* @description Given text as input, capture citation which has only party (i.e. Henderson vs Ronaldo)
+* Given text as input, capture citation which has only party (i.e. Henderson vs Ronaldo)
 * @function cit_party_only
-* @param {String} text 
-* @return {[String]}    list of captured citation
+* @param {String} text input raw text
+* @return {[String]} list of captured citation
 */
 
 const cit_party_only = (text) => {
@@ -51,6 +51,4 @@ const cit_party_only = (text) => {
 }
 
 module.exports = { cit_party_date, cit_party_unreported, cit_party_only }
-
-cit_party_only()
 
