@@ -6,6 +6,6 @@ module.exports = {
   output: {
     filename: 'annotation.js',
     path: path.resolve(__dirname, 'dist'),
-    library: "annotation"
+    library: "annotate"
   },
 };

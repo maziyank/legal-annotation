@@ -54,7 +54,7 @@
 
     const annotate_text = () => {
         let text = text_input.value;
-        const cit = annotation.annotate(text);
+        const cit = annotate(text);
         cit.forEach(c => {
             text = text.replace(c, `<a href="#" data-toggle="tooltip" data-placement="top" title="${c}"><mark>${c}</mark></a>`);
         });
