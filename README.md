@@ -19,7 +19,7 @@ We aims to detect case law citation on law texts using heuristic approach. We em
 
 ### Dataset
 
-We also collect some piece of law text as test case. Please see `dataset` folder. 
+We also collect some piece of law text as test case with manually extracted citation. Please see `dataset` folder. 
 
 
 ### Test Case
