@@ -22,18 +22,18 @@ We also collect some piece ow law text as test case.
 
 For evaluating precision and recall please run
 
-```
+```js
 npm run eval
 ```
 
 or
 
-```
+```js
 node evaluate.js
 ```
 
 ### Usage
 
-```
+```js
     annotation.annotate("sample text")
 ```
