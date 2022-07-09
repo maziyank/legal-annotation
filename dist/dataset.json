@@ -1,0 +1,850 @@
+{
+    "scenarios": [
+        {
+            "text": "Collins J decided that the Administrative Court had jurisdiction to hear A's challenge: [2008] 4 All ER 511 (4 July 2008). The Court of Appeal (Laws and Dyson LJJ, Rix LJ dissenting) reversed that decision, holding that exclusive jurisdiction lies with the IPT: [2009] 3 WLR 717 (18 February 2009).",
+            "expected": [
+                "[2008] 4 All ER 511 (4 July 2008)",
+                "2009] 3 WLR 717 (18 February 2009)"
+            ]
+        },
+        {
+            "text": "A and Justice argue that to construe section 65 as conferring exclusive jurisdiction on the IPT constitutes an ouster of the ordinary jurisdiction of the courts and is constitutionally objectionable on that ground. They pray in aid two decisions of high authority: Pyx Granite Co Ltd v Ministry of Housing and Local Government [1960] AC 260 and Anisminic Ltd v Foreign Compensation Commission [1969] 2 AC 147. To my mind, however, the argument is unsustainable. In the first place, it is evident, as the majority of the Court of Appeal pointed out, that the relevant provisions of RIPA, HRA and the CPR all came into force at the same time as part of a single legislative scheme. With effect from 2 October 2000 section 7(1)(a) HRA jurisdiction came into existence (i) in respect of section 65(3) proceedings in the IPT pursuant to section 65(2)(a), and (ii) in respect of any other section 7(1)(a) HRA proceedings in the courts pursuant to section 7(9) and CPR 7.11. True it is, as Rix LJ observed, that CPR 7.11(2) does not explicitly recognise the exception to its apparent width represented by section 65(2)(a).",
+            "expected": [
+                "Pyx Granite Co Ltd v Ministry of Housing and Local Government [1960] AC 260",
+                "Anisminic Ltd v Foreign Compensation Commission [1969] 2 AC 147"
+            ]
+        },
+        {
+            "text": "The position here is analogous to that in Farley v Secretary of State for Work and Pensions (No. 2) [2006] 1 WLR 1817 where the statutory provision in question provided that, on an application by the Secretary of State for a liability order in respect of a person liable to pay child support, `the court . . . shall not question the maintenance assesment under which the payments of child support maintenance fall to be made.` Lord Nicholls, with whom the other members of the Committee agreed, observed, at para 18:",
+            "expected": [
+                "Farley v Secretary of State for Work and Pensions (No. 2) [2006] 1 WLR 1817"
+            ]
+        },
+        {
+            "text": "As, however, already explained (at para 14), claims against the intelligence services inevitably raise special problems and simply cannot be dealt with in the same way as other claims. This, indeed, has long since been recognised both domestically and in Strasbourg. It is sufficient for present purposes to cite a single paragraph from the speech of Lord Bingham of Cornhill in R v Shayler [2003] 1 AC 247, para 26 (another case raising article 10 considerations)",
+            "expected": [
+                "R v Shayler [2003] 1 AC 247, para 26"
+            ]
+        },
+        {
+            "text": "In one of the Strasbourg cases there referred to, Esbester v United Kingdom, and indeed in a series of other cases brought against the UK at about the same time, the Strasbourg Commission rejected complaints as to the form of proceedings adopted by the Security Service Tribunal and the Interception of Communications Tribunal, not least as to the absence of a reasoned determination.",
+            "expected": [
+                "Esbester v United Kingdom"
+            ]
+        },
+        {
+            "text": "Admittedly the Esbester line of cases were decided in the context of article 8 (rather than article 10) and, understandably, Strasbourg attaches particular weight to the right to freedom of expression. Neither A nor Justice, however, were able to show us any successful article 10 cases involving national security considerations save only for Sunday Times v UK (No. 2) (1992) 14 EHRR 229 (Spycatcher) where, of course, the disputed material was already in the public domain.",
+            "expected": [
+                "Sunday Times v UK (No. 2) (1992) 14 EHRR 229"
+            ]
+        },
+        {
+            "text": "We would, it seems to me, be going further than the Strasbourg jurisprudence has yet gone were we to hold in the abstract that the IPT procedures are necessarily incompatible with article 6(1). Consistently with the well known rulings of the House of Lords in R (Ullah) v Special Adjudicator [2004] 2 AC 323 para 20 and R (Al-Skeini) v Secretary of State for Defence [2008] 1 AC 153 paras 105, 106, I would decline to do so, particularly since, as already mentioned, the IPT's own decision on its rules is shortly to be considered by the ECtHR.",
+            "expected": [
+                "R (Ullah) v Special Adjudicator [2004] 2 AC 323 para 20",
+                "R (Al-Skeini) v Secretary of State for Defence [2008] 1 AC 153 paras 105, 106"
+            ]
+        },
+        {
+            "text": "As Lord Brown has explained (see para 14, above), among the factors that reinforce the conclusion that is to be drawn from the terms of the statute that Parliament did not intend to leave it to the complainant to choose for himself whether to bring his proceedings in a court or before the IPT are the provisions that RIPA contains about the rules that may be made under it. In Hanlon v The Law Society [1981] AC 124, 193-194 Lord Lowry set out the circumstances in which a regulation made under a statutory power was admissible for the purpose of construing the statute under which it was made. The use of the rules themselves as an aid to construction, in addition to what RIPA itself says about them, needs however to be treated with some care",
+            "expected": [
+                "Hanlon v The Law Society [1981] AC 124, 193-194"
+            ]
+        },
+        {
+            "text": "In R v Kansal (No 2) [2002] 2 AC 69, 105-106 I said that section 7(1)(a) and section 7(1)(b) are designed to provide two quite different remedies. Section 7(1)(a) enables the victim of the unlawful act to bring proceedings under the Act against the authority. It is intended to cater for free-standing claims made under the Act where there are no other proceedings in which the claim can be made. It does not apply where the victim wishes to rely on his Convention rights in existing proceedings which have been brought against him by a public authority. His remedy in those proceedings is that provided by section 7(1)(b), which is not subject to the time limit on proceedings under section 7(1)(a) prescribed by section 7(5); see also Wilson v First County Trust Ltd (No 2) [2004] 1 AC 816, para 90. The purpose of section 7(1)(b) is to enable persons against whom proceedings have been brought by a public authority to rely on the Convention rights for their protection.",
+            "expected": [
+                "R v Kansal (No 2) [2002] 2 AC 69",
+                "Wilson v First County Trust Ltd (No 2) [2004] 1 AC 816, para 90"
+            ]
+        },
+        {
+            "text": "The District Court distinguished the position of aliens held at a port of entry into the United States and seeking immigration. They are entitled to a writ of habeas corpus to ascertain whether the restraint is lawful – Nishimura Ekiu v. United States (1892) 142 U.S. 651, 660.",
+            "expected": [
+                "Nishimura Ekiu v. United States (1892) 142 U.S. 651, 660"
+            ]
+        },
+        {
+            "text": "Mr Fry has placed before the court a pleading in a case, Hamdi v Donald Rumsfeld, concerning a national of Saudi Arabia, born in Louisiana and claiming to be an American citizen. He was captured in Afghanistan, held initially in Guantanamo Bay but then transferred to custody in Norfolk, Virginia. His father has petitioned on his behalf for habeas corpus in the District Court for the Eastern District of Virginia, Norfolk Division. ",
+            "expected": [
+                "Hamdi v Donald Rumsfeld"
+            ]
+        },
+        {
+            "text": "The cases cited by Mr Greenwood unquestionably support the general proposition for which they were cited. It is not, however, a proposition that affords of no exception. Mr Greenwood accepted that there were exceptions to the rule. He submitted, however, that the exceptions applied only in exceptional circumstances and had no application to the facts of the present case. Examples of cases where the rule was not applied are Oppenheim v Cattermole [1976] AC 249, R v Secretary of State for the Home Department, ex parte Adan [2001] 2 AC 477 and Kuwait Airways Corp v Iraqi Airways Co (Nos 4 and 5) [2002] 2 WLR 1352. We shall revert to these decisions when we come to review the merits of the rival contentions.",
+            "expected": [
+                "Oppenheim v Cattermole [1976] AC 249, R v Secretary of State for the Home Department, ex parte Adan [2001] 2 AC 477",
+                "Kuwait Airways Corp v Iraqi Airways Co (Nos 4 and 5) [2002] 2 WLR 1352"
+            ]
+        },
+        {
+            "text": "Mr Greenwood referred to a formidable line of authority in support of his submission that the decisions taken by the executive in its dealings with foreign states regarding the protection of British citizens abroad are non-justiciable, starting with Council of Civil Service Unions v Minister for the Civil Service [1985] 1 AC 374 (the GCHQ case). Mr Greenwood drew particular attention to the observations of Lord Diplock at p.411. He submitted that the courts have repeatedly held that the decisions taken by the executive in its dealings with foreign states regarding the protection of British nationals abroad are non-justiciable. He cited the following passages from recent decisions in support of this proposition:",
+            "expected": [
+                "Council of Civil Service Unions v Minister for the Civil Service [1985] 1 AC 374"
+            ]
+        },
+        {
+            "text": "The general rule is well established that the courts should not interfere in the conduct of foreign relations by the Executive, most particularly where such interference is likely to have foreign policy repercussions (see R. v. Secretary of State for Foreign and Commonwealth Affairs, ex parte Everett [1989] 1 QB 811 at 820). This extends to decisions whether or not to seek to persuade a foreign government of any international obligation (e.g. to respect human rights) which it has assumed. What if any approach should be made to the Yemeni authorities in regard to the conduct of the trial of these terrorist charges must be a matter for delicate diplomacy and the considered and informed judgement of the FCO. In such matters the courts have no supervisory role. (p.615, per Lightman J).",
+            "expected": [
+                "R. v. Secretary of State for Foreign and Commonwealth Affairs, ex parte Everett [1989] 1 QB 811 at 820"
+            ]
+        },
+        {
+            "text": "In answer to the case advanced by Mr Greenwood, Mr Blake submitted that the mere fact that the decision sought to be reviewed related to the exercise of prerogative power by the Foreign Office did not place a complete embargo on relief being obtained from the court. He referred to ex parte Everett [1989] 1 QB 811 relating to the issue of passports, and to Lewis v A-G of Jamaica [2001] 2 AC 50 a case concerned with the prerogative of mercy, where a procedural irregularity was held to be the subject of review. He, in his turn, relied on the GCHQ case where he pointed out that the court held that executive action was not immune from judicial review merely because it was carried out in pursuance of a power derived from a common law or prerogative, rather than a statutory source. This is an authority to which we will return.",
+            "expected": [
+                "Lewis v A-G of Jamaica [2001] 2 AC 50"
+            ]
+        },
+        {
+            "text": "In support of this submission, Mr Blake relied on the reasoning of Stanley Burnton J. in R (Carson) v Secretary of State for Employment and Pensions (23rd May 2002), a case concerned with the pension rights of a British subject resident abroad. Mr Blake accepted that there was no Convention right to diplomatic protection, but argued that if there was a causal link between the failure to accord Mr Abbasi diplomatic protection and his continued arbitrary detention, then the Foreign and Commonwealth Office was acting in a way which was incompatible with Mr Abbasi's Convention right to liberty under Article 5 and was thus in breach of Section 6 of the Human Rights Act",
+            "expected": [
+                "R (Carson) v Secretary of State for Employment and Pensions (23rd May 2002)"
+            ]
+        },
+        {
+            "text": "This principle applies to every person, British citizen or not, who finds himself within the jurisdiction of the court: 'He who is subject to English law is entitled to its protection.' (per Lord Scarman, ibid p.111). It applies in war as in peace; in Lord Atkin's words (written in one of the darkest periods of the last war): 'In this country, amid the clash of arms, the laws are not silent. They may be changed, but they speak the same language in war as in peace.'(Liversidge v Anderson [1942] AC 206, 245 at p.244)",
+            "expected": [
+                "Liversidge v Anderson [1942] AC 206, 245 at p.244"
+            ]
+        },
+        {
+            "text": "the 'extraordinary prestige' of the Great Writ, habeas corpus ad subjiciendum, in Anglo-American jurisprudence... It is 'a writ antecedent to statute, and throwing its root deep into the genius of our common law... It is perhaps the most important writ known to the constitutional law of England, affording as it does a swift remedy in all cases of illegal restraint or confinement...'(adopting the words of Lord Birkenhead LC, in Secretary of State v O'Brien [1923] AC 603, 609).",
+            "expected": [
+                "Secretary of State v O'Brien [1923] AC 603, 609"
+            ]
+        },
+        {
+            "text": "That is not to say that his detention as an alleged 'enemy combatant' may not be justified. This court has very recently had occasion to consider the legitimacy of legislation that empowers the Secretary of State to detain within this jurisdiction aliens who are suspected of being international terrorists – A, X and Y and Others v Secretary of State for the Home Department [2002] EWCA Civ 1502. We would endorse the summary of the position under international law of Brooke LJ at paragraph 130:",
+            "expected": [
+                "A, X and Y and Others v Secretary of State for the Home Department [2002] EWCA Civ 1502"
+            ]
+        },
+        {
+            "text": "In Bankovic and Others v Belgium and Others (App. No. 52207/99) [11 BHRC 435] citizens of the Federal Republic of Yugoslavia ('FRY') sought to complain to the Strasbourg Court that deaths and injuries caused by air strikes carried out by members of Nato in the course of the conflict in Kosovo violated, among others, Article 2 of the Convention. The respondent governments contended that the applicants and their deceased relatives were not at the material time within their jurisdictions, within the meaning of Article 1. The applicants argued that the very act of carrying out the air strikes was an assertion of effective control, which brought the applicants within the jurisdiction of those carrying out the strikes. They further argued that the decision to carry out the air-strikes had been taken within the territories of the respondent governments, so that the principle in Soering v UK [1989] ECHR 14038/88 was applicable.",
+            "expected": [
+                "Bankovic and Others v Belgium and Others (App. No. 52207/99)",
+                "Soering v UK [1989] ECHR 14038/88"
+            ]
+        },
+        {
+            "text": "Finally in this context we should refer to the decision of the Commission in Bertrand Russell Peace Foundation v United Kingdom (2 May 1978). The applicant, which was unquestionably within the jurisdiction of the United Kingdom, complained of the failure by the British postal authorities to make representations to the Soviet authorities in respect of the interception and destruction of mail sent by the applicant to Russia. The applicant alleged that this failure violated Articles 8 and 10 of the Convention. The Commission held that the application was not admissible. The following passages from its judgment are material:",
+            "expected": [
+                "Bertrand Russell Peace Foundation v United Kingdom (2 May 1978)"
+            ]
+        },
+        {
+            "text": "The interaction of these two developments in the law of judicial review can be seen in R –v- Home Secretary ex p. Ahmed and Patel [1998] INLR 570. The applicants were illegal immigrants who had married persons with indefinite leave to remain in the UK and had children in the UK. In support of their applications for leave to remain on the basis of their marriages, they relied on legitimate expectations created by the UK's ratification of two international conventions relating to the rights of the child and of the family. Lord Woolf MR accepted that in principle a legitimate expectation could be created by the State's act in entering into a treaty. He relied, at p.584, on the approach of the High Court of Australia in Minister for Immigration –v- Teoh [1995] 183 CLR 273:",
+            "expected": [
+                "R –v- Home Secretary ex p. Ahmed and Patel [1998] INLR 570",
+                "Minister for Immigration –v- Teoh [1995] 183 CLR 273"
+            ]
+        },
+        {
+            "text": "The present case concerns Mr Ainslie’s appeal to the First-tier Tribunal (FTT) against the Information Commissioner’s Decision Notice (FS50295366) in respect of his request for information made to Dorset County Council (Ainslie v Information Commissioner and Dorset County Council [2012] UKUT 441 (AAC) (also known as GIA/294/2012). The other two appeals were Information Commissioner v Devon County Council and Dransfield [2012] UKUT 440 (AAC) (GIA/3037/2011) and Craven v Information Commissioner and Department for Energy and Climate Change [2012] UKUT 442 (AAC) (GIA/786/2012). For convenience, and with no disrespect intended to the individuals concerned, I simply refer to the three appeals by the name of the individual requester, irrespective of their status in the proceedings before either the FTT or the Upper Tribunal (hence Ainslie, Dransfield and Craven).",
+            "expected": [
+                "Ainslie v Information Commissioner and Dorset County Council [2012] UKUT 441 (AAC) (also known as GIA/294/2012)",
+                "The other two appeals were Information Commissioner v Devon County Council and Dransfield [2012] UKUT 440 (AAC) (GIA/3037/2011)",
+                "Craven v Information Commissioner and Department for Energy and Climate Change [2012] UKUT 442 (AAC) (GIA/786/2012)"
+            ]
+        },
+        {
+            "text": "On 21 December 2009 Mr Kirby of Dorset CC wrote to Mr Ainslie informing him that he had decided that all six requests should be treated as vexatious under section 14(1) of FOIA. He said that he took into account “the vast amount of correspondence that various officers in the authority have received from you (and continue to receive) all relating to the same subject area”. He stated that it had taken “well over 100 hours” of staff time to deal with such correspondence, costing the County Council “many thousands of pounds”. Having referred to the example of Betts v Information Commissioner (EA/2007/0109), he concluded that the six requests in question “appear to be obsessive and they are unreasonably burdensome to the authority. It is clear to me that any further requests on the subject lack any serious purpose or value.”",
+            "expected": [
+                "Betts v Information Commissioner (EA/2007/0109)"
+            ]
+        },
+        {
+            "text": "I must start by setting out how the FTT did not err in law. The FTT set out, in paragraph 8 of its reasons, its understanding of the proper test for determining whether a request is vexatious (see paragraph 17 above). None of the parties took issue with that exposition of the meaning of section 14(1); indeed, Mr Ainslie expressly agreed with the general approach taken by the FTT in paragraph 8. I am satisfied that the FTT’s analysis involves no error of law in this respect. Indeed, the FTT is to be commended for explaining the test under section 14(1) in such a succinct, straightforward and user-friendly way. In particular I agree with the FTT that “the common sense application of the ordinary meaning of the word [vexatious] to the actual circumstances of an individual case must be the correct approach to adopt”. The FTT further concluded that an ordinary dictionary “definition of ‘tending to cause trouble or harassment by unjustified interference’ fairly summarises the meaning”. In Dransfield I suggested that the term “vexatious” connotes the “manifestly unjustified, inappropriate or improper use of a formal procedure” (Dransfield at paragraph 27, agreeing with the conclusion of the FTT in Lee v Information Commissioner and King’s College Cambridge EA/2012/0015, 0049 and 0085 at [69]). I see no significant difference between these two approaches; they are simply different formulations of what is essentially the same underlying test.",
+            "expected": [
+                "Lee v Information Commissioner and King’s College Cambridge EA/2012/0015, 0049 and 0085 at [69]"
+            ]
+        },
+        {
+            "text": "In re-making the decision, the Upper Tribunal is in effect standing in the shoes of the First-tier Tribunal. I can make any decision that the FTT could have made. Despite the rather curious wording of section 58(1) of FOIA, the FTT’s role is not limited to the approach undertaken by the High Court on an application for judicial review. Rather, the FTT’s function is to undertake a full merits review of the IC’s decision. The former Information Tribunal adopted that approach (see e.g. Guardian Newspapers Ltd v Information Commissioner and the BBC [2007] UKIT EA/2006/0013 at paragraph [14]). That analysis is also entirely consistent with the thrust of the reforms embodied in the Tribunals, Courts and Enforcement Act 2007.",
+            "expected": [
+                "Guardian Newspapers Ltd v Information Commissioner and the BBC [2007] UKIT EA/2006/0013 at paragraph [14]"
+            ]
+        },
+        {
+            "text": "On that last point, a starting point is the IC’s Guidance to public authorities (see Dransfield at paragraph 13), which is to the effect that, in deciding whether a request falls foul of section 14(1), “the key question is whether the request is likely to cause distress, disruption or irritation, without any proper or justified cause” (at p.3). I doubt very much whether any of Mr Ainslie’s six requests were likely to cause distress to any member of the County Council’s staff. I suspect that the amount of disruption involved, given the well-focussed nature of each request, was likely to be minimal. I think it very likely that the requests caused considerable irritation in some quarters at Dorset CC, but that is hardly decisive (see Dransfield at paragraph 26). However, my overall assessment, for the reasons outlined above, is that Mr Ainslie had a proper or justified cause and above all was acting proportionately, not disproportionately.",
+            "expected": []
+        },
+        {
+            "text": "it is unnecessary to trace the history of official interception in the United Kingdom before 1985, which is uncontroversial and has been summarised on other occasions: see, for example, R v Preston [1994] 2 AC 130, 142, 147-148; R v P [2002] 1 AC 146, 155-157; The Interception of Communications in the United Kingdom (Cmnd 9438, 1985). It is enough to draw attention to four features of the practice as it then existed. First, telephones had for many years been tapped, and mail intercepted, pursuant to warrants issued by an appropriate secretary of state. Secondly, in cases culminating in criminal prosecution the tap or intercept was used for purposes of preventing and detecting crime, and not for the purpose of prosecuting culprits: the product of the tap or intercept was not relied on as evidence. Thirdly, there was no rule of law or practice which rendered inadmissible in criminal proceedings the product of any unofficial or private eavesdropping activity. While a trial judge might exclude such evidence in the exercise of his overriding discretion to ensure the fairness of a trial, he would not in the absence of special circumstances have been at all likely to do so. Fourthly, the process of interception, by whatever means, official or unofficial, of communications, whether public or private, was wholly unregulated by statute.",
+            "expected": [
+                "R v Preston [1994] 2 AC 130, 142, 147-148",
+                "R v P [2002] 1 AC 146, 155-157;"
+            ]
+        },
+        {
+            "text": "It was this last feature of the prevailing practice which led the European Court of Human Rights to hold, in the context of warranted police tapping of Mr Malone's telephone, that the interference with his right to privacy which the facts disclosed was not, as required by article 8 of the European Convention, `in accordance with the law``: Malone v United Kingdom (1984) 7 EHRR 14. This adverse finding obliged the United Kingdom under articles 1 and 46 of the Convention to secure the protection of article 8 rights to all within its jurisdiction and to abide by the judgment.",
+            "expected": [
+                "Malone v United Kingdom (1984) 7 EHRR 14"
+            ]
+        },
+        {
+            "text": "Following enactment of the 1985 Act, the courts were more than once called upon to consider whether evidence on which it was sought to rely was the product of interception of a public or private telecommunications system: see R v Ahmed (Court of Appeal, 29 March 1994, unreported); R v Effik [1995] 1 AC 309, 314. The focus of the enquiry in the latter of these cases is shown by the ruling of Lord Oliver of Aylmerton, with which all members of the committee agreed (page 317):",
+            "expected": [
+                "R v Ahmed (Court of Appeal, 29 March 1994, unreported)",
+                "R v Effik [1995] 1 AC 309, 314"
+            ]
+        },
+        {
+            "text": "These last two features of the regime established by the 1985 Act have been judicially recognised on a number of occasions: see, for example, R v Preston [1994] 2 AC 130, 143-144, 167-168, 170; Morgans v Director of Public Prosecutions [2001] 1 AC 315, 321, 337-339; R v Sargent [2001] UKHL 54, [2003] 1 AC 347, para 28; R v P [2002] 1 AC 146, 163-164. As Lord Hobhouse of Woodborough said in the last cited case, page 164,",
+            "expected": [
+                "[2001] 1 AC 315, 321, 337-339",
+                "R v Sargent [2001] UKHL 54, [2003] 1 AC 347, para 28",
+                "R v P [2002] 1 AC 146, 163-164"
+            ]
+        },
+        {
+            "text": " There are three further points, all of them negative, but all of them in my opinion very important, which should guide the construction of the 2000 Act. First, there is nothing whatever which suggests an intention to depart from the principle that the issue of warrants by a secretary of state and all matters pertaining to such warrants should not be the subject of enquiry in the course of a criminal trial. Secondly, there was nothing in the 2000 Act, nor in the consultation paper which preceded it (Interception of Communications in the United Kingdom, Cm 4368, 1999), nor in the Hansard references to which the House was referred, which questioned or threw doubt on the decisions in R v Ahmed and R v Effik (see paragraph 8 above) in which the court had examined whether an interception had been made within a public or a private system. Since the 2000 Act was passed, there have been further Court of Appeal decisions in which the same enquiry has been conducted: R v Allan [2001] EWCA Crim 1027 (6 April 2001, unreported); R v Goodman [2002] EWCA Crim 903 (4 March 2002, unreported). Thirdly, there is nothing in the 2000 Act or in any other materials the House has been shown to suggest a parliamentary intention to render inadmissible as evidence in criminal proceedings any material which had previously been admissible, save to the extent explained in paragraph 20 below. As already shown, the United Kingdom practice has been to exclude the product of warranted interception from the public domain and thus to preclude its use as evidence. But this has been a policy choice, not a requirement compelled by the Convention, and other countries have made a different policy choice. Article 8(2) of the European Convention permits necessary and proportionate interference with the right guaranteed in article 8(1) if in accordance with the law and if in the interests of national security, public safety, the economic well-being of the country, the prevention of disorder or crime, the protection of health or morals or the protection of the rights and freedoms of others. Save where necessary to preserve the security of warranted interception, there is no reason why it should have been sought to exclude the product of any lawful interception where relevant as evidence in any case whether civil or criminal.",
+            "expected": [
+                "R v Allan [2001] EWCA Crim 1027 (6 April 2001, unreported)",
+                "R v Goodman [2002] EWCA Crim 903 (4 March 2002, unreported)",
+                "R v Ahmed",
+                "R v Effik"
+            ]
+        },
+        {
+            "text": " This guidance was approved in R (Greenfield) v Secretary of State for the Home Department [2005] 1 WLR 673 by the House of Lords per Lord Bingham at 9, and he gave three reasons why damages in such cases, if granted at all, were in a small compass.",
+            "expected": [
+                "R (Greenfield) v Secretary of State for the Home Department [2005] 1 WLR 673"
+            ]
+        },
+        {
+            "text": "Against the background of the guidance given by s8(3) and (4) of the HRA, and Anufrijeva and Greenfield, the Tribunal has considered, in the absence of any evidenced or proven financial loss, the Strasbourg authorities in respect of non-pecuniary loss, such as distress and frustration. No award was made for non-pecuniary loss in respect of a violation of Article 8 in the cases of Niemietz v Germany [1993] 16 EHRR 97 (1½ hours search and removal of documents, including privilege documents), Cremieux v France [1993] 16 EHRR 357 (a lengthy search and seizure at the claimant’s house)",
+            "expected": [
+                "Niemietz v Germany [1993] 16 EHRR 97",
+                "Cremieux v France [1993] 16 EHRR 357"
+            ]
+        },
+        {
+            "text": "Mr Coppel has drawn attention to two cases in which damages have been awarded for what he calls distress caused by a one-off intrusion into the home, Taner Kilic v Turkey ECtHR 70845/01 of 24 October 2006, and Keegan v UK [2007] 44 EHRR 33. In the Taner Kilic case, the violation of Article 8 consisted of a substantial search of the applicant’s home and office and seizure of documents or copy documents and video tapes.",
+            "expected": [
+                "Taner Kilic v Turkey ECtHR 70845/01 of 24 October 2006",
+                "Keegan v UK [2007] 44 EHRR 33"
+            ]
+        },
+        {
+            "text": "  The Judge said (at [24]) that, where art.10 is engaged, freedom of expression may justify breach of confidence where publication is in the public interest, and whether it does so in a particular case is fact-sensitive and requires balancing the claimant's right to confidentiality with the defendants' right of freedom of expression. He referred in that connection to Lord Goff's speech in Attorney General v Observer Ltd [1990] 1 A.C. 109 at p.282E-F and to Associated Newspapers Limited v HRH Prince of Wales [2006] EWCA Civ 1776; [2008] Ch. 57 at [55]. He then said that, where there is a breach of confidence, the test is not simply whether the information is a matter of public interest, but rather whether, in the circumstances, it is in the public interest that the duty of confidence should be breached. He referred in that connection to paragraphs [67] and [68] of the judgment of the Court of Appeal in the Prince of Wales case.",
+            "expected": [
+                "Attorney General v Observer Ltd [1990] 1 A.C. 109",
+                "ssociated Newspapers Limited v HRH Prince of Wales [2006] EWCA Civ 1776; [2008] Ch. 57 at [55]"
+            ]
+        },
+        {
+            "text": "The Judge then went on to say that it was of significance that there is no question in this case of publication being necessary to correct a false impression created by BHAM, to reveal any illegal or immoral dealing, to expose hypocrisy or to expose some improper practice or concealment, nor even to demonstrate incompetence. He referred to Lion Laboratories Ltd v Evans [1985] 1 Q.B. 526 as establishing that there is no bright line rule that it is necessary to demonstrate iniquity in order to justify a breach of confidence and that a balancing exercise falls to be performed. He said that in some cases the balance may come down in favour of permitting publication even in the absence of iniquity. The Judge then quoted two passages in the judgment of Griffiths LJ in Lion Laboratories at page 550 C-D and page 551",
+            "expected": [
+                "Lion Laboratories Ltd v Evans [1985] 1 Q.B. 526"
+            ]
+        },
+        {
+            "text": " A number of decisions of the Strasbourg court provide examples of situations where the public interest in the receipt of information protected by Article 10 has prevailed over restraints on publication that were lawful under domestic law. In general the Strasbourg court views with disfavour attempts to suppress publication of information which is of genuine public interest. Where it relates to a matter of major public concern, even medical confidentiality may not prevail:Éditions Plon v France (2004) 42 EHRR 705.”",
+            "expected": [
+                "Éditions Plon v France (2004) 42 EHRR 705"
+            ]
+        },
+        {
+            "text": "  Fourth, there is a wide range of public information which it is in the public interest to disseminate, including economic information, and also information which corrects a false impression or image. Mr Vassall-Adams referred in that connection to Campbell v MGN Ltd [2004] UKHL 22; [2004] 2 A.C. 457. In that case the claimant, an internationally famous fashion model, who had courted publicity, volunteered information to the media about her private life and stated publicly, but untruthfully, that she did not take drugs. The defendant newspaper published articles which disclosed her drug addiction and the fact that she was receiving therapy through Narcotics Anonymous, a self-help group, gave details of group meetings she attended and showed photographs of her in a street as she was leaving a group meeting. She claimed damages against the newspaper for",
+            "expected": [
+                "Campbell v MGN Ltd [2004] UKHL 22; [2004] 2 A.C. 457"
+            ]
+        },
+        {
+            "text": " Mr Vassall-Adams relied on the judgment of the European Court of Human Rights (“the ECrtHR”) in Couderc v France (2015) 40 BHRC for a variety of points of principle as to the role of the media and the importance of their task to impart to the public information and ideas on matters of public interest. In that case the Grand Chamber held, in favour of the applicant publishers, that the award of damages of the French Courts against them for the publication of an interview with a woman who claimed that her son's father was the Prince of Monaco was in violation of art.10.",
+            "expected": [
+                "Couderc v France (2015) 40 BHRC"
+            ]
+        },
+        {
+            "text": " The Court reiterates that there is little scope under art.10 § 2 of the Convention for restrictions on freedom of expression when a matter of public interest is at stake (see, inter alia, Wingrove v the United Kingdom, 25 November 1996, § 58, Reports of Judgments and Decisions 1996-V). The margin of appreciation of States is reduced where a debate on a matter of public interest is concerned (see Éditions Plon v France No.58148/00, § 44, ECHR 2004-IV).",
+            "expected": [
+                "Wingrove v the United Kingdom, 25 November 1996, § 58, Reports of Judgments and Decisions 1996-V",
+                "Éditions Plon v France No.58148/00, § 44, ECHR 2004-IV"
+            ]
+        },
+        {
+            "text": " Mr Vassall-Adams emphasised that the decision whether or not to grant an injunction in the circumstances of the present case is not merely an exercise in unfettered judicial discretion but the carrying out of a careful assessment of proportionality. He cited in that connection the decision of the Court of Appeal in London Regional Transport v Mayor of London [2001] EWCA Civ 1491; [2003] E.M.L.R. 4. In that case the court upheld the decision of the first instance judge discharging an earlier interim injunction preventing the publication by the defendants of an expert report critical of the claimants' assessment of the value for money of a proposed public-private partnership (PPP) for the track maintenance function of the London Underground. ",
+            "expected": [
+                "London Regional Transport v Mayor of London [2001] EWCA Civ 1491; [2003] E.M.L.R"
+            ]
+        },
+        {
+            "text": "  if the Judge made an error of law or principle or if he reached a conclusion which was plainly wrong, that is to say it was outside the ambit of conclusions which a judge could properly reach: Lord Browne v Associated Newspapers Ltd [2008] Q.B. 103 at [45]; JIH v News Group Newspapers Ltd [2011] 1 W.L.R. 1645 at [26].",
+            "expected": [
+                "Lord Browne v Associated Newspapers Ltd [2008] Q.B. 103 at [45]",
+                "JIH v News Group Newspapers Ltd [2011] 1 W.L.R. 1645 at [26]"
+            ]
+        },
+        {
+            "text": "  There is nothing inconsistent between the approach in the Prince of Wales case and the jurisprudence of the ECrtHR. The Strasbourg court expressly recognised in Markt Intern and Beerman v Germany (1990) 12 E.H.R.R. 161 at [35] that even the publication of items which are true and describe real events may have to be prohibited in order to respect the confidentiality of certain commercial information.",
+            "expected": [
+                "Markt Intern and Beerman v Germany (1990) 12 E.H.R.R. 161 at [35]"
+            ]
+        },
+        {
+            "text": "For these reasons, the test to be applied when considering whether it is necessary to restrict freedom of expression in order to prevent disclosure v of information received in confidence is not simply whether the information is a matter of public interest but whether, in all the circumstances, it is in the public interest that the duty of confidence should be breached. The court will need to consider whether, having regard to the nature of the information and all the relevant circumstances, it is legitimate for the owner of the information to seek to keep it confidential or whether it is in the public interest that the information should be made public",
+            "expected": []
+        },
+        {
+            "text": "The next question is whether there is a rule of law by which the Scottish Courts are bound to give effect to the certificate of the Secretary of State, or whether these Courts have an inherent jurisdiction not to review the certificate but to override it. It is conceded that the Courts do not know the exigencies and conditions of the public service and cannot be in a position to say that the Minister, to whom the exigencies and conditions are known, was wrong in certifying that the public interest would be injured by the publication of documents called for by a party to a litigation. One of the considerations which may move a Minister to grant a certificate like the present is that publication would or might be injurious to that freedom and candour of communication in writing between the officers of a department, which are of great importance to public administration: and the responsible Minister or the head of the public department must be the judge whether the disclosure of documents would have an adverse effect by inducing among public servants a cautious timidity in expressing their views. The judgments of Lord President Dunedin, Lord M'Laren, Lord Kinnear and Lord Pearson in The Admiralty v. Aberdeen Steam Trawling and Fishing Co. are conclusive on this point, but these judgments do not deal explicitly with the question whether the Courts in Scotland have the power to override the ministerial certificate. If such a power does exist, it must be based on the ground that the fair administration of justice between subject and subject and between the subject and the Crown, is a public interest of a high order, and that its protection is the care of the Courts",
+            "expected": [
+                "The Admiralty v. Aberdeen Steam Trawling and Fishing Co"
+            ]
+        },
+        {
+            "text": "It was, however, contended by the Lord Advocate that Duncan v. Cammell, Laird & Co. has established that in England there is a rule of law by which the Courts are always bound to give effect to a valid certificate by the responsible Minister, or in some cases the head of a department, that production of a particular document either in itself or as forming an item of a class of documents would be contrary to the public interest, and that the same rule of law prevails in Scotland. He also contended that the judgment of Lord President Cooper in M'Kie v. Western Scottish Motor Traction Co. shows that after Duncan'scase the Scottish Courts were at least weakening in their assertion of their inherent power.",
+            "expected": [
+                "Duncan v. Cammell, Laird & Co",
+                "M'Kie v. Western Scottish Motor Traction Co"
+            ]
+        },
+        {
+            "text": "LORD RADCLIFFE .—I do not think that the difficulty of this case lies in discovering the legal principles that are applicable to it. I am satisfied that the respondents, the Central Land Board, are an agency of the Crown, and, as such, entitled to rely upon any rule of law that excuses the production of documents in the possession of the Crown on the ground that their production would injure the public interest. Further, I am satisfied that the decision of this House in Duncan v. Cammell, Laird & Co. ought not to be treated as a decision which either declares or affects the law of Scotland: and that the true view of the law of Scotland on this subject is that, however unexceptionable the form of a Minister's certificate to the effect that production would be against the public interest,, the tender of that certificate does not absolutely exclude the Court from making an order for production. I do not think that the case of Earl v. Vass ought to be treated as anything more than a limited decision related to its own facts and to the considerations, no doubt compelling ones, which supported the Crown's objection to the production there claimed. In all this I agree with what is said in the speeches of my noble friends Viscount Simonds and Lord Normand, and I do not wish to add any further reasons of my own.",
+            "expected": [
+                "Earl v. Vass",
+                "Duncan v. Cammell, Laird & Co"
+            ]
+        },
+        {
+            "text": "I turn first to Vass's case. Vass had been regimental paymaster in a regiment commanded by the Earl of Home and on leaving the regiment had been nominated by the Lords of the Treasury for employment with the Board of Customs. Vass alleged that by untrue and malicious statements made by Lord Home as to his character, in letters written to the Board, he was prevented from being employed as comptroller of customs at Grangemouth. He sued Lord Home for damages and took a diligence to recover the letters of Lord Home which were in the hands of the Board of Customs. The Lord Ordinary granted the diligence against the objection of the Board—Vass v. Board of Customs —and on a reclaiming petition the Court adhered by a majority of three to two. The minority took the view that compelling production of such letters would deprive the Board of, the power of procuring information and would be unjust to the opposite party as being only a partial production of evidence, it being admitted that the Board were not bound to disclose their deliberations and proceedings on the information obtained by them, so that it could not appear to what extent the information had operated. On appeal to this House by the Commissioners of Customs the case was decided ex parte, no case having been lodged on behalf of Vass and no appearance made for him. The House reversed the decision of the Court of Session. The judgment of the Lord Chancellor (Lord Eldon) appears to have proceeded on English practice and, to confirm or aid him in his opinion, he consulted the Lord Chief Justice (Abbott, C.J.).",
+            "expected": [
+                "Board—Vass v. Board of Customs"
+            ]
+        },
+        {
+            "text": "And in Brinkley v Brinkley [1965] P 75, 78 Scarman J said that `for a court to take into consideration evidence which a party to the proceedings has had no opportunity during trial to see or hear, and thus to challenge, explain or comment upon, seems to us to strike at the very root of the judicial process`. In Pamplin v Express Newspapers Ltd [1985] 1 WLR 689 at 691 Hobhouse J expressed the principle in similarly forthright terms",
+            "expected": [
+                "Brinkley v Brinkley [1965] P 75, 78",
+                "Pamplin v Express Newspapers Ltd [1985] 1 WLR 689 at 691"
+            ]
+        },
+        {
+            "text": "a genuine business reason it is not open to a tribunal to investigate whether that decision was sensible see- James W Cook & Co (Wivenhoe) Ltd v Tipper [1990] IRLR 386. That does not preclude a tribunal from investigating whether the employer held a genuine belief in the facts relied upon to conclude that employees needed to be made redundant. In forming that belief, it was said by Slynn J in Orr v Vaughan [1981] IRLR 63, that the employer must act on reasonable information reasonably acquired.",
+            "expected": [
+                "James W Cook & Co (Wivenhoe) Ltd v Tipper [1990] IRLR 386",
+                "Slynn J in Orr v Vaughan [1981] IRLR 63"
+            ]
+        },
+        {
+            "text": "itself demonstrate that an employee dismissed in those circumstances was dismissed for the reason, or principle reason, of redundancy. Whether that is the case is a question of fact and causation for the tribunal see Manchester College of Arts and Technology (MANCAT) v Mr G Smith [2007] UKEAT 0460/06 absent any conduct which mars the fairness of the scheme the employer will have acted reasonably - British Aerospace plc v Green and ors 1995 ICR 1006, CA. It follows that it is not the role of the employment tribunal to minutely scrutinise any scores allocated by an employer absent any underlying unfairness",
+            "expected": [
+                "Manchester College of Arts and Technology (MANCAT) v Mr G Smith [2007] UKEAT 0460/06",
+                "British Aerospace plc v Green and ors 1995 ICR 1006"
+            ]
+        },
+        {
+            "text": "The Australian jurisprudence presently supports the proposition that the use of the words ‘serious reasons for considering that …’ does not mandate a positive finding by the receiving state that the applicant for protection has engaged in conduct of the kind contemplated in Art 1F. No question of proof on the civil or criminal standard arises in that context: Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563 per French J; Ovcharuk v Minister for Immigration and Multicultural Affairs (1998) 153 ALR 385 at 388 per Marshall J and on appeal Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179; 158 ALR 289 at 294–5; 51 ALD 549 at 554 per Whitlam J. See also Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476; 63 ALD 321 at 331–2 where Weinberg J reviewed the authorities. A contrary view in relation to standard of proof was expressed by Mathews J sitting as president of the tribunal in Re W97/164 and Minister for Immigration and Multicultural Affairs (1998) 51 ALD 432 at 441; 27 AAR 482 at 491. In Canada the Federal Court of Appeals has held that the words require something less than proof on the balance of probabilities: Ramirez v Canada (1992) 89 DLR (4th) 173. But see also Cardenas v Canada (1994) 23 Imm LR (2d) 244 where a requirement for ‘clear and convincing evidence’ was posited by Jerome ACJ (at 252)",
+            "expected": [
+                "Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563",
+                "Ovcharuk v Minister for Immigration and Multicultural Affairs (1998) 153 ALR 385",
+                "Marshall J and on appeal Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179",
+                "Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476; 63 ALD 321 at 331–2",
+                "Ramirez v Canada (1992) 89 DLR (4th) 173",
+                "Cardenas v Canada (1994) 23 Imm LR (2d) 244",
+                "Re W97/164 and Minister for Immigration and Multicultural Affairs (1998) 51 ALD 432 at 441; 27 AAR 482 at 491"
+            ]
+        },
+        {
+            "text": "The claimant did refer to the FRS grade C role in her first witness statement at paragraph 110 o, whereas the allegation is made in the second claim. The claimant referred to a vacancy in the IT department from October 2014; and then from July 2015 onwards. A failure to offer the claimant a vacancy in October 2014 pleaded in the second claim is subject to issue estoppel or Henderson v Henderson. The claimant therefore cannot pursue that allegation",
+            "expected": [
+                "Henderson v Henderson"
+            ]
+        },
+        {
+            "text": "The claimant did refer to the FRS grade C role in her first witness statement at paragraph 110 o, whereas the allegation is made in the second claim. The claimant referred to a vacancy in the IT department from October 2014; and then from July 2015 onwards. A failure to offer the claimant a vacancy in October 2014 pleaded in the second claim is subject to issue estoppel or Henderson v Henderson. The claimant therefore cannot pursue that allegation",
+            "expected": [
+                "Henderson v Henderson"
+            ]
+        },
+        {
+            "text": "In respect of harassment under s. 26 EQA, in Richmond Pharmacology v Dhaliwal 2009 IRLR 336 the EAT set out a three step test for establishing whether harassment has occurred: (i) was there unwanted conduct; (ii) did it have the purpose or effect of violating a person's dignity, or creating an intimidating, hostile, degrading, humiliating or offensive environment for that person and (iii) was it related to a protected characteristic?",
+            "expected": [
+                "Richmond Pharmacology v Dhaliwal 2009 IRLR 336"
+            ]
+        },
+        {
+            "text": "In Hewage v Grampian Health Board 2012 IRLR 870 the Supreme Court endorsed the approach of the Court of Appeal in Igen Ltd v Wong and Madarassy v Nomura International plc. Which said that it is important not to make too much of the role of the burden of proof provisions. They require careful attention where there is room for doubt as to the facts necessary to establish discrimination, but have nothing to offer where the tribunal is in a position to make positive findings on the evidence one way or the other",
+            "expected": [
+                "Hewage v Grampian Health Board 2012 IRLR 870",
+                "Igen Ltd v Wong",
+                "Madarassy v Nomura International plc."
+            ]
+        },
+        {
+            "text": "The Court of Appeal in Ayodele v Citylink Ltd 2017 EWCA Civ 1913 confirmed that the line of authorities including Igen and Hewage remain good law and that the interpretation of the burden of proof by the EAT in Efobi v Royal Mail Group Ltd EAT/0203/16 was wrong and should not be followed.",
+            "expected": [
+                "Ayodele v Citylink Ltd 2017 EWCA Civ 1913",
+                "Efobi v Royal Mail Group Ltd EAT/0203/16"
+            ]
+        },
+        {
+            "text": "A detriment has been held to be ‘putting under a disadvantage’ and ‘exists if a reasonable worker would or might take the view that [the action of the employer] was in all the circumstances to his detriment’ (MoD v Jeremiah 1980 ICR 13), ‘disadvantaged in the circumstances and conditions of work’ (De Souza v AA 1986 ICR 513 CA, or simply a ‘disadvantage’ (Porcelli v Strathclyde Regional Council 1986 ICR 564)",
+            "expected": [
+                "MoD v Jeremiah 1980 ICR 13",
+                "De Souza v AA 1986 ICR 513 CA",
+                "Porcelli v Strathclyde Regional Council 1986 ICR 564"
+            ]
+        },
+        {
+            "text": "Mr Tinnion drew our attention to those passages in paragraphs 122 and 123 and suggested that they were not an accurate statement of the law. More particularly, Mr Tinnion submitted that the law had moved on and had been developed in a series of recent authorities. He took us in turn to three such authorities. First, the decision of this Employment Appeal Tribunal in Samsung Electronics v Monte-D’Cruz UKEAT/0039/11/DM. The Judgment in that case was handed down by this Appeal Tribunal on 1 March 2012. Second, to the decision in Mitchells of Lancaster (Brewers) Ltd v Tattersall UKEAT/0605/11/SM, another decision",
+            "expected": [
+                "Mitchells of Lancaster (Brewers) Ltd v Tattersall UKEAT/0605/11/SM",
+                "Samsung Electronics v Monte-D’Cruz UKEAT/0039/11/DM"
+            ]
+        },
+        {
+            "text": "The first of the grounds of appeal set out in the Notice of Appeal contends that the Tribunal engaged in an impermissible re-marking/re-assessment exercise of the scores of those in the pool. Again, we were taken to a series of examples, but in the context of Mr Tinnion’s reminding us of the relevant authorities. He took us, in particular, to the decision of the Court UKEAT/0551/12/LA",
+            "expected": [
+                "UKEAT/0551/12/LA"
+            ]
+        },
+        {
+            "text": "We need only refer to the well-known authorities of Meek v City of Birmingham DC [1987] IRLR 250 and English v Emery Reimbold and Strick [2003] IRLR 710 for the proposition that the Tribunal was required to explain to the parties in its written Reasons, in a fair and sufficient manner, precisely why it had reached the conclusions it had reached and, from each party’s point of view, why it had won or lost. We apply that approach to what the Tribunal has done here. Paragraph 160 self-evidently comes at the end of a very full and lengthy set of Reasons. The written Reasons are extremely well-structured, ample and well- written. The passage at paragraph 160 must be seen in the context of the Tribunal’s earlier findings of fact and, in particular, in the context of the adverse finding of age discrimination. The Tribunal, in our judgment, have sufficiently explained why the dismissal of this particular Claimant was found unfair. It has explained why the process was unfair and it has set out sufficient as to the background context for one to understand why it was able to conclude, as it did, that the exercise here was designed solely to produce the result that it was Ms Simpson who would be the one person made redundant from amongst those who faced potential redundancy.",
+            "expected": [
+                "Meek v City of Birmingham DC [1987] IRLR 250",
+                "English v Emery Reimbold and Strick [2003] IRLR 710"
+            ]
+        },
+        {
+            "text": "In Qua v John Ford Morrison Solicitors 2003 EAT/884/01 the Employment Appeal Tribunal considered what was then the new section 57A and 57B Employment Rights Act 1996 which was introduced to give effect to the Parental Leave Directive 96/34/EC. The EAT considered that the right to time off to provide assistance does not enable employees to have time off in order to provide care themselves beyond the reasonable amount necessary to enable them to deal with the immediate crisis.",
+            "expected": [
+                "Qua v John Ford Morrison Solicitors 2003 EAT/884/01"
+            ]
+        },
+        {
+            "text": "I have identified the EAT judgment by Mr Justice Kerr in First Greater Western Ltd & Anor v Waiyego [2018] UKEAT 0056/18; [2019] 5 WLR(D) 290. On the facts and circumstances of that case, the EAT held that the ET had rightly rejected the claimant's invitation to impose a financial penalty on the first respondent for deliberate and repeated breaches of employment law.",
+            "expected": [
+                "First Greater Western Ltd & Anor v Waiyego [2018] UKEAT 0056/18; [2019] 5 WLR(D) 290"
+            ]
+        },
+        {
+            "text": "Sub-section 139(1)(b) of the Employment Rights Act 1996 refers to the ‘requirements’ of the employer. Where the employer has taken the decision to reduce the numbers of employees for a genuine business reason it is not open to a tribunal to investigate whether that decision was sensible see James W Cook & Co (Wivenhoe) Ltd v Tipper [1990] IRLR 386. That does not preclude a tribunal from investigating whether the employer held a genuine belief in the facts relied upon to conclude that employees needed to be made redundant. In forming that belief, it was said by Slynn J in Orr v Vaughan [1981] IRLR 63, that the employer must act on reasonable information reasonably acquired",
+            "expected": [
+                "James W Cook & Co (Wivenhoe) Ltd v Tipper [1990] IRLR 386",
+                "Orr v Vaughan [1981] IRLR 63"
+            ]
+        },
+        {
+            "text": "Whilst the focus of the EAT in Williams v Compair Maxam was towards collective consultation the importance of consultation in general but also with individual employees was emphasised in Mugford v Midland Bank plc 1997 ICR 399, EAT where HHJ Clarke giving the judgment of the tribunal said:",
+            "expected": [
+                "Williams v Compair Maxam",
+                "Mugford v Midland Bank plc 1997 ICR 399"
+            ]
+        },
+        {
+            "text": "The correct test is whether the employer acted reasonably, not whether the tribunal would have come to the same decision itself. In many cases there will be a 'range of reasonable responses', so that, provided that the employer acted as a reasonable employer could have acted, the dismissal will be fair: Iceland Frozen Foods Ltd v Jones [1982] IRLR 439. That test recognises that two employers faced with the same circumstances may arrive at different decisions, but both of those decisions might be reasonable.",
+            "expected": [
+                "Iceland Frozen Foods Ltd v Jones [1982] IRLR 439"
+            ]
+        },
+        {
+            "text": "When choosing who should be made redundant and who should be retained an employer may need to identify a pool of employees from which the redundancies will be made. There is no requirement that the pool be limited to employees doing the same work see Taymech v Ryan [1994] EAT/663/94. The question will be whether the employer has genuinely applied its’ mind to the question and whether its conclusions fell within a band of reasonable options see Capita Hartshead Ltd v Byard [2012] IRLR 814.",
+            "expected": [
+                "Taymech v Ryan [1994] EAT/663/94",
+                "Capita Hartshead Ltd v Byard [2012] IRLR 814"
+            ]
+        },
+        {
+            "text": "In the hundred years before the case of Duncan v. Cammell, Laird & Co. was decided, there can be no doubt that the Scottish Courts were satisfied that they possessed the inherent power I am now discussing. In the present case the Lord Ordinary and Lord Russell were of opinion that the Scottish Courts retain that power. Lord Carmont was, I think, disposed to agree with that opinion but he felt constrained to bow to the decision in Duncan v. Cammell, Laird & Co. Lord Sorn also held that the rule of law laid down in Duncan v. Cammell, Laird & Co. was binding on the Court of Session in any situation contemplated in the judgment of the Lord Chancellor in Duncan v. Cammell, Laird & Co., but not in other cases.",
+            "expected": [
+                "Duncan v. Cammell, Laird & Co"
+            ]
+        },
+        {
+            "text": "The second ground of appeal advanced was that the tribunal had erred in law in failing to explain why the previous award was no longer merited: per R(M)1/96 and VH v SSWP (ESA) [2018] UKUT 290 (AAC). It was agued thirdly that the findings, upheld by the tribunal, that the appellant satisfied descriptor 15b in Schedule 2 to the ESA Regs (cannot get to a specific place with which the claimant is familiar on his or her own) and descriptor 16c in the same schedule (engaging in social contact with someone unfamiliar to the claimant is not possible for the majority of the time) ought additionally to have led the tribunal to consider regulation 35(2)",
+            "expected": [
+                "R(M)1/96",
+                "VH v SSWP (ESA) [2018] UKUT 290 (AAC)"
+            ]
+        },
+        {
+            "text": "Strictly speaking, as a judge exercising the Upper Tribunal’s jurisdiction in Scotland, neither Hooper nor Mongan are binding on me (see SSWP v Deane [2010] EWCA Civ 699; [2010] AACR 42 at paragraphs [26]-[27]). However, in my judgment both decisions are plainly correct and, in case there is any doubt, the effect of my decision on this appeal is to make the propositions in those two decisions binding on First-tier Tribunals exercising jurisdiction under section 12 of the SSA in Scotland",
+            "expected": [
+                "[2010] AACR 42 at paragraphs [26]-[27]",
+                "SSWP v Deane [2010] EWCA Civ 699"
+            ]
+        },
+        {
+            "text": "Strictly speaking, as a judge exercising the Upper Tribunal’s jurisdiction in Scotland, neither Hooper nor Mongan are binding on me (see SSWP v Deane [2010] EWCA Civ 699; [2010] AACR 42 at paragraphs [26]-[27]). However, in my judgment both decisions are plainly correct and, in case there is any doubt, the effect of my decision on this appeal is to make the propositions in those two decisions binding on First-tier Tribunals exercising jurisdiction under section 12 of the SSA in Scotland",
+            "expected": [
+                "[2010] AACR 42 at paragraphs [26]-[27]",
+                "SSWP v Deane [2010] EWCA Civ 699"
+            ]
+        },
+        {
+            "text": "Whether an issue is sufficiently apparent will depend on the particular circumstances of the case. This means that the tribunal must apply its knowledge of the law to the facts established by it, and it is not limited in its consideration of the facts by the arguments advanced by the appellant. I adopt the observations of this court in R v Secretary of State for the Home Department ex parte Robinson [1998] 1 QB 929 at page 945 E–F in the context of appeals in asylum cases. But the tribunal is not required to investigate an issue that has not been the subject of argument by the appellant if, regardless of what facts are found, the issue would have no prospects of success",
+            "expected": [
+                "R v Secretary of State for the Home Department ex parte Robinson [1998] 1 QB 929 at page 945 E–F"
+            ]
+        },
+        {
+            "text": "[other aid] is general in terms and covers everything else that exists or might exist in the future. [SI v Secretary of State], paragraph 65 supports the contention a powered wheelchair is an ‘other aid’…The Tribunal concludes the terms stick and manual wheelchair are there for illustrative purposes only. This fits in with the way the legal test is written. If the terms were not illustrative it would be necessary to look at each and every aid/appliance to decide whether it is excluded from being part of the term ‘other aid’ because of the similarity they may have to a stick or manual wheelchair. It would become an impossible test to apply. The phrase other aid would effectively be redundant. Would an elbow crutch be excluded from consideration because it is not a stick?",
+            "expected": [
+                "SI v Secretary of State"
+            ]
+        },
+        {
+            "text": "The verb ‘disapply’ in relation to the entitlements is used throughout this work to signify that one or both of the entitlements do not apply. It is recognised that the creation of express relationships between ss 1(1), 1(2), 2 and Pt II of the FOIA is simply a legislative technique for delineating the bounds of those entitlements. In other words, these provisions shape the scope of the entitlements, rather than remove or negate a entitlement already given. For a similar technique used elsewhere, see Matthews v Ministry of Defence [2003] 1 AC 1163, esp at [20], in relation to the Crown Proceedings Act 1947.",
+            "expected": [
+                "Matthews v Ministry of Defence [2003] 1 AC 1163, esp at [20]"
+            ]
+        },
+        {
+            "text": "The basic purpose of [the] FOIA is to ensure an informed citizenry, vital to the functioning of a democratic society, needed to check against corruption and to hold the governors accountable to the governed.’: National Labor Relations Board v Robbins Tire & Rubber Co 437 US 214, 242 (1978). Or, put another way, ‘to reinforce “the three basic principles of democratic government, namely, openness, accountability and responsibility.’”: Commissioner of Police v District Court of New South Wales (1993) 31 NSWLR 606 at 612; Osland v Secretary to the Department of Justice [2008] HCA 37, (2008) 234 CLR 27 at [62].",
+            "expected": [
+                "Commissioner of Police v District Court of New South Wales (1993) 31 NSWLR 606 at 612",
+                "Osland v Secretary to the Department of Justice [2008] HCA 37, (2008) 234 CLR 27 at [62]"
+            ]
+        },
+        {
+            "text": "For judicial support, see London Regional Transport v Mayor of London [2001] EWCA Civ 1491 [2003] EMLR 4 at [40], quoting Sullivan J with approval. In Kuijer v Council of the European Union (No 2) [2002] 1 WLR 1941 at [52] the Court of First Instance, dealing with Council Directive 93/731/EC, said: ‘It is first necessary to point out that the principle of transparency is intended to secure a more significant role for citizens in the decision-making process and to ensure that the administration acts with greater propriety, efficiency and responsibility vis-à-vis the citizens in a democratic system. It helps strengthen the principle of democracy and respect for fundamental rights.’ See, further: Case C-64/05 IFAW gGmbH v European Commission [2008] QB 902 (Opinion of Advocate General Maduro, 18 July 2007) at [53]. ",
+            "expected": [
+                "Transport v Mayor of London [2001] EWCA Civ 1491 [2003] EMLR 4 at [40]",
+                "Kuijer v Council of the European Union (No 2) [2002] 1 WLR 1941 at [52]",
+                "Case C-64/05 IFAW gGmbH v European Commission [2008] QB 902"
+            ]
+        },
+        {
+            "text": "For example: Turner v Spooner (1861) 30 LJ Ch 801 at 803; Monson v Tussauds Ltd [1894] 1 QB 671 at 687; Tolley v Fry Ltd [1930] 1 KB 467 at 478 per Greer LJ; reversed on appeal [1931] AC 333; Victoria Park Racing v Taylor (1937) 58 CLR 479 at 505, per Rich J (diss); Bernstein v Sky Views [1978] QB 479 at 483; Kaye v Robertson [1991] FSR 62 at 70 (CA); R v Khan (Sultan) [1997] AC 558 at 582-583; Mills v News Group Newspapers Ltd [2001] EWHC Ch 412 (‘But the day may not be far off when this deficiency will be remedied’); A v B plc [2002] EWCA Civ 337, [2003] QB 195; Douglas v Hello! Ltd [2003] EWHC 786, [2003] 3 All ER 996 at [229]; cf Morris v Beardmoret 465",
+            "expected": [
+                "Turner v Spooner (1861) 30 LJ Ch 801 at 803",
+                "Monson v Tussauds Ltd [1894] 1 QB 671 at 687",
+                "Tolley v Fry Ltd [1930] 1 KB 467 at 478",
+                "[1931] AC 333",
+                "Victoria Park Racing v Taylor (1937) 58 CLR 479 at 505",
+                "Bernstein v Sky Views [1978] QB 479 at 483",
+                "Kaye v Robertson [1991] FSR 62 at 70 (CA)",
+                "R v Khan (Sultan) [1997] AC 558 at 582-583",
+                "Mills v News Group Newspapers Ltd [2001] EWHC Ch 412",
+                "A v B plc [2002] EWCA Civ 337",
+                "[2003] QB 195",
+                "Douglas v Hello! Ltd [2003] EWHC 786",
+                "[2003] 3 All ER 996 at [229]",
+                "Morris v Beardmoret 465"
+            ]
+        },
+        {
+            "text": "Article 20 of the FEU Treaty confers the status of citizen of the European Union on every person holding the nationality of a member state: see, inter alia, D'Hoop v Office national de l'emploi (Case C-224/98) [2004] ICR 137, para 27, and Garcia Avello v Belgian State (Case C-148/02) [2003] ECR I-11613, para 21. Since Mr Ruiz Zambrano's second and third children possess Belgian nationality, the conditions for the acquisition of which it is for the member state in question to lay down (see, to that effect, inter alia, Rottmann v Freistaat Bayern (Case C-135/08) [2010] QB 761, para 39), they undeniably enjoy that status: see, to that effect, the Garcia Avello case, para 21, and the Chen case, [2005] QB 325, para 20. ",
+            "expected": [
+                "(Case C-224/98) [2004] ICR 137, para 27",
+                "Garcia Avello v Belgian State (Case C-148/02) [2003] ECR I-11613, para 21",
+                "Rottmann v Freistaat Bayern (Case C-135/08) [2010] QB 761, para 39",
+                "2005] QB 325, para 20"
+            ]
+        },
+        {
+            "text": "As regards the second element, Mr Blundell relied on what he said was a presumption against `gold-plating` – that is (as defined in the Department for Business, Enterprise and Industrial Strategy's document Transposition guidance: how to implement EU Directives into UK law effectively) `going beyond the minimum necessary to comply with a Directive`. The Guidance says that it is not Government policy to gold-plate in the absence of exceptional circumstances (see para. 2.7). Mr Blundell referred also to the judgment of Lord Mance in Nuclear Decommissioning Authority v Energy Solutions EU Ltd [2017] UKSC 34, [2017] 1 WLR 1373, which was concerned with UK legislation implementing the scheme for remedies for breach of the Public Procurement Directive. At para. 39 Lord Mance said that there was `a natural assumption that the UK legislator will not go further than required by EU law when implementing such a scheme, without considering this and making it clear",
+            "expected": [
+                "Nuclear Decommissioning Authority v Energy Solutions EU Ltd [2017] UKSC 34",
+                "[2017] 1 WLR 1373"
+            ]
+        },
+        {
+            "text": " The question thus is whether we are prevented from reaching that conclusion by any decision of this Court. For the reasons given by the Master of the Rolls, the decisions in Sion, Walters and Ronayne are not authoritative on the present issue. The difficulty, however, is Taylor v A. Novo. I have not found it easy to identify the precise ratio of that decision. There are some parts of the reasoning in paras. 29 and 30 of Lord Dyson's judgment that suggest that he saw the crucial feature of the case as being that there had been an initial \"accident\" which could in principle have constituted a shocking event, if witnessed, and that that meant that any subsequent such event could not be regarded as sufficiently proximate: that was Chamberlain J's analysis. But I have come to the conclusion that if the judgment is read as a whole the ratio is wider than that. At para. 33 Lord Dyson said that \"it follows from what I have said above\" that the reasoning of Auld J in Taylor v Somerset Health Authority was correct, and he rejected Peter Gibson LJ's contrary observations in Sion on the basis that they were obiter dicta. The essence of the reasoning which he was thereby endorsing was that there could be no liability for psychiatric injury to the claimant caused by witnessing her husband's death \"long after the negligence which had caused it\", as opposed to injury caused by a traumatic event occurring at the time of the breach of duty (see the passage quoted at para. 11). Against that background, the fair reading of paras. 29 and 30 seems to be that the ultimately decisive feature was simply that there had been an interval of time between the breach of duty, whether or not it occasioned any injury at the time, and the shocking event. In Taylor v A. Novo itself the interval was three weeks, but the principle must be the same whatever the interval, provided it is not part of the same sequence of events as in cases of the Walters kind.",
+            "expected": [
+                "Taylor v A",
+                "Taylor v Somerset Health Authority"
+            ]
+        },
+        {
+            "text": " Where there is a potential conflict of laws, the process of determining the law which applies to an issue in a case involves three stages: (i) characterisation of the issue; (ii) selection of conflict of laws rule which lays down a “connecting factor” for that issue; and (iii) identification of the system of law which is tied by that connecting factor to that issue: see Macmillan Inc v Bishopsgate Investment Trust (No.3) [1996] 1 WLR 387 at 391-392 per Staughton LJ, applied in Raiffesen Zentralbank v Five Star Trading LLC [2001] QB 825 at paragraphs [26] - [28] per Mance LJ.  As Mance LJ emphasised, this analysis must be done according to English law, but not in an overly mechanistic way, or in a way constrained by particular notions of English domestic law.",
+            "expected": [
+                "Raiffesen Zentralbank v Five Star Trading LLC [2001] QB 825 at paragraphs [26] - [28]",
+                "Macmillan Inc v Bishopsgate Investment Trust (No.3) [1996] 1 WLR 387 at 391-392"
+            ]
+        },
+        {
+            "text": "Whilst the Judge’s conclusion was technically a finding of fact as to Californian law, findings of fact on foreign law are not subject to the same restrictions on appeal as ordinary findings of fact.  It is open to this court to consider the evidence of foreign law that was before the Judge and decide whether it justified the conclusion to which he came: see Parkasho v Singh [1968] P 23 at 250, per Cairns J, referred to with approval by Megaw LJ in Dalmia Dairy Industries v National Bank of Pakistan [1978] 2 Lloyd’s Rep 223 at 286.  That is certainly so where, as here, the Judge made his findings on the basis of written evidence alone, and did not hear any cross-examination of the experts on their reports.",
+            "expected": [
+                "Parkasho v Singh [1968] P 23 at 250",
+                "Dalmia Dairy Industries v National Bank of Pakistan [1978] 2 Lloyd’s Rep 223 at 286"
+            ]
+        },
+        {
+            "text": "As a general proposition, the law governing the validity of the arbitration agreement also governs the question who becomes party to it: Kabab-Ji SAL (Lebanon) v Kout Food Group (Kuwait) [2021] UKSC 48 at [18] (i) and [53] (approving a decision of Sir Michael Burton GBE to that effect: J (Lebanon) v K (Kuwait) [2019] EWHC 899 (Comm) at [19]). Logically, the same principle must apply to the question who is bound by it.",
+            "expected": [
+                "Kabab-Ji SAL (Lebanon) v Kout Food Group (Kuwait) [2021] UKSC 48 at [18] (i) and [53]",
+                "J (Lebanon) v K (Kuwait) [2019] EWHC 899 (Comm) at [19]"
+            ]
+        },
+        {
+            "text": "On the Appellant's case, he is entitled to sideways relief for all tax years up to and including 2011/12, because the farming and market gardening activities at the Farm were competently managed throughout. He says he is supported by findings of fact in the FTT and by the general principle that trading losses should be permitted to be offset against other profits in the same year, citing R v IRC ex p Unilever plc [1996] STC 681 at 690. HMRC do not dispute the principle, at a high level of generality, but they dispute Mr Naghshineh's entitlement to sideways relief for the years in issue, because they say he fails limb (b) of the reasonable expectation of profits test in each of those years. The test requires evidence to show that if the activities in the current tax year had been carried on at the beginning of the prior period of loss (from 6 April 1994, in Mr Naghshineh's case), they could not reasonably have been expected to be profitable until after the end of the current tax year; but, they say, no finding to that effect was made by the FTT, in relation to any one of the years in dispute, and so the claim for sideways relief must fail.",
+            "expected": [
+                "R v IRC ex p Unilever plc [1996] STC 681 at 690"
+            ]
+        },
+        {
+            "text": " An important part of the objective of a consolidating statute or a project like the Tax Law Rewrite Project is to gather disparate provisions into a single, easily accessible code. That objective would be undermined if, in order to interpret the consolidating legislation, there was a constant need to refer back to the previous disparate provisions and construe them. … However, where, after undertaking such an exercise, a provision which falls to be applied is found to be ambiguous, a subordinate presumption comes into play, namely that it is presumed that there was no intention to change the meaning of the provision which has been repeated in the same language in the consolidated code. In such circumstances, it may be relevant to try to determine the meaning of the relevant provision by looking to see what it meant when it was previously enacted: see [Farrell v Alexander][1977] AC 59 at 73B (Lord Wilberforce), 84D-H (Lord Simon of Glaisdale) and 97B (Lord Edmund-D",
+            "expected": [
+                "Farrell v Alexander][1977] AC 59 at 73B"
+            ]
+        },
+        {
+            "text": "Previous to Scambler, there were three FTT decisions on the point. One of them, Erridge v HMRC [2015] UKFTT 0089 (TC), arrived at the same conclusion on the meaning of the provision as I have done, and as did the UT in this case and in Scambler, leading to the outcome in that case that sideways relief was denied for the year in question. One feature of that case was the FTT's recognition that farming involves occupation of land. This finds a statutory echo in section 996 which defines farming and market gardening by reference to occupation of the land (see paragraph 23 above)",
+            "expected": [
+                "Erridge v HMRC [2015] UKFTT 0089 (TC)"
+            ]
+        },
+        {
+            "text": "In IRC v Barclay Curle & Co Ltd [1969] 1 WLR 675 the taxpayers incurred expenditure on the construction of a dry dock. The expenditure consisted of the cost of excavating a specially shaped new basin having direct access to the Clyde and a floor below the level of high tide to enable ships to float in and out. The expenditure also included the cost of lining the excavation with concrete and installing valves, pumps, electricity generators and other machinery needed for the operation of the dock. What was in issue was the cost of excavation and lining the excavation with concrete. The key findings of fact were these. The dock could not be used to repair ships without the valves and pumps. The dock could not have fulfilled its purpose unless there had been excavated a depth sufficient to enable ships of the contemplated draught to enter and leave it. The valves, the machinery for the provision of electricity and the pumps were an integral part of the dock as a functioning entity. The remainder of the dock would have been useless to the company without them and, similarly, they would have been useless without the remainder of the dock. The House of Lord held, by a majority, that the whole of the expenditure qualified.",
+            "expected": [
+                "IRC v Barclay Curle & Co Ltd [1969] 1 WLR 675"
+            ]
+        },
+        {
+            "text": "In my view, the same is true of Cooke v Beach Stations Caravans Ltd [1974] 1 WLR 1398. That case concerned a swimming pool constructed at a caravan park. HMRC accepted that expenditure on the provisions for filtration, heating and recirculation of water, the plumbing, the fittings such as steps and diving boards, etc., and the electrical installations were plant; but contested the cost of excavating and constructing the pool itself. Megarry J held that the pool was to be regarded as a single unit, because it was both constructed and operated as such. The purpose of the pool was to provide and retain a suitable body of water which was circulated, cleansed and heated, and so would provide a medium which the visitors to the caravan park could enjoy. The water that the pool was designed to contain could not be divorced from the structure of the pool and its apparatus. It was, therefore, treated as an integral whole. The whole, therefore, qualified as plant. That decision sheds no light on what the answer would have been if the basin had been considered on its own, rather than in conjunction with the remainder of the equipment; still less if the basin had simply been an unlined hole in the ground.",
+            "expected": [
+                "Cooke v Beach Stations Caravans Ltd [1974] 1 WLR 1398"
+            ]
+        },
+        {
+            "text": "Wimpy International Ltd v Warland concerned the installation of fixtures in fast food restaurants. They included shop fronts, floor and wall tiles, wall finishes, suspended ceilings, raised floors, fire doors and fire proofing. At first instance ([1988] STC 149), Hoffmann J pointed out that in the familiar quotation from Yarmouth v France there were three relevant distinctions. He said: `It is important to notice the various discriminations which are stated or implied in this description. First, it excludes anything which is not used for carrying on the business. Secondly, it excludes stock-in-trade both expressly and because, although used for the purposes of the business, its use lacks permanence. Thirdly, it excludes things which are not `apparatus … goods and chattels, fixed or moveable, live or dead` or not employed in the business. This excludes the premises or place in or upon which the business is conducted.",
+            "expected": [
+                "Wimpy International Ltd v Warland",
+                "[1988] STC 149"
+            ]
+        },
+        {
+            "text": "The judge refused an application by Mylan for a stay of the injunction pending the determination of an application by Mylan to this Court for permission to appeal. Even so, I am surprised that the judge did not see fit to grant Mylan a stay of, say, 14 or 21 days in order to enable Mylan to make an orderly application to this Court following receipt of the further judgment and the judge's determination of Mylan's renewed application for permission to appeal in the light of that judgment. As it was, Mylan was forced to make an urgent application to this Court on 8 March 2022 when neither of those things had happened. Also on 8 March 2022 the judge handed down his further judgment [2022] EWHC 512 (Pat) (\"the March Judgment\") in which he explained his reasons for rejecting the lay-patient argument and for refusing permission to appeal. This in turn led to Mylan filing further submissions in support of their application to this Court and amending their grounds of appeal.",
+            "expected": [
+                "[2022] EWHC 512 (Pat)"
+            ]
+        },
+        {
+            "text": "Reliance is placed by the appellant on the decision of this court in R (on the application of B) v. Ashworth Hospital Authority [2003] EWCA Civ 547. That was a case where B had been convicted of manslaughter and had been made the subject of a section 37 hospital order and a section 41 restriction order. The court specified \"mental illness\" in the hospital order as the form of mental disorder from which B was suffering. At no time did the court specify \"psychopathic disorder\" as the form of mental disorder, nor was he reclassified to that effect by an MHRT. The issue which arose was whether B could be compulsorily treated under section 63 for psychopathetic disorder which the clinicians subsequently diagnosed. There is no restriction in the wording of section 63, which merely refers to the patient's consent not being required for any treatment \"for the mental disorder from which he is suffering\", but this court concluded that the statutory context was such that the patient could only be treated compulsorily for the form of mental disorder for which he was being detained.",
+            "expected": [
+                "[2022] EWHC 512 (Pat)",
+                "R (on the application of B) v. Ashworth Hospital Authority [2003] EWCA Civ 547"
+            ]
+        },
+        {
+            "text": "The judge rejected all three submissions. As for the first, he applied Waller LJ's gloss in Canada Trust Co v. Stolzenberg (No2) [1998] 1 WLR 547 of the \"good arguable case\" test (ex Seaconsar Far East Ltd v. Bank Markazi [1994] 1 AC 438) in the context of a choice for founding jurisdiction as requiring that \"one side has a much better argument on the material available\" (at 555). He applied that test to the mirror context of declining jurisdiction, and found that the Reinsurers had failed to meet it. He said (at para 68):",
+            "expected": [
+                "Canada Trust Co v. Stolzenberg (No2) [1998] 1 WLR 547",
+                "Seaconsar Far East Ltd v. Bank Markazi [1994] 1 AC 438"
+            ]
+        },
+        {
+            "text": "On behalf of Coromin, Mr Steven Berry QC had three main themes. The first was that it is very difficult to upset on appeal the commercial judge's exercise of his discretion in such a matter, a fortiori in the context of a decision of case management. The leading authority in such a context is Reichold Norway ASA v. Goldman Sachs International [2000] 1 WLR 173, where Lord Bingham CJ said that \"stays are only granted in cases of this kind in rare and compelling circumstances\" (at 186). The second was that in any event the judge was right to exercise his discretion in the way he did for the reasons that he did. He had taken all relevant matters into account, in particular the (assumed good arguable case for the) application of the Zambian law and jurisdiction clause and the evidential centre of gravity of the \"collapse\" issue (at para 112). If his decision on discretion was good in the context of the application for a jurisdictional stay, it was all the more unassailable on the hypothesis of a case management stay unassisted by the jurisdictional arguments.",
+            "expected": [
+                "Reichold Norway ASA v. Goldman Sachs International [2000] 1 WLR 173"
+            ]
+        },
+        {
+            "text": "It seems to me that the issue of the right test to apply to this question is a difficult one. On the one hand, one would wish to avoid a test which sets up a trial on the merits, even if only a provisional one. On the other hand, where there is established Regulation or Convention jurisdiction subject to a jurisdiction clause, the choice is not merely between two competing jurisdiction clauses, but between the established jurisdiction and a jurisdiction clause derogating from that jurisdiction. Since an English jurisdiction clause does not here derogate from the established jurisdiction, the real competition in this case is between England as the established jurisdiction and the Zambian clause relied on by the Reinsurers. Moreover, there may be a difference between a jurisdiction established by mandatory international rules as under the Regulation and a jurisdiction merely accepted by the English courts as part of their national rules, including their long-arm statute, and always subject to their overriding and inherent discretion. Where the choice arises under the Regulation itself and article 23 is in question – which Colman J has held is not the case here in respect of the Zambian clause since that is not a clause giving jurisdiction to a court or the courts of a Member Stat  (article 23.1) – article 23 itself lays down the conditions for the clause in question, eg that it should be in or evidenced in writin  (article 23.1(a)); and ECJ jurisprudence has held that it is necessary for the applicability of the jurisdiction clause to be without doubt, in the sense that it should be established that the parties' consent has been clearly and precisely demonstrated: see Etsasis Salotti di Colzano Aimo e Gianmario Colzani v. Ruwa Polstereinaschinen GmbH [1976] ECR 1831 and Partenreederei MS Tilly Russ v. Haven & Vervoebedrijf Nova NV [1985] QB 931. By analogy, therefore, there is an argument for saying that the test for the applicability of the clause in this case should be a stringent one.",
+            "expected": [
+                "Colzano Aimo e Gianmario Colzani v. Ruwa Polstereinaschinen GmbH [1976] ECR 1831",
+                "Partenreederei MS Tilly Russ v. Haven & Vervoebedrijf Nova NV [1985] QB 931"
+            ]
+        },
+        {
+            "text": "The Parliamentary intention in making adjudication obligatory for construction contracts was described by Dyson J (as he then was) in Macob Civil Engineering Limited v Morrison Construction Limited (1999) BLR 93 at 97. It was to provide a speedy mechanism for settling disputes under construction contracts on a provisional interim basis. The statutory provisions have in general been salutary. But it is common experience that the policy of the statute is sometimes not achieved – as when a large dispute unrelated to immediate cash flow and not suitable for speedy resolution is oppressively squeezed into the short timetable required by the Act; or when what was intended to be an inexpensive procedure generates very large costs. It is not suggested that the first of these applies to Parkcare's reference to adjudication in the present case. But the reference certainly did generate very large costs.",
+            "expected": [
+                "Macob Civil Engineering Limited v Morrison Construction Limited (1999) BLR 93 at 97"
+            ]
+        },
+        {
+            "text": "The meaning which a document … would convey to a reasonable man is not the same thing as the meaning of its words. The meaning of words is a matter of dictionaries and grammar; the meaning of the document is what the parties using those words against the relevant background would reasonably have been understood to mean. The background may not merely enable the reasonable man to choose between the possible meanings of words which are ambiguous but even (as occasionally happens in ordinary life) to conclude that the parties must, for whatever reason, have used the wrong words or syntax: see Mannai Investments Co. Ltd v. Eagle Star Life Assurance Co. Ltd [1997] AC 749.",
+            "expected": [
+                "Mannai Investments Co. Ltd v. Eagle Star Life Assurance Co. Ltd [1997] AC 749"
+            ]
+        },
+        {
+            "text": "Mr Tregear then referred to the commentary on this passage in the judgment of Hoffmann LJ (as he then was) in Co-operative Wholesale Society Ltd v National Westminster Bank plc [1995] 1 EGLR 97 at 99F as follows: \"This robust declaration does not, however, mean that one can rewrite the language which the parties have used in order to make the contract conform to business commonsense. But language is a very flexible instrument and, if it is capable of more than one construction, one chooses that which seems most likely to give effect to the commercial purpose of the agreement.\" In the present case, says Mr Tregear, the language is not capable of more than one construction. All Antaios allows you to do is to choose between two viable meanings. Here there is only one. One of Mr Walker's submissions – that the words \"as part of his decision\" are unnecessary and can be notionally left out – is not a solution. That would be illegitimate rectification.",
+            "expected": [
+                "Co-operative Wholesale Society Ltd v National Westminster Bank plc [1995] 1 EGLR 97 at 99F"
+            ]
+        },
+        {
+            "text": "Where there has been no transfer of the reversion, it is clear that the tenant can in principle set off against its liability for rent, a claim for damages arising from a breach by the landlord of a term of the agreement from the lease, as well as any claim against the landlord for a breach of the provision of the lease itself. That point has been regarded as conclusively determined by the judgment of Forbes J in British Anzani (Felixstowe) Limited v International Marine Management (UK) Ltd [1977] 1 QB 137, a decision which has been approved on a number of occasions in this court, for example Connaught Restaurants v Indoor Leisure [1994] 1 WLR 501 at 505C and 511C, Mortgage Corporation v Ubah [1996] 73 P&CR at 500 and 507, and Muscat v Smith [2003] 1 WLR 2853 paragraph 9. Accordingly, it is common ground in this case that, had the WDA not assigned the reversion to the lease to Edlington, Fenner would be able to settle this claim for damages under the building agreement against its liability for rent.",
+            "expected": [
+                "British Anzani (Felixstowe) Limited v International Marine Management (UK) Ltd [1977] 1 QB 137",
+                "Connaught Restaurants v Indoor Leisure [1994] 1 WLR 501 at 505C and 511C",
+                "Mortgage Corporation v Ubah [1996] 73 P&CR at 500 and 507",
+                "Muscat v Smith [2003] 1 WLR 2853 paragraph 9"
+            ]
+        },
+        {
+            "text": "The effect of section 136 of the Law of Property Act 1925 (\"section 136\"), which reenacted with some amendments section 25(6) of the Supreme Court of Judicative Act 1873, was to do away with the common law requirement that the assignee of the right to recover the debt or of any other chose in action would have to sue in the assignor's name, provided that the assignment satisfied certain conditions. Section 136, like its statutory predecessor, by its terms preserves the equitable rule that the debtor can rely on any rights of set-off which arose before he had notice of assignment – see per Phillips J in Pfeiffer GmbH v Arbuthnot Factors Limited [1988] 1WLR 150 (1623).",
+            "expected": [
+                "Pfeiffer GmbH v Arbuthnot Factors Limited [1988] 1WLR 150 (1623)"
+            ]
+        },
+        {
+            "text": "However, as Mr Fancourt QC, who appears with Mr Peters for Edlington argues, the contention that a liability to pay damages from the accrued breach of covenant runs with the reversion (or with the term) is an entirely different notion, and it is one which appears to me to be contrary to principle. Indeed the contention is difficult to reconcile with the decision of Garland J in Duncliffe v Caerfelin Properties Ltd [1989] 2 EGLR 38. That decision, which is rightly accepted as correctly decided by Mr Lundie, and was also so treated by Buxton LJ in paragraphs 28 and 41 of Muscat, was to the effect that a transferee of the reversion could not be held liable by the tenant for breaches of a landlord's covenant committed by the transferor, even though the covenant in question bound the transferee, who would of course be liable for any breach of the covenant after the transfer. The decision was based on section 141 and 142 of the 1925 Act, but it applies equally in a case such as this where the relevant provisions are sections 3 and 23 of the 1995 Act.",
+            "expected": [
+                "Duncliffe v Caerfelin Properties Ltd [1989] 2 EGLR 38"
+            ]
+        },
+        {
+            "text": "High authority suggests that a purchaser of land and in particular for present purposes a reversion to a lease, will take an interest subject to an equitable right only (a) where he has notice, including of course a deemed notice, of the right; and (b) where that right is \"such that it creates a legal or equitable estate or interest in [that] land\" – per Lord Upjohn in National Provincial Bank Limited v Ainsworth [1965] AC 1175 at 1238 and also per Lord Wilberforce in the same case at 1253 to 1254. As is clear from that case, a purchaser of a legal estate in land is not bound by any personal obligation of the vendor even though it may fairly be said that the personal obligation relates to the land in question. By parity of reasoning, in the present case the right to claim a set-off against rent, while it can be said to relate to the lease in the sense that it is being invoked to impeach the tenant's liability to pay rent, is in reality a \"mere\" claim for money, not a right which can be said to be in anyway proprietary. Additionally, although not essential for present purposes, it is a claim which arises from a mere contractual right against the original landlord under an obligation which cannot, after the transfer of the reversion, be invoked against the successor of that landlord.",
+            "expected": [
+                "National Provincial Bank Limited v Ainsworth [1965] AC 1175 at 1238"
+            ]
+        },
+        {
+            "text": "By contrast in Re West Canadian Collieries Ltd [1962] Ch 370 notice of the general meeting was sent to members, but was not sent to a small number of members whose address details had been taken out of the mailing list arrangements that were set up on the occasion of a previous mailing, for entirely innocuous reasons, but should have been put back for the purposes of the notice of the meeting. That was inadvertently overlooked at the time of giving notice of the meeting and the details were not added back, so they did not get their notices. Plowman J held that that was an accidental omission.",
+            "expected": [
+                "Re West Canadian Collieries Ltd [1962] Ch 370"
+            ]
+        },
+        {
+            "text": "Against this background, Miss Rose submitted that we should apply the reasoning of this court as explained in paragraphs 41 to 46 of the judgment of Brooke LJ in Tanfern Limited v Cameron-MacDonald and another (Tanfern) [2000] 1 WLR 1311, a judgment with which Lord Woolf MR (as he then was) and Peter Gibson LJ agreed. Mr. Phipps had had a long and careful hearing in front of the PCC. He had had a full and careful hearing on appeal by Newman J in the Administrative Court. In these circumstances, she submitted, AJA 1999 section 55(1) applied.",
+            "expected": [
+                "Brooke LJ in Tanfern Limited v Cameron-MacDonald and another (Tanfern) [2000] 1 WLR 1311"
+            ]
+        },
+        {
+            "text": "There is no obligation on the PCC to give reasons for finding the facts in the charges proved (Gupta v GMC [2002] 1 WLR 1691 paras 10-14). The narrative form of the charges and the notice to the practitioner informs him or her of the facts in issue in connection with the chargers. But whilst the general rule is well established, this case demonstrates that a lack of specificity in the charges and consequently in the reasons can give rise to difficulty, in particular, in this court on appeal. The court has had to travel through the nine lever arch files to see whether unfairness had occurred.",
+            "expected": [
+                "Gupta v GMC [2002] 1 WLR 1691 paras 10-14"
+            ]
+        },
+        {
+            "text": "The position as to the duty of the Professional Conduct Committee to give reasons, as presently understood, is to be found in Selvanathan v General Medical Council. In that case the amended allegation against the practitioner was to the effect that he had knowingly given a false and misleading response to an inquiry by his local health authority in relation to a complaint by a patient. The evidence against the practitioner was all agreed and the committee's decision depended on the inferences drawn from that evidence and from the oral evidence given by the practitioner. After considering the evidence, the committee decided that particular heads of the charge had been proved. The committee gave no reasons for its decision. The practitioner appealed to this Board on the basis that the committee should have given its reasons for finding against the practitioner on the charge that he had known that his response to the health authority had been false and misleading. Giving the decision of the Board, Lord Hope of Craighead first drew attention to the nature and composition of the committee, comprising medical practitioners and lay members, acting with the legal advice of their assessor. The rules required the committee, as a committee, to reach a view on the matters for its determination and there was no provision for expressions of dissent. In these circumstances, said Lord Hope at p 7- Whilst I fully accept that the instant case is not a proper forum for the promulgation of guidelines, my provisional view is that paragraph 14 of the decision of the Privy Council in Gupta v GMC identifies an approach which reflects current norms of judicial behaviour. In every case, as it seems to me, every Tribunal (including the PCC of the GMC) needs to ask itself the elementary questions: is what we have decided clear? Have we explained our decision and how we have reached it in such a way that the parties before us can understand clearly why they have won or why they have lost?",
+            "expected": [
+                "Selvanathan v General Medical Council",
+                "Gupta v GMC "
+            ]
+        },
+        {
+            "text": "would in this instance respectfully draw attention to the following matters. First, it was not necessary for Miss Rose to develop any submissions on the points which my Lord makes in the paras. cited, and therefore we have not heard what she would have submitted, no doubt very helpfully, on this point. We do not know what the practical implications are: No-one would want to cause unnecessary delays in the delivery of decisions by the GMC. That would not be in the public interest. By contrast with this court, the Privy Council had enormous experience in dealing with these appeals and we should not lightly cast aside the benefit of that heritage. Indeed I would say that in this particular field the judge was right to treat the decision in Gupta as binding on him unless it could not stand with a decision of this court or of the House of Lords. If the relevant decision of the Privy Council was inconsistent with a decision of the House of Lords, this court would in turn have to take account of the what was recently decided by the Criminal Division of this court in R v James, R v Karimi [2006] 1All ER 759. Secondly, the decision in English v Emery Reimbold does not encourage appeals on the grounds of adequacy of reasons: see for example paras. 30 and 53 to 57 of the judgment of the court. In my judgment the English case establishes that a decision of a court does not infringe article 6 or the common law on the grounds that the reasons are not spelt out if the reasons can be deduced from other sources to which reference may properly be made: see the judgment in the English case at the paras already cited and para. 26. Applying that to this case, to the extent that the issue was for example whether Mr Phipps' explanations for his misstatements were accepted, it seems to me that Mr Phipps can have little doubt that the reason why he lost is that the GMC found his explanations incredible in the light of the evidence and general matters of practice of which both would be aware.",
+            "expected": [
+                "R v James",
+                "R v Karimi [2006] 1All ER 759",
+                "English v Emery Reimbold"
+            ]
+        },
+        {
+            "text": " It is elementary that a national measure purporting to implement a Directive must be interpreted \"as far as possible, in the light of the wording and the purpose of the Directive in order to achieve the result pursued by the latter\": Marleasing [1990] ECR 1-4135. I should refer also to the decision of their Lordships' House in Litster [1990] 1 AC 546, where Lord Oliver said this at 559: \"If the [domestic] legislation can reasonably be construed so as to conform with those obligations – obligations which are to be ascertained not only from the wording of the relevant Directive but from the interpretation placed upon it by the European Court of Justice at Luxembourg – such a purposive construction will be applied even though, perhaps, it may involve some departure from the strict and literal application of the words which the legislature has elected to use.\" In the same context I should cite Commissioners v IDT [2006] EWCA Civ 29, paragraph 82, per Arden LJ: 'In the context… of legislation which requires to be construed in a way which is compatible with European Union law or with the rights conferred by the European Convention on Human Rights, the English courts can adopt a construction which is not the natural one. The process, however, remains one of interpretation: the obligation imposed by the Court of Justice is only to interpret national law in conformity with a directive 'so far as possible'.",
+            "expected": [
+                "Marleasing [1990] ECR 1-4135",
+                "Litster [1990] 1 AC 546",
+                "Commissioners v IDT [2006] EWCA Civ 29"
+            ]
+        },
+        {
+            "text": "  27 April 2004 the application for judicial review was heard by Collins J on the basis of an amended claim form which sought the quashing of the assessment of 5 March. He granted the application and quashed the assessment. Slough now appeal against that order. The appeal requires consideration under two headings: (1) Was Collins J correct to find that this case fell within section 21 of the 1948 Act? (2) Even if he was, have subsequent events taken the case outside section 21? The subsequent events include the Secretary of State's refusal of the Article 3 claim on 12 November 2004, the issue of removal directions on 5 March 2005, M's successful appeal against the removal directions on asylum (not Article 3) grounds on 30 December 2005 and the Secretary of State's application for a statutory review of the decision of the Asylum and Immigration Tribunal dated 30 December 2005 (which application is currently stayed in the Administrative Court, pending judgment in the Court of Appeal in the case of AA, concerning involuntary return to Zimbabwe, which judgment was given, in the Secretary of State's favour on 12 April 2006: [2006] EWCA Civ 401 ). Before considering the present appeal under the two headings to which I have referred, it is necessary to summarise the judgment of Collins J [2004] EWHC 1109 (Admin).",
+            "expected": [
+                "[2006] EWCA Civ 401",
+                "Collins J [2004] EWHC 1109 (Admin)"
+            ]
+        },
+        {
+            "text": "This reflects the way in which the exclusion of late applicants from asylum support under section 55 is softened by section 55(5), as to which see R(Adam, Limbuela and Tesema) v Secretary of State for the Home Department [2005] UKHL 66 In AW (above), Lloyd-Jones J concluded that if, in the case of a failed asylum-seeker who otherwise satisfies the criteria of section 21(1) and (1A), the provision of support is necessary for the purpose of avoiding a breach of that person's Convention rights, that provision is to be made by the local authority pursuant to section 21 rather than by the Secretary of State pursuant to section 4 of the Immigration and Asylum Act 1999, which provides for \"hard cases\" support.",
+            "expected": [
+                "R(Adam, Limbuela and Tesema) v Secretary of State for the Home Department [2005] UKHL 66"
+            ]
+        },
+        {
+            "text": " There has been no detailed judicial consideration of section 97, though it has been referred to in passing in Kelly v BBC [2001] Fam 59 at 78f and HM Attorney General v Pelling [2005] EWHC 414 (Admin); [2006] 1 FLR 93 at para [28]. It was also briefly mentioned in the form in which the section was originally enacted in the Children Act 1989 (i.e. as relating only to proceedings in the Magistrates' Court) in Re: PB at 768 G-H. Referring to the question of privacy for proceedings in the magistrates' courts, Butler-Sloss LJ said:",
+            "expected": [
+                "Kelly v BBC [2001] Fam 59 at 78f ",
+                "HM Attorney General v Pelling [2005] EWHC 414 (Admin)"
+            ]
+        },
+        {
+            "text": "Like the President, I accept the joint submissions of Mr. Price and Mr. Jubb. I am, of course, conscious that we have not heard the alternative viewpoint argued. However, apart from the natural meaning of the words used in the section, I am, I think, particularly influenced by three factors. The first is the fact that the section creates a criminal offence (CA 1989, section 97(6)) and therefore needs to be construed strictly. The second is that the use of the phrase \"as being involved in any proceedings\" in CA 1989, section 97(2)(a) connotes the identification of a period when those proceedings are pending and not concluded. The third is that the thrust of the authorities - to which I will refer later in this judgment - is that there is no special privilege accorded to children who are the subject matter of proceeding save as is strictly necessary for their protection in the context of the proceedings themselves: see R v Central Independent Television PLC [1994] Fam 192 at 207 per Waite LJ",
+            "expected": [
+                "R v Central Independent Television PLC [1994] Fam 192 at 207"
+            ]
+        },
+        {
+            "text": "The President has, in his judgment, considered further the decision of the House of Lords in Re S (A Child) (Identification: Restrictions on Publication) [2005] 1 AC 593, (Re S) and his own decision in A Local Authority v W, L, W, T and R (by the Children's Guardian) [2006] 1 FLR 1. Whilst Re S is plainly a decision of considerable significance in its emphasis on the balance to be struck between Article 8 and Article 10 rights, it does not address either of the issues which, in my judgment are at the heart of this case, namely (1) the construction of CA 1989, section 97(2); and (2) the circumstances in which the court is properly seized of an issue in proceedings under CA 1989; in which the child's welfare requires the court to take action to prevent the child's exposure by one of her parents to a particular form of publicity which, in the view of the court, is inimical to her welfare. In my judgment, the principles applied in the case of Re Z (A minor) (Freedom of Publication [1997] Fam 1 (Re Z) which I examine below continue to apply in such a case.",
+            "expected": [
+                "Re S (A Child) (Identification: Restrictions on Publication) [2005] 1 AC 593",
+                "Re Z (A minor) (Freedom of Publication [1997] Fam 1"
+            ]
+        },
+        {
+            "text": "  As is also well known, the result of the analysis In re Z [1997] Fam 1 is that in relation to the media the exercise of the court's inherent parens patriae or wardship jurisdiction is divided into three parts: the first part, in which the jurisdiction is not exercisable at all and the child is left to whatever remedies against the media the law would give an adult in comparable circumstances; a second part in which the jurisdiction is exercisable, but in circumstances where, because the court is exercising only its \"protective\" jurisdiction, the child's interests are not paramount and where a so-called balancing exercise has to be performed; and the third part, in which, because the court is exercising its \"custodial\" jurisdiction, the child's interests are paramount. Well known examples of cases falling into the first category, where no injunction can be granted, are In re X (A Minor) (Wardship: Jurisdiction) [1975] Fam 47; R v Central Television plc [1994] Fam 192 and M v British Broadcasting Corporation [1997] 1 FLR 51. Familiar examples of cases falling into the second category, where there is a so-called balancing exercise, are In re M and N (Minors) (Wardship: Publication of Information) [1990] Fam 211 and In re W (A Minor) (Wardship: Restrictions on Publication) [1992] 1 WLR 100. So far as I am aware, and none of the counsel appearing before me was able to identify any other example, In re Z [1997] Fam 1 is the only reported case falling within the third category.",
+            "expected": [
+                "In re Z [1997] Fam 1",
+                "In re X (A Minor) (Wardship: Jurisdiction) [1975] Fam 47",
+                "R v Central Television plc [1994] Fam 192",
+                "M v British Broadcasting Corporation [1997] 1 FLR 51",
+                "[1990] Fam 211",
+                "In re W (A Minor) (Wardship: Restrictions on Publication) [1992] 1 WLR 100",
+                "In re Z [1997] Fam 1"
+            ]
+        },
+        {
+            "text": "The decision of the Divisional Court in Her Majesty's Attorney-General v Pelling [2006] 1 FLR 93 is also plainly relevant, although in my judgment equally plainly distinguishable from the facts of the instant case. In that case, the contempt with which Dr. Pelling was charged was the deliberate publication of a judgment which had been (equally deliberately) delivered in private. Dr Pelling's argument that the common law, combined with ECHR entitled him to publish the judgment has been concluded against him both by this court and by the European Court of Human Rights – see Re PB (Hearings in Open Court) [1996] 2 FLR 765 and B v United Kingdom; P v United Kingdom [2001] 2 FLR 261. It was not accordingly open to Dr Pelling to reopen the question. The Divisional Court, unsurprisingly in my view, concluded that in proceedings under CA 1989, the protection of the interests of the child concerned was a function of the administration of justice, and that the publication of a judgment, which the court had determined should be kept private, was an interference with the course of justice. In my judgment that is plainly correct, but it is equally not determinative of the issues in the present case.",
+            "expected": [
+                "Her Majesty's Attorney-General v Pelling [2006] 1 FLR 93",
+                "Re PB (Hearings in Open Court) [1996] 2 FLR 765",
+                "B v United Kingdom",
+                "P v United Kingdom [2001] 2 FLR 261"
+            ]
+        },
+        {
+            "text": "In Re W, L, W, T and R the President granted an injunction restraining the identification of the parents of children whose mother was the subject of criminal proceedings for (and had pleaded guilty to) having knowingly infected the father of one of the children with HIV. He held that the balance between the Article 8 rights of the children and the Article 10 right to freedom of expression fell in favour of the children's Article 8 rights. He did so for the reasons set out in the judgment, which I need not repeat.",
+            "expected": []
+        },
+        {
+            "text": "In relation to costs, even if the proceedings below had been a pure permission application, the judge could have awarded the PCT its costs if successful: see Mount Cook v Westminster CC [2003] EWCA Civ 1346. The PCT were obliged to attend in view of the nature of the application made. They were wholly successful and there was no reason why they should not have been entitled to their costs; the fact that the PCT decided at its meeting not to suspend him showed how misconceived the application was; indeed all the materials suggest that the PCT had acted entirely reasonably. There is no prospect of the applicant persuading a court that the judge was wrong in the exercise of his discretion as to costs. We have before us applications by the first and second, and third and fourth defendants. Each pair seek an order that the appeal be struck out, either now, or if the interim orders costs are not paid, within 21 days. There seems to be no doubt that he has been served with these applications, at least he has been served with these applications at the addresses he gave to the Appeals Office. There is equally no doubt that the court has jurisdiction to make the orders sought; see Hammond Suddard Solicitors v Agrichem International Holdings Ltd [2001] EWCA Civ 2065, where the relevant rules are discussed and it is held that there is a jurisdiction.",
+            "expected": [
+                "Mount Cook v Westminster CC [2003] EWCA Civ 1346",
+                "Hammond Suddard Solicitors v Agrichem International Holdings Ltd [2001] EWCA Civ 2065"
+            ]
+        },
+        {
+            "text": "I pause there; the criticism made of that observation in Igen v Wong was that section 63A had, or may have, reversed some observations of Neal LJ in King v Great Britain – China Centre [1992] ICR 516, to the effect that it was permissible, not obligatory, as section 63A seemed to make it obligatory, to infer discrimination in the absence of an explanation. Simon Brown LJ then went on to say:",
+            "expected": [
+                "King v Great Britain – China Centre [1992] ICR 516"
+            ]
+        },
+        {
+            "text": "The basis of the criticism of the Employment Tribunal is that the tribunal simply misunderstood the implications of section 63A, with the result that its whole view of the case, and its whole approach to the evidence, was distorted. At the time at which the tribunal heard this case, the applicable guidance as to interpretation and application to section 63A had given by the Employment Appeal Tribunal in a case called Barton v Investec Henderson Crossthwaite Securities Ltd [2003] IRLR 332. A week after the Employment Appeal Tribunal determined the case with which we are concerned, this court addressed that matter in the case of Igen v Wong [2005] EWCA Civ 142. The Employment Appeal Tribunal in Barton had set out a number of guidelines for the attention of Employment Tribunals and others who had to apply section 63A. In Igen v Wong those guidelines were repeated and largely approved, with one or two small additions; this court however at the same time emphasising two elementary points, the first being that guidelines are indeed only guidelines, and the second being that what courts must apply is, at the end of the day, the words of the statute and not glosses upon or attempts to explain those words by other tribunals. It will be necessary in dealing with the arguments advanced in this case, for me to say something about the Barton and Igen guidelines, because a complaint is made that the Employment Tribunal in our case failed to follow them to the extent that its determination was, as I have said, irrevocably damaged. I wish however to emphasise that we have not heard a focused argument, I fear I have to say, about the status of the Igen v Wong guidelines; nor have we heard, or is it necessary to hear, adversary argument about them. I am aware it is likely that that question may return to this court in a more formal way in the coming months, and nothing that I say about the content of the guidelines should be regarded as in any way authoritative, if only for this reason: that I go into them for the purpose of explanation only, because as will rapidly become clear, and was clear to both tribunals below, this case does not even meet the preliminary requirement for the application of section 63A.",
+            "expected": [
+                "Barton v Investec Henderson Crossthwaite Securities Ltd [2003] IRLR 332",
+                "Igen v Wong [2005] EWCA Civ 142",
+                "Igen v Wong"
+            ]
+        },
+        {
+            "text": "The five year period ended on 22nd September l987. By that date, when all swaps had been effected, the Council had received from the Bank £384,409 more than it had paid. There matters might have rested but for the fact that on lst November l989 the Divisional Court declared, as subsequently upheld in the House of Lords in Hazell v Hammersmith and Fulham London BC [1992] 2 A.C. l, that such an agreement as the Council had apparently concluded with the Bank was ultra vires the Council and so void from the start.",
+            "expected": [
+                "House of Lords in Hazell v Hammersmith and Fulham London BC [1992] 2 A.C."
+            ]
+        },
+        {
+            "text": "In section (2) Hobhouse J analysed the restitutionary claim of money had and received under five headings of which only the second “void contracts and absence of consideration” is directly material. He recorded two arguments for the banks; first that payments made under a void contract do not amount to consideration for the purposes of the law of restitution; second, that the banks did not get the benefit for which they had bargained, sc. payments which would discharge a legal obligation and which, therefore, the banks might lawfully retain, but, by contrast, obtained under a void contract money which the local authority was prima facie entitled to recover. After referring to Rowland v Divall [1923] 2 K.B. 500, Linz v Electric Wire Co. of Palestine Ltd [1948] A.C. 371 and Rover International Ltd v Cannon Film Sales Ltd (No.3) [1989] l W.L.R. 912 he said “In my judgment, the correct analysis is that any payments made under a contract which is void ab initio, in the way that an ultra vires contract is void, are not contractual payments at all. They are payments in which the legal property in the money passes to the recipient, but in equity the property in the money remains with the payer. The recipient holds the money as a fiduciary for the payer and is bound to recognise his equity and repay the money to him. This relationship and the consequent obligation have been recognised both by courts applying the common law and by Chancery courts. The principle is the same in both cases: it is unconscionable that the recipient should retain the money. Neither mistake nor the contractual principle of total failure of consideration are the basis for the right of recovery.”",
+            "expected": [
+                "Rowland v Divall [1923] 2 K.B. 500",
+                "Linz v Electric Wire Co. of Palestine Ltd [1948] A.C. 371",
+                "Rover International Ltd v Cannon Film Sales Ltd (No.3) [1989] l W.L.R. 912"
+            ]
+        },
+        {
+            "text": "This view is, in my opinion, consistent with the decision of this court in Dendy v. Evans [1910] 1 KB 263. A lessor had claimed to forfeit a lease in breach of covenant to keep in repair. He had issued proceedings and served them upon the lessee who had sub-let the premises to the defendant with a similar covenant to keep the premises in repair. After the proceedings had been served upon the lessor, he assigned the lease to the plaintiff who having obtained relief from forfeiture under s.14(2) of the Conveyancing and Law of Property Act 1881 on terms that he should hold the premises according to the old lease without any new lease brought an action against the defendant for rent due upon the underlease subsequent to the issue and service of the writ to recover possession. The defendant argued that the issue of the writ for possession by the lessor was an irrevocable election by him to treat the lease as void and made the lease void thus putting an end to the underlease. Cozens-Hardy M.R. rejected this argument. He held that the order relieving the plaintiff from forfeiture of the lease and ordering that she held the demised premises according to the lease without any new lease meant that the right of re-entry for forfeiture was got rid of. He said at page 269:",
+            "expected": [
+                "Dendy v. Evans [1910] 1 KB 263"
+            ]
+        },
+        {
+            "text": "A further consideration is the general purpose of the legislative scheme. In O'Rourke v Camden LBC [1990] 3 WLR 86 at p.90, Lord Hoffmann said: \".... the Act is a scheme of social welfare, intended to confer benefits at the public expense on grounds of public policy. Public money is spent on housing the homeless not merely for the private benefit of people who find themselves homeless but on grounds of general public interest; because, for example, proper housing means that people will be less likely to suffer illness, turn to crime or require the attention of other social services.\" In Ex parte Puhlhofer [1986] AC 484 at p.517, Lord Brightman said:",
+            "expected": [
+                "O'Rourke v Camden LBC [1990] 3 WLR 86 at p.90",
+                "Ex parte Puhlhofer [1986] AC 484 at p.517"
+            ]
+        },
+        {
+            "text": "Stuart-Smith LJ distinguished between three types of situation. In his first category fell cases in which the defendant's negligence consisted of some positive act or misfeasance and the question of causation was one of historical fact, in which event proof on the balance of probability prevailed. In the second category fell cases in which the defendant's negligence consisted of an omission where causation depended not upon a question of historical fact but upon the answer to the hypothetical question 'what would the plaintiff have done if there had been no negligence?'; here the answer is provided by the application of proof on the balance of probabilities. In the third category fell cases in which the plaintiff's loss depended upon the hypothetical action of a third party, whether in addition to action by the plaintiff or independently of it; here the plaintiff need only show that he had a substantial chance of the third party acting in such a way as to benefit him. The Court of Appeal held that the plaintiffs needed to show only that there was a significant chance, which could be less than likely, that the third party would have been prepared to offer them this protection and held that the loss of such a chance had been made out and it was assessed at 50%. This Court adopted a similar approach to the valuation of a chance in Stovold v Barlows (The Times, 30 October 1995), Stuart-Smith LJ presiding). The Court evaluated the chance as 50% on the ground that a successful sale depended on two contingencies, first that, if the deeds had been posted as instructed, they would in fact have arrived by the stipulated date, and secondly, that even if they had arrived by then, the prospective purchaser would not have decided to buy another house. A similar test in a personal injury award was adopted by Mr Roger Bell QC (now Bell J) in Anderson v Davis [1993] PIQR Q87, when he held that the plaintiff, had it not been for his injuries, would have had a two-thirds chance of obtaining promotion as a principal lecturer. He said at p293:",
+            "expected": [
+                "Stovold v Barlows",
+                "Anderson v Davis [1993] PIQR Q87"
+            ]
+        },
+        {
+            "text": "It is for the plaintiff to prove both the fact of the loss and the quantum of damage (McGregor on Damages 16th Ed. para.357). Moreover, the assessment of damages is subjective in the sense that the loss is loss sustained by the actual plaintiff, not some hypothetical plaintiff (see per Phillimore J. in Thomas McGhie & Sons Ltd v British Transport Commission [1962] 2 All ER 646.656G).This case lasted for 30 days and many complex issues arose, many of which have not concerned this Court. Counsel have to direct the evidence, cross-examination and their submissions to the live issues in the case. They should not waste time tilting at windmills. It is important, if the judge has it in mind to adopt an approach to some important issue which has not been canvassed at trial that he should give the parties a proper opportunity to deal with it. In Hoecheong Products Ltd v Cargill Ltd [1995] 1 WLR 404 at 409A-C, Lord Mustill said: Mr Field submitted that this Court should not interfere with the judge's assessment. He had the feel of the case and was in a better position after a long hearing to judge the effect of the overstated profit than this Court. We cannot accept this submission. A similar submission was made to the Court of Appeal in Jade Tower Ltd v NM Schroder Financial Management Ltd (unreported transcript 6 April 1995). In his judgment agreeing with Nourse and Kennedy LJJ, Evans LJ said :",
+            "expected": [
+                "Thomas McGhie & Sons Ltd v British Transport Commission [1962] 2 All ER 646.656G",
+                "Hoecheong Products Ltd v Cargill Ltd [1995] 1 WLR 404 at 409A-C",
+                "Jade Tower Ltd v NM Schroder Financial Management Ltd (unreported transcript 6 April 1995)"
+            ]
+        }
+    ]
+}

@@ -1,5 +1,5 @@
-const annotate = require('./src/annotation');
-const test_case = require('./dataset.json');
+const annotate = require('.');
+const test_case = require('./../dataset/dataset.json');
 
 const sum = (arr) => arr.reduce((a, b) => a + b, 0);
 
