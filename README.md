@@ -16,9 +16,13 @@ We aims to detect case law citation on law texts using heuristic approach. We em
 | 7  | Multiple Reported                                     | * Prebble v Television New Zealand Ltd [1995] 1 AC 321, [1994] 3 WLR 970, [1994] 3 All ER 407 (PC)<br><br>* Neale v Hereford and Worcester CC [1986] ICR 471, [1986] IRLR 168 (CA)                                                                                                                                                                                                                                                            | Done   |
 | 8  | Other                                                 | K (Infants) [1963] Ch 381                                                                                                                                                                                                                                                                                                                                                                                                                     | To Do  |
 
-### Test Case
 
-We also collect some piece ow law text as test case. 
+### Dataset
+
+We also collect some piece of law text as test case. Please see `dataset` folder. 
+
+
+### Test Case
 
 For evaluating precision and recall please run
 
