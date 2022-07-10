@@ -4,7 +4,7 @@
             "text": "Collins J decided that the Administrative Court had jurisdiction to hear A's challenge: [2008] 4 All ER 511 (4 July 2008). The Court of Appeal (Laws and Dyson LJJ, Rix LJ dissenting) reversed that decision, holding that exclusive jurisdiction lies with the IPT: [2009] 3 WLR 717 (18 February 2009).",
             "expected": [
                 "[2008] 4 All ER 511 (4 July 2008)",
-                "2009] 3 WLR 717 (18 February 2009)"
+                "[2009] 3 WLR 717 (18 February 2009)"
             ]
         },
         {
@@ -35,7 +35,7 @@
         {
             "text": "Admittedly the Esbester line of cases were decided in the context of article 8 (rather than article 10) and, understandably, Strasbourg attaches particular weight to the right to freedom of expression. Neither A nor Justice, however, were able to show us any successful article 10 cases involving national security considerations save only for Sunday Times v UK (No. 2) (1992) 14 EHRR 229 (Spycatcher) where, of course, the disputed material was already in the public domain.",
             "expected": [
-                "Sunday Times v UK (No. 2) (1992) 14 EHRR 229"
+                "Sunday Times v UK (No. 2) (1992) 14 EHRR 229 (Spycatcher)"
             ]
         },
         {
@@ -93,7 +93,8 @@
         {
             "text": "In answer to the case advanced by Mr Greenwood, Mr Blake submitted that the mere fact that the decision sought to be reviewed related to the exercise of prerogative power by the Foreign Office did not place a complete embargo on relief being obtained from the court. He referred to ex parte Everett [1989] 1 QB 811 relating to the issue of passports, and to Lewis v A-G of Jamaica [2001] 2 AC 50 a case concerned with the prerogative of mercy, where a procedural irregularity was held to be the subject of review. He, in his turn, relied on the GCHQ case where he pointed out that the court held that executive action was not immune from judicial review merely because it was carried out in pursuance of a power derived from a common law or prerogative, rather than a statutory source. This is an authority to which we will return.",
             "expected": [
-                "Lewis v A-G of Jamaica [2001] 2 AC 50"
+                "Lewis v A-G of Jamaica [2001] 2 AC 50",
+                "[1989] 1 QB 811"
             ]
         },
         {
@@ -174,7 +175,7 @@
             "text": "it is unnecessary to trace the history of official interception in the United Kingdom before 1985, which is uncontroversial and has been summarised on other occasions: see, for example, R v Preston [1994] 2 AC 130, 142, 147-148; R v P [2002] 1 AC 146, 155-157; The Interception of Communications in the United Kingdom (Cmnd 9438, 1985). It is enough to draw attention to four features of the practice as it then existed. First, telephones had for many years been tapped, and mail intercepted, pursuant to warrants issued by an appropriate secretary of state. Secondly, in cases culminating in criminal prosecution the tap or intercept was used for purposes of preventing and detecting crime, and not for the purpose of prosecuting culprits: the product of the tap or intercept was not relied on as evidence. Thirdly, there was no rule of law or practice which rendered inadmissible in criminal proceedings the product of any unofficial or private eavesdropping activity. While a trial judge might exclude such evidence in the exercise of his overriding discretion to ensure the fairness of a trial, he would not in the absence of special circumstances have been at all likely to do so. Fourthly, the process of interception, by whatever means, official or unofficial, of communications, whether public or private, was wholly unregulated by statute.",
             "expected": [
                 "R v Preston [1994] 2 AC 130, 142, 147-148",
-                "R v P [2002] 1 AC 146, 155-157;"
+                "R v P [2002] 1 AC 146, 155-157"
             ]
         },
         {
@@ -249,7 +250,8 @@
         {
             "text": "  Fourth, there is a wide range of public information which it is in the public interest to disseminate, including economic information, and also information which corrects a false impression or image. Mr Vassall-Adams referred in that connection to Campbell v MGN Ltd [2004] UKHL 22; [2004] 2 A.C. 457. In that case the claimant, an internationally famous fashion model, who had courted publicity, volunteered information to the media about her private life and stated publicly, but untruthfully, that she did not take drugs. The defendant newspaper published articles which disclosed her drug addiction and the fact that she was receiving therapy through Narcotics Anonymous, a self-help group, gave details of group meetings she attended and showed photographs of her in a street as she was leaving a group meeting. She claimed damages against the newspaper for",
             "expected": [
-                "Campbell v MGN Ltd [2004] UKHL 22; [2004] 2 A.C. 457"
+                "Campbell v MGN Ltd [2004] UKHL 22",
+                "[2004] 2 A.C. 457"
             ]
         },
         {
@@ -268,7 +270,8 @@
         {
             "text": " Mr Vassall-Adams emphasised that the decision whether or not to grant an injunction in the circumstances of the present case is not merely an exercise in unfettered judicial discretion but the carrying out of a careful assessment of proportionality. He cited in that connection the decision of the Court of Appeal in London Regional Transport v Mayor of London [2001] EWCA Civ 1491; [2003] E.M.L.R. 4. In that case the court upheld the decision of the first instance judge discharging an earlier interim injunction preventing the publication by the defendants of an expert report critical of the claimants' assessment of the value for money of a proposed public-private partnership (PPP) for the track maintenance function of the London Underground. ",
             "expected": [
-                "London Regional Transport v Mayor of London [2001] EWCA Civ 1491; [2003] E.M.L.R"
+                "London Regional Transport v Mayor of London [2001] EWCA Civ 1491",
+                "[2003] E.M.L.R."
             ]
         },
         {
@@ -808,7 +811,7 @@
         {
             "text": "The five year period ended on 22nd September l987. By that date, when all swaps had been effected, the Council had received from the Bank £384,409 more than it had paid. There matters might have rested but for the fact that on lst November l989 the Divisional Court declared, as subsequently upheld in the House of Lords in Hazell v Hammersmith and Fulham London BC [1992] 2 A.C. l, that such an agreement as the Council had apparently concluded with the Bank was ultra vires the Council and so void from the start.",
             "expected": [
-                "House of Lords in Hazell v Hammersmith and Fulham London BC [1992] 2 A.C."
+                "Hazell v Hammersmith and Fulham London BC [1992] 2 A.C."
             ]
         },
         {

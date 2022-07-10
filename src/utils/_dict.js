@@ -30,12 +30,16 @@ const DICT = {
             "to": "in"
         },
         {
-            "from": "the speech of(\\s\\w+){1,5}\\s+in",
+            "from": "speech\\sof(\\s[\\w\\%]+){1,5}\\s+in",
             "to": "speech in"
         },
         {
-            "from": "the decision(\\s?) of(\\s\\w+){1,5}\\s+in",
+            "from": "decision(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
             "to": "decision in"
+        },
+        {
+            "from": "ruling(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
+            "to": "rulings in"
         },
         {
             "from": "\\,?\\sand\\s",

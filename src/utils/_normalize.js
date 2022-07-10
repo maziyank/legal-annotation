@@ -17,10 +17,10 @@ const normalize = (txt) => {
     }
 
     // preserve
-    txt = txt.replace(/(\(\S+\))(?=.*\sv\.?\s)/gm, x => x.replace(/\(|\)/g, '-'));
-    txt = txt.replace(/(\(\S+\))(?=.*((\[\d{4}\])|(\(\d{4}\))|(\d{4})))/gm, x => x.replace(/\(|\)/g, '-'));
-    txt = txt.replace(/(?<=[A-Z]\w+)(\sof\s)(?=[A-Z])/gm, x => x.replace(' of ', ' %OF% '));
-    txt = txt.replace(/(?<=[A-Z]\w+)(\sfor\s)(?=[A-Z])/gm, x => x.replace(' for ', ' %FOR% '));
+    // txt = txt.replace(/(\(\S+\))(?=.*\sv\.?\s)/gm, x => x.replace(/\(|\)/g, '-'));
+    // txt = txt.replace(/(\(\S+\))(?=.*((\[\d{4}\])|(\(\d{4}\))|(\d{4})))/gm, x => x.replace(/\(|\)/g, '-'));
+    // txt = txt.replace(/(?<=[A-Z]\w+)(\sof\s)(?=[A-Z])/gm, x => x.replace(' of ', ' %OF% '));
+    // txt = txt.replace(/(?<=[A-Z]\w+)(\sfor\s)(?=[A-Z])/gm, x => x.replace(' for ', ' %FOR% '));
     return txt;
 }
 
