@@ -12,7 +12,7 @@ const GENERAL_REGEX = {
     FULL_COURTNAME: new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`),
     DIVISION: new RegExp(`((\\([\\w\\d]*\\)))`),
     COURT_ABBV: new RegExp(`((((\\s[A-Z]\\w*)){1,2})|((\\s([A-Z])([\\\.A-Z])+)))`),
-    PARTY_NAME: new RegExp(`(((\\s|^)+([\\\(\\-]?[A-Z][a-z\\,\\-]*[\\\)\\-]?)(\\s+(of|for|%FOR%|%OF%|and|in|plc|&|the|Co\\.))?)+)`)
+    PARTY_NAME: new RegExp(`(((\\s|^)+([\\\(\\-]?[A-Z0-9][a-z\\,\\-]*[\\\)\\-]?)(\\s+(of|for|%FOR%|%OF%|and|in|plc|&|the|Co\\.))?)+)`)
 }
 
 const GR = GENERAL_REGEX;

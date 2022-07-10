@@ -12,3 +12,4 @@ const cit_short = (text) => {
 }
 
 module.exports = {cit_short};
+

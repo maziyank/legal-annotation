@@ -1,5 +1,5 @@
 const DICT = {
-    prefix: ["on", "see", "appendix to", "in", "applied", "appeal", "accord", "cites", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for"],
+    prefix: ["on", "see", "appendix to", "in", "applied are", "applied is", "applied", "were", "appeal", "accord", "cites", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for"],
     normalizer: [
         {
             "from": "[sS]ee,? generally,",
@@ -28,6 +28,14 @@ const DICT = {
         {
             "from": "^In",
             "to": "in"
+        },
+        {
+            "from": "the speech of(\\s\\w+){1,5}\\s+in",
+            "to": "speech in"
+        },
+        {
+            "from": "the decision(\\s?) of(\\s\\w+){1,5}\\s+in",
+            "to": "decision in"
         },
         {
             "from": "\\,?\\sand\\s",

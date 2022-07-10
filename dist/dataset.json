@@ -4,7 +4,7 @@
             "text": "Collins J decided that the Administrative Court had jurisdiction to hear A's challenge: [2008] 4 All ER 511 (4 July 2008). The Court of Appeal (Laws and Dyson LJJ, Rix LJ dissenting) reversed that decision, holding that exclusive jurisdiction lies with the IPT: [2009] 3 WLR 717 (18 February 2009).",
             "expected": [
                 "[2008] 4 All ER 511 (4 July 2008)",
-                "2009] 3 WLR 717 (18 February 2009)"
+                "[2009] 3 WLR 717 (18 February 2009)"
             ]
         },
         {
@@ -54,7 +54,7 @@
         {
             "text": "In R v Kansal (No 2) [2002] 2 AC 69, 105-106 I said that section 7(1)(a) and section 7(1)(b) are designed to provide two quite different remedies. Section 7(1)(a) enables the victim of the unlawful act to bring proceedings under the Act against the authority. It is intended to cater for free-standing claims made under the Act where there are no other proceedings in which the claim can be made. It does not apply where the victim wishes to rely on his Convention rights in existing proceedings which have been brought against him by a public authority. His remedy in those proceedings is that provided by section 7(1)(b), which is not subject to the time limit on proceedings under section 7(1)(a) prescribed by section 7(5); see also Wilson v First County Trust Ltd (No 2) [2004] 1 AC 816, para 90. The purpose of section 7(1)(b) is to enable persons against whom proceedings have been brought by a public authority to rely on the Convention rights for their protection.",
             "expected": [
-                "R v Kansal (No 2) [2002] 2 AC 69",
+                "R v Kansal (No 2) [2002] 2 AC 69, 105-106",
                 "Wilson v First County Trust Ltd (No 2) [2004] 1 AC 816, para 90"
             ]
         },

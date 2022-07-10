@@ -54,7 +54,7 @@
         {
             "text": "In R v Kansal (No 2) [2002] 2 AC 69, 105-106 I said that section 7(1)(a) and section 7(1)(b) are designed to provide two quite different remedies. Section 7(1)(a) enables the victim of the unlawful act to bring proceedings under the Act against the authority. It is intended to cater for free-standing claims made under the Act where there are no other proceedings in which the claim can be made. It does not apply where the victim wishes to rely on his Convention rights in existing proceedings which have been brought against him by a public authority. His remedy in those proceedings is that provided by section 7(1)(b), which is not subject to the time limit on proceedings under section 7(1)(a) prescribed by section 7(5); see also Wilson v First County Trust Ltd (No 2) [2004] 1 AC 816, para 90. The purpose of section 7(1)(b) is to enable persons against whom proceedings have been brought by a public authority to rely on the Convention rights for their protection.",
             "expected": [
-                "R v Kansal (No 2) [2002] 2 AC 69",
+                "R v Kansal (No 2) [2002] 2 AC 69, 105-106",
                 "Wilson v First County Trust Ltd (No 2) [2004] 1 AC 816, para 90"
             ]
         },
@@ -73,7 +73,8 @@
         {
             "text": "The cases cited by Mr Greenwood unquestionably support the general proposition for which they were cited. It is not, however, a proposition that affords of no exception. Mr Greenwood accepted that there were exceptions to the rule. He submitted, however, that the exceptions applied only in exceptional circumstances and had no application to the facts of the present case. Examples of cases where the rule was not applied are Oppenheim v Cattermole [1976] AC 249, R v Secretary of State for the Home Department, ex parte Adan [2001] 2 AC 477 and Kuwait Airways Corp v Iraqi Airways Co (Nos 4 and 5) [2002] 2 WLR 1352. We shall revert to these decisions when we come to review the merits of the rival contentions.",
             "expected": [
-                "Oppenheim v Cattermole [1976] AC 249, R v Secretary of State for the Home Department, ex parte Adan [2001] 2 AC 477",
+                "Oppenheim v Cattermole [1976] AC 249", 
+                "R v Secretary of State for the Home Department, ex parte Adan [2001] 2 AC 477",
                 "Kuwait Airways Corp v Iraqi Airways Co (Nos 4 and 5) [2002] 2 WLR 1352"
             ]
         },
