@@ -8,13 +8,13 @@ const normalize = (txt) => {
     });
 
     // split if `and` found 
-    match_and_ = Array.from(txt.matchAll(RGX.AND));
-    if (match_and_) {
-        match_and_.forEach((ma, i) => {
-            index_and_ = ma.index + ma[0].length;
-            txt = txt.substring(0, index_and_ + i) + '\n' + txt.substring(index_and_ + i);
-        })
-    }
+    // match_and_ = Array.from(txt.matchAll(RGX.AND));
+    // if (match_and_) {
+    //     match_and_.forEach((ma, i) => {
+    //         index_and_ = ma.index + ma[0].length;
+    //         txt = txt.substring(0, index_and_ + i) + '\n' + txt.substring(index_and_ + i);
+    //     })
+    // }
 
     // preserve
     // txt = txt.replace(/(\(\S+\))(?=.*\sv\.?\s)/gm, x => x.replace(/\(|\)/g, '-'));
@@ -27,10 +27,16 @@ const normalize = (txt) => {
 const denormalize = (txt) => {
     if (!txt) return
     txt = txt.replace(/\-\S+\-/gm, x => `(${x.slice(1, x.length - 1)})`);
-    txt = txt.replace(' %OF% ', ' of ');
-    txt = txt.replace(' %FOR% ', ' for ');
+    // txt = txt.replace(' %OF% ', ' of ');
+    // txt = txt.replace(' %FOR% ', ' for ');
     txt = txt.trim();
-    txt = txt.replace(/,$/, "");
+    txt = txt.replace(/^\(/, "");
+    if (/\)$/.test(txt) && !(/\(.*/.test(txt))) {
+        txt = txt.replace(/\)$/, "");
+    }
+    
+    txt = txt.replace(/[\,\.]$/, "");
+    // txt = txt.replace(/,$/, "");
     return txt;
 }
 

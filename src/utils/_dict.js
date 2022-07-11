@@ -1,5 +1,5 @@
 const DICT = {
-    prefix: ["on", "see", "appendix to", "in", "applied are", "applied is", "applied", "were", "appeal", "accord", "cites", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for"],
+    prefix: ["on", "see",  "appendix to", "in", "was emphasised in", "applied are", "applied is", "applied", "were", "appeal", "accord", "cites", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for"],
     normalizer: [
         {
             "from": "[sS]ee,? generally,",
@@ -40,6 +40,22 @@ const DICT = {
         {
             "from": "ruling(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
             "to": "rulings in"
+        },
+        {
+            "from": "judgment(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
+            "to": "judgement in"
+        },
+        {
+            "from": "conclusion(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
+            "to": "rulings in"
+        },
+        {
+            "from": "approval(s)?\\sby(\\s[\\w\\%]+){1,6}\\s+in",
+            "to": "approval in"
+        },
+        {
+            "from": "(see\\s)?per(\\s[\\w\\%]+){1,6}\\s+in",
+            "to": "approval in"
         },
         {
             "from": "\\,?\\sand\\s",

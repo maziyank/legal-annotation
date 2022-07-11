@@ -3,16 +3,16 @@ const DICT = require("./_dict")
 
 const GENERAL_REGEX = {
     PREFIX: new RegExp(`((\\. +|\:|\\(|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|\\(|^|\\n|\\.\\s+`, "gm"),
-    YEAR: new RegExp("((\\[\\d{4}\\])|(\\(\\d{4}\\))|\\d{4})"),
-    V: new RegExp("(\\s[\\–\\-]?v[\\-\\.]?\\s)"),
-    NUM_OR_SLASHEDNUM: new RegExp("(\\d+(\\/\\d+)*(\\,\\s\\d+)*(\\-\\d+)*)"),
-    PINPOINT: new RegExp(`(((at)|(at pp)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|(at par[a]?[s]?)|(at paragraph))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+))*)|(\\[\\d+\\]((\\s*-\\s*)\\[\\d+\\])*)))`),
+    YEAR: new RegExp("([\\[\\(\\s][1-2]\\d{3}[\\]\\)\\s)])"),
+    V: new RegExp("(\\s[\\–\\-]?v[\\–\\-\\.]?\\s)"),
+    NUM_OR_SLASHEDNUM: new RegExp("(\\d+(\\/\\d+)*((\\,\\s\\d+)|(\\-\\d+))*(\\.[\\d\\w]+)*)"),
+    PINPOINT: new RegExp(`(((at)|(at pp)|((\\,\\s+)?esp at)|(at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|(at par[a]?[s]?)|(at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+))*)|(\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
     STOPPER: new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))"),
     DATE_DDMMMMYYYY: new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\s+(${DICT.month.join('|')})\\s+\\d{4}`),
     FULL_COURTNAME: new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`),
     DIVISION: new RegExp(`((\\([\\w\\d]*\\)))`),
-    COURT_ABBV: new RegExp(`((((\\s[A-Z]\\w*)){1,2})|((\\s([A-Z])([\\\.A-Z])+)))`),
-    PARTY_NAME: new RegExp(`(((\\s*|^)([\\\(\\-]?[A-Z0-9][a-z\\,\\-]*[\\\)\\-]?)(\\s+(of|for|%FOR%|%OF%|and|in|plc|&|the|Co\\.))?)+)`)
+    COURT_ABBV: new RegExp(`((((\\s*[A-Z][\\w\\’]*)){1,2})|((\\s*([A-Z])([\\\.A-Z])+)))`),
+    PARTY_NAME: new RegExp(`(((\\s*|^)([[A-Z0-9][a-z\\,\\-]*)(\\s[\\(\\-][A-Z0-9][a-z\\,\\-]+[\\)\\-])?(\\s+(of|for|%FOR%|%OF%|and|in|plc|&|the|ors|Co\\.))?(\\s\\([A-Z]+\\))?)+)`)
 }
 
 const GR = GENERAL_REGEX;

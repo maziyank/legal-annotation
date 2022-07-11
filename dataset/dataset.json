@@ -144,9 +144,12 @@
         {
             "text": "The present case concerns Mr Ainslie’s appeal to the First-tier Tribunal (FTT) against the Information Commissioner’s Decision Notice (FS50295366) in respect of his request for information made to Dorset County Council (Ainslie v Information Commissioner and Dorset County Council [2012] UKUT 441 (AAC) (also known as GIA/294/2012). The other two appeals were Information Commissioner v Devon County Council and Dransfield [2012] UKUT 440 (AAC) (GIA/3037/2011) and Craven v Information Commissioner and Department for Energy and Climate Change [2012] UKUT 442 (AAC) (GIA/786/2012). For convenience, and with no disrespect intended to the individuals concerned, I simply refer to the three appeals by the name of the individual requester, irrespective of their status in the proceedings before either the FTT or the Upper Tribunal (hence Ainslie, Dransfield and Craven).",
             "expected": [
-                "Ainslie v Information Commissioner and Dorset County Council [2012] UKUT 441 (AAC) (also known as GIA/294/2012)",
-                "The other two appeals were Information Commissioner v Devon County Council and Dransfield [2012] UKUT 440 (AAC) (GIA/3037/2011)",
-                "Craven v Information Commissioner and Department for Energy and Climate Change [2012] UKUT 442 (AAC) (GIA/786/2012)"
+                "Ainslie v Information Commissioner and Dorset County Council [2012] UKUT 441 (AAC)",
+                "The other two appeals were Information Commissioner v Devon County Council and Dransfield [2012] UKUT 440 (AAC)",
+                "Craven v Information Commissioner and Department for Energy and Climate Change [2012] UKUT 442 (AAC)",
+                "GIA/294/2012",
+                "GIA/3037/2011",
+                "GIA/786/2012"
             ]
         },
         {
@@ -194,8 +197,10 @@
         {
             "text": "These last two features of the regime established by the 1985 Act have been judicially recognised on a number of occasions: see, for example, R v Preston [1994] 2 AC 130, 143-144, 167-168, 170; Morgans v Director of Public Prosecutions [2001] 1 AC 315, 321, 337-339; R v Sargent [2001] UKHL 54, [2003] 1 AC 347, para 28; R v P [2002] 1 AC 146, 163-164. As Lord Hobhouse of Woodborough said in the last cited case, page 164,",
             "expected": [
-                "[2001] 1 AC 315, 321, 337-339",
-                "R v Sargent [2001] UKHL 54, [2003] 1 AC 347, para 28",
+                "R v Preston [1994] 2 AC 130, 143-144, 167-168, 170",
+                "Morgans v Director of Public Prosecutions [2001] 1 AC 315, 321, 337-339",
+                "R v Sargent [2001] UKHL 54", 
+                "[2003] 1 AC 347, para 28",
                 "R v P [2002] 1 AC 146, 163-164"
             ]
         },
@@ -231,8 +236,9 @@
         {
             "text": "  The Judge said (at [24]) that, where art.10 is engaged, freedom of expression may justify breach of confidence where publication is in the public interest, and whether it does so in a particular case is fact-sensitive and requires balancing the claimant's right to confidentiality with the defendants' right of freedom of expression. He referred in that connection to Lord Goff's speech in Attorney General v Observer Ltd [1990] 1 A.C. 109 at p.282E-F and to Associated Newspapers Limited v HRH Prince of Wales [2006] EWCA Civ 1776; [2008] Ch. 57 at [55]. He then said that, where there is a breach of confidence, the test is not simply whether the information is a matter of public interest, but rather whether, in the circumstances, it is in the public interest that the duty of confidence should be breached. He referred in that connection to paragraphs [67] and [68] of the judgment of the Court of Appeal in the Prince of Wales case.",
             "expected": [
-                "Attorney General v Observer Ltd [1990] 1 A.C. 109",
-                "ssociated Newspapers Limited v HRH Prince of Wales [2006] EWCA Civ 1776; [2008] Ch. 57 at [55]"
+                "Attorney General v Observer Ltd [1990] 1 A.C. 109 at p.282E-F",
+                "Associated Newspapers Limited v HRH Prince of Wales [2006] EWCA Civ 1776",
+                "[2008] Ch. 57 at [55]"
             ]
         },
         {
@@ -342,12 +348,16 @@
             "text": "The Australian jurisprudence presently supports the proposition that the use of the words ‘serious reasons for considering that …’ does not mandate a positive finding by the receiving state that the applicant for protection has engaged in conduct of the kind contemplated in Art 1F. No question of proof on the civil or criminal standard arises in that context: Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563 per French J; Ovcharuk v Minister for Immigration and Multicultural Affairs (1998) 153 ALR 385 at 388 per Marshall J and on appeal Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179; 158 ALR 289 at 294–5; 51 ALD 549 at 554 per Whitlam J. See also Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476; 63 ALD 321 at 331–2 where Weinberg J reviewed the authorities. A contrary view in relation to standard of proof was expressed by Mathews J sitting as president of the tribunal in Re W97/164 and Minister for Immigration and Multicultural Affairs (1998) 51 ALD 432 at 441; 27 AAR 482 at 491. In Canada the Federal Court of Appeals has held that the words require something less than proof on the balance of probabilities: Ramirez v Canada (1992) 89 DLR (4th) 173. But see also Cardenas v Canada (1994) 23 Imm LR (2d) 244 where a requirement for ‘clear and convincing evidence’ was posited by Jerome ACJ (at 252)",
             "expected": [
                 "Dhayakpa v Minister for Immigration and Ethnic Affairs (1995) 62 FCR 556 at 563",
-                "Ovcharuk v Minister for Immigration and Multicultural Affairs (1998) 153 ALR 385",
+                "Ovcharuk v Minister for Immigration and Multicultural Affairs (1998) 153 ALR 385 at 388",
+                "158 ALR 289 at 294–5",
+                "51 ALD 549 at 554",
                 "Marshall J and on appeal Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179",
-                "Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476; 63 ALD 321 at 331–2",
+                "Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476", 
+                "63 ALD 321 at 331–2",
                 "Ramirez v Canada (1992) 89 DLR (4th) 173",
                 "Cardenas v Canada (1994) 23 Imm LR (2d) 244",
-                "Re W97/164 and Minister for Immigration and Multicultural Affairs (1998) 51 ALD 432 at 441; 27 AAR 482 at 491"
+                "Re W97/164 and Minister for Immigration and Multicultural Affairs (1998) 51 ALD 432 at 441",
+                "27 AAR 482 at 491"
             ]
         },
         {
@@ -420,7 +430,8 @@
         {
             "text": "I have identified the EAT judgment by Mr Justice Kerr in First Greater Western Ltd & Anor v Waiyego [2018] UKEAT 0056/18; [2019] 5 WLR(D) 290. On the facts and circumstances of that case, the EAT held that the ET had rightly rejected the claimant's invitation to impose a financial penalty on the first respondent for deliberate and repeated breaches of employment law.",
             "expected": [
-                "First Greater Western Ltd & Anor v Waiyego [2018] UKEAT 0056/18; [2019] 5 WLR(D) 290"
+                "First Greater Western Ltd & Anor v Waiyego [2018] UKEAT 0056/18",
+                "[2019] 5 WLR(D) 290"
             ]
         },
         {
@@ -471,13 +482,6 @@
             ]
         },
         {
-            "text": "Strictly speaking, as a judge exercising the Upper Tribunal’s jurisdiction in Scotland, neither Hooper nor Mongan are binding on me (see SSWP v Deane [2010] EWCA Civ 699; [2010] AACR 42 at paragraphs [26]-[27]). However, in my judgment both decisions are plainly correct and, in case there is any doubt, the effect of my decision on this appeal is to make the propositions in those two decisions binding on First-tier Tribunals exercising jurisdiction under section 12 of the SSA in Scotland",
-            "expected": [
-                "[2010] AACR 42 at paragraphs [26]-[27]",
-                "SSWP v Deane [2010] EWCA Civ 699"
-            ]
-        },
-        {
             "text": "Whether an issue is sufficiently apparent will depend on the particular circumstances of the case. This means that the tribunal must apply its knowledge of the law to the facts established by it, and it is not limited in its consideration of the facts by the arguments advanced by the appellant. I adopt the observations of this court in R v Secretary of State for the Home Department ex parte Robinson [1998] 1 QB 929 at page 945 E–F in the context of appeals in asylum cases. But the tribunal is not required to investigate an issue that has not been the subject of argument by the appellant if, regardless of what facts are found, the issue would have no prospects of success",
             "expected": [
                 "R v Secretary of State for the Home Department ex parte Robinson [1998] 1 QB 929 at page 945 E–F"
@@ -499,15 +503,17 @@
             "text": "The basic purpose of [the] FOIA is to ensure an informed citizenry, vital to the functioning of a democratic society, needed to check against corruption and to hold the governors accountable to the governed.’: National Labor Relations Board v Robbins Tire & Rubber Co 437 US 214, 242 (1978). Or, put another way, ‘to reinforce “the three basic principles of democratic government, namely, openness, accountability and responsibility.’”: Commissioner of Police v District Court of New South Wales (1993) 31 NSWLR 606 at 612; Osland v Secretary to the Department of Justice [2008] HCA 37, (2008) 234 CLR 27 at [62].",
             "expected": [
                 "Commissioner of Police v District Court of New South Wales (1993) 31 NSWLR 606 at 612",
-                "Osland v Secretary to the Department of Justice [2008] HCA 37, (2008) 234 CLR 27 at [62]"
+                "Osland v Secretary to the Department of Justice [2008] HCA 37",
+                "(2008) 234 CLR 27 at [62]"
             ]
         },
         {
             "text": "For judicial support, see London Regional Transport v Mayor of London [2001] EWCA Civ 1491 [2003] EMLR 4 at [40], quoting Sullivan J with approval. In Kuijer v Council of the European Union (No 2) [2002] 1 WLR 1941 at [52] the Court of First Instance, dealing with Council Directive 93/731/EC, said: ‘It is first necessary to point out that the principle of transparency is intended to secure a more significant role for citizens in the decision-making process and to ensure that the administration acts with greater propriety, efficiency and responsibility vis-à-vis the citizens in a democratic system. It helps strengthen the principle of democracy and respect for fundamental rights.’ See, further: Case C-64/05 IFAW gGmbH v European Commission [2008] QB 902 (Opinion of Advocate General Maduro, 18 July 2007) at [53]. ",
             "expected": [
-                "Transport v Mayor of London [2001] EWCA Civ 1491 [2003] EMLR 4 at [40]",
+                "London Regional Transport v Mayor of London [2001] EWCA Civ 1491",
+                "[2003] EMLR 4 at [40]",
                 "Kuijer v Council of the European Union (No 2) [2002] 1 WLR 1941 at [52]",
-                "Case C-64/05 IFAW gGmbH v European Commission [2008] QB 902"
+                "gGmbH v European Commission [2008] QB 902"
             ]
         },
         {
@@ -532,10 +538,10 @@
         {
             "text": "Article 20 of the FEU Treaty confers the status of citizen of the European Union on every person holding the nationality of a member state: see, inter alia, D'Hoop v Office national de l'emploi (Case C-224/98) [2004] ICR 137, para 27, and Garcia Avello v Belgian State (Case C-148/02) [2003] ECR I-11613, para 21. Since Mr Ruiz Zambrano's second and third children possess Belgian nationality, the conditions for the acquisition of which it is for the member state in question to lay down (see, to that effect, inter alia, Rottmann v Freistaat Bayern (Case C-135/08) [2010] QB 761, para 39), they undeniably enjoy that status: see, to that effect, the Garcia Avello case, para 21, and the Chen case, [2005] QB 325, para 20. ",
             "expected": [
-                "(Case C-224/98) [2004] ICR 137, para 27",
+                "[2004] ICR 137, para 27",
                 "Garcia Avello v Belgian State (Case C-148/02) [2003] ECR I-11613, para 21",
                 "Rottmann v Freistaat Bayern (Case C-135/08) [2010] QB 761, para 39",
-                "2005] QB 325, para 20"
+                "[2005] QB 325, para 20"
             ]
         },
         {
@@ -697,7 +703,7 @@
         {
             "text": "Against this background, Miss Rose submitted that we should apply the reasoning of this court as explained in paragraphs 41 to 46 of the judgment of Brooke LJ in Tanfern Limited v Cameron-MacDonald and another (Tanfern) [2000] 1 WLR 1311, a judgment with which Lord Woolf MR (as he then was) and Peter Gibson LJ agreed. Mr. Phipps had had a long and careful hearing in front of the PCC. He had had a full and careful hearing on appeal by Newman J in the Administrative Court. In these circumstances, she submitted, AJA 1999 section 55(1) applied.",
             "expected": [
-                "Brooke LJ in Tanfern Limited v Cameron-MacDonald and another (Tanfern) [2000] 1 WLR 1311"
+                "Tanfern Limited v Cameron-MacDonald and another (Tanfern) [2000] 1 WLR 1311"
             ]
         },
         {
