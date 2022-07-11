@@ -24,14 +24,16 @@ const evaluate = () => {
     console.log("Heuristic Model Evaluation Result:");
     console.log("=================================");
     console.log("")
-    console.log("Total Docs\t\t:", test_case.scenarios.length);
-    console.log("Total Citation\t\t:", total_citation);
-    console.log("Total Prediction\t:", total_prediction);
-    console.log("TP\t\t\t:", TP);
-    console.log("FN\t\t\t:", FN);
-    console.log("FP\t\t\t:", FP);
-    console.log("Precision\t\t:", (TP / (TP+FP)).toFixed(3));
-    console.log("Recall\t\t\t:", (TP / (TP+FN)).toFixed(3));
+    console.log("Total Documents\t\t\t:", test_case.scenarios.length);
+    console.log("Total Actual Citation\t\t:", total_citation);
+    console.log("Total Predicted Citation\t:", total_prediction);
+    console.log("")
+    console.log("TP (Correct Prediction)\t\t:", TP);
+    console.log("FN (Error Type I)\t\t:", FN);
+    console.log("FP (Error Type II)\t\t:", FP);
+    console.log("")
+    console.log("Precision\t\t\t:", (TP / (TP+FP)).toFixed(3));
+    console.log("Recall\t\t\t\t:", (TP / (TP+FN)).toFixed(3));
     console.log("")
     console.log("Done.")
 }
