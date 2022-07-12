@@ -6,7 +6,7 @@ const GENERAL_REGEX = {
     YEAR: new RegExp("([\\[\\(\\s][1-2]\\d{3}[\\]\\)\\s)])"),
     V: new RegExp("(\\s[\\–\\-]?v[\\–\\-\\.]?\\s)"),
     NUM_OR_SLASHEDNUM: new RegExp("(\\d+(\\/\\d+)*((\\,\\s\\d+)|(\\-\\d+))*(\\.[\\d\\w]+)*)"),
-    PINPOINT: new RegExp(`(((at)|(at pp)|((\\,\\s+)?esp at)|(at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|(at par[a]?[s]?)|(at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+))*)|(\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
+    PINPOINT: new RegExp(`(((at)|(at pp)|((\\,\\s+)?esp at)|(at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|(at par[a]?[s]?)|(at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+)|(\\sto+\\s\\d+))*)|(\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
     STOPPER: new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))"),
     DATE_DDMMMMYYYY: new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\s+(${DICT.month.join('|')})\\s+\\d{4}`),
     FULL_COURTNAME: new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`),
