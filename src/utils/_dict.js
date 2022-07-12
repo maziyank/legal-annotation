@@ -30,31 +30,39 @@ const DICT = {
             "to": "in"
         },
         {
-            "from": "speech\\sof(\\s[\\w\\%]+){1,5}\\s+in",
+            "from": "speech\\sof(\\s[\\w\\%\\,\\']+){1,5}\\s+in",
             "to": "speech in"
         },
         {
-            "from": "decision(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
+            "from": "decision(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
             "to": "decision in"
         },
         {
-            "from": "ruling(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
+            "from": "ruling(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
             "to": "rulings in"
         },
         {
-            "from": "judgment(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
+            "from": "judgment(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
             "to": "judgement in"
         },
         {
-            "from": "conclusion(s)?\\sof(\\s[\\w\\%]+){1,6}\\s+in",
+            "from": "adopting the words?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
+            "to": "judgement in"
+        },
+        {
+            "from": "observation(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
+            "to": "judgement in"
+        },
+        {
+            "from": "conclusion(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
             "to": "rulings in"
         },
         {
-            "from": "approval(s)?\\sby(\\s[\\w\\%]+){1,6}\\s+in",
+            "from": "approval(s)?\\sby(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
             "to": "approval in"
         },
         {
-            "from": "(see\\s)?per(\\s[\\w\\%]+){1,6}\\s+in",
+            "from": "(see\\s)?per(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
             "to": "approval in"
         },
         {
@@ -78,7 +86,7 @@ const DICT = {
             "to": "\n"
         },
         {
-            "from": "\\s+–\\s+",
+            "from": "\\s+–\\s+[A-Z]",
             "to": "\n"
         },
         {
