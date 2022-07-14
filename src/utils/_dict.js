@@ -1,5 +1,5 @@
 const DICT = {
-    prefix: ["on", "see",  "appendix to", "in", "was emphasised in", "applied are", "applied is", "applied", "were", "was", "appeal", "as", "accord", "cites", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for", "against"],
+    prefix: ["on", "see",  "appendix to", "in", "was emphasised in", "applied are", "applied is", "applied", "were", "was", "appeal", "as", "accord", "cites", "citing", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for", "against", "de", "also", "including", "per", "upon", "re", "which", "et", "is", "and", "for", "example"],
     normalizer: [
         {
             "from": "[sS]ee,? generally,",
@@ -34,7 +34,7 @@ const DICT = {
             "to": "lord in"
         },
         {
-            "from": "(\\s[A-Z]\\w+){1,2}\\s(Court|Tribunal)\\s+in",
+            "from": "(\\s[A-Z]\\w+){1,2}\\s(Court|Tribunal|Division|Chamber|Lord(s?)|House|Justice|Board)\\s+in",
             "to": "court in"
         },
         {
