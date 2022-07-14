@@ -1,26 +1,7 @@
 const DICT = {
-    prefix: ["on", "see",  "appendix to", "in", "was emphasised in", "applied are", "applied is", "applied", "were", "was", "appeal", "as", "accord", "cites", "citing", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for", "against", "de", "also", "including", "per", "upon", "re", "which", "et", "is", "and", "for", "example"],
+    prefix: ["on", "see",  "appendix to", "in", "was emphasised in", "applied are", "applied is", "applied", "were", "was", "from", "appeal", "as", "accord", "cites", "citing", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for", "against", "de", "also", "including", "per", "upon", "re", "which", "et", "is", "and", "for", "example", "applying"],
     normalizer: [
-        {
-            "from": "[sS]ee,? generally,",
-            "to": "see"
-        },
-        {
-            "from": "[sS]ee also",
-            "to": "see"
-        },
-        {
-            "from": "[sS]ee (in|on)",
-            "to": "see"
-        },
-        {
-            "from": "[sS]ee, for example,",
-            "to": "see"
-        },
-        {
-            "from": "see-",
-            "to": "see"
-        },
+
         {
             "from": "(\\.\\s+)In",
             "to": ". in"
@@ -54,28 +35,8 @@ const DICT = {
             "to": "\n"
         },
         {
-            "from": "\\:\\s*",
-            "to": "\n"
-        },
-        {
-            "from": "\\;",
-            "to": "\n"
-        },
-        {
-            "from": "\\s-\\s",
-            "to": "\n"
-        },
-        {
-            "from": "\\s+–\\s+[A-Z]",
-            "to": "\n"
-        },
-        {
             "from": "refer to the decision of the \\w+ in",
             "to": "refer to"
-        },
-        {
-            "from": "([a-z]+\\s){2}([a-z]+\\,)",
-            "to": "see "
         },
         {
             "from": "Court\\s+of\\s+Appeal\\s+in",
