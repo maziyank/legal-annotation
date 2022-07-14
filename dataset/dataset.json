@@ -73,7 +73,7 @@
         {
             "text": "The cases cited by Mr Greenwood unquestionably support the general proposition for which they were cited. It is not, however, a proposition that affords of no exception. Mr Greenwood accepted that there were exceptions to the rule. He submitted, however, that the exceptions applied only in exceptional circumstances and had no application to the facts of the present case. Examples of cases where the rule was not applied are Oppenheim v Cattermole [1976] AC 249, R v Secretary of State for the Home Department, ex parte Adan [2001] 2 AC 477 and Kuwait Airways Corp v Iraqi Airways Co (Nos 4 and 5) [2002] 2 WLR 1352. We shall revert to these decisions when we come to review the merits of the rival contentions.",
             "expected": [
-                "Oppenheim v Cattermole [1976] AC 249", 
+                "Oppenheim v Cattermole [1976] AC 249",
                 "R v Secretary of State for the Home Department, ex parte Adan [2001] 2 AC 477",
                 "Kuwait Airways Corp v Iraqi Airways Co (Nos 4 and 5) [2002] 2 WLR 1352"
             ]
@@ -87,7 +87,7 @@
         {
             "text": "The general rule is well established that the courts should not interfere in the conduct of foreign relations by the Executive, most particularly where such interference is likely to have foreign policy repercussions (see R. v. Secretary of State for Foreign and Commonwealth Affairs, ex parte Everett [1989] 1 QB 811 at 820). This extends to decisions whether or not to seek to persuade a foreign government of any international obligation (e.g. to respect human rights) which it has assumed. What if any approach should be made to the Yemeni authorities in regard to the conduct of the trial of these terrorist charges must be a matter for delicate diplomacy and the considered and informed judgement of the FCO. In such matters the courts have no supervisory role. (p.615, per Lightman J).",
             "expected": [
-                "R. v. Secretary of State for Foreign and Commonwealth Affairs, ex parte Everett [1989] 1 QB 811 at 820"
+                "R. v. Secretary of State for Foreign and Commonwealth Affairs ex parte Everett [1989] 1 QB 811 at 820"
             ]
         },
         {
@@ -199,7 +199,7 @@
             "expected": [
                 "R v Preston [1994] 2 AC 130, 143-144, 167-168, 170",
                 "Morgans v Director of Public Prosecutions [2001] 1 AC 315, 321, 337-339",
-                "R v Sargent [2001] UKHL 54", 
+                "R v Sargent [2001] UKHL 54",
                 "[2003] 1 AC 347, para 28",
                 "R v P [2002] 1 AC 146, 163-164"
             ]
@@ -277,7 +277,7 @@
             "text": " Mr Vassall-Adams emphasised that the decision whether or not to grant an injunction in the circumstances of the present case is not merely an exercise in unfettered judicial discretion but the carrying out of a careful assessment of proportionality. He cited in that connection the decision of the Court of Appeal in London Regional Transport v Mayor of London [2001] EWCA Civ 1491; [2003] E.M.L.R. 4. In that case the court upheld the decision of the first instance judge discharging an earlier interim injunction preventing the publication by the defendants of an expert report critical of the claimants' assessment of the value for money of a proposed public-private partnership (PPP) for the track maintenance function of the London Underground. ",
             "expected": [
                 "London Regional Transport v Mayor of London [2001] EWCA Civ 1491",
-                "[2003] E.M.L.R."
+                "[2003] E.M.L.R. 4"
             ]
         },
         {
@@ -352,7 +352,7 @@
                 "158 ALR 289 at 294–5",
                 "51 ALD 549 at 554",
                 "Marshall J and on appeal Minister for Immigration and Multicultural Affairs v Ovcharuk (1998) 88 FCR 173 at 179",
-                "Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476", 
+                "Arquita v Minister for Immigration and Multicultural Affairs (2000) 106 FCR 465 at 476",
                 "63 ALD 321 at 331–2",
                 "Ramirez v Canada (1992) 89 DLR (4th) 173",
                 "Cardenas v Canada (1994) 23 Imm LR (2d) 244",

@@ -38,7 +38,7 @@ const cit_party_unreported = (text) => {
 
 const cit_party_only = (text) => {
     const RGX_TEST = new RegExp(`${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX.PARTY_NAME.source}(.{0,30})`, 'gm');
-    const RGX_PARTY_ONLY = new RegExp(`${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v\\.?)${RGX.PARTY_NAME.source}`, 'gm');
+    const RGX_PARTY_ONLY = new RegExp(`${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source}`, "g");
     const matched = Array.from(text.matchAll(RGX_TEST));
 
     const result = matched.filter(m => !RGX.YEAR.test(m) && !RGX.UNUSUAL_1.test(m))
