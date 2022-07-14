@@ -71,7 +71,7 @@ module.exports = { cit_neutral2 };
 const test_case = require('./../../dataset/dataset.json');
 
 // Sample Fail Number 40, 82, 88, 97, 101, 123
-// const no = 18
+// const no = 121
 // console.log({
 //     result: cit_neutral2(normalize((test_case.scenarios[no].text))),
 //     gt: test_case.scenarios[no].expected

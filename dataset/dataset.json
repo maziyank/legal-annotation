@@ -817,17 +817,17 @@
             ]
         },
         {
-            "text": "The five year period ended on 22nd September l987. By that date, when all swaps had been effected, the Council had received from the Bank £384,409 more than it had paid. There matters might have rested but for the fact that on lst November l989 the Divisional Court declared, as subsequently upheld in the House of Lords in Hazell v Hammersmith and Fulham London BC [1992] 2 A.C. l, that such an agreement as the Council had apparently concluded with the Bank was ultra vires the Council and so void from the start.",
+            "text": "The five year period ended on 22nd September l987. By that date, when all swaps had been effected, the Council had received from the Bank £384,409 more than it had paid. There matters might have rested but for the fact that on lst November l989 the Divisional Court declared, as subsequently upheld in the House of Lords in Hazell v Hammersmith and Fulham London BC [1992] 2 A.C. 1, that such an agreement as the Council had apparently concluded with the Bank was ultra vires the Council and so void from the start.",
             "expected": [
-                "Hazell v Hammersmith and Fulham London BC [1992] 2 A.C."
+                "Hazell v Hammersmith and Fulham London BC [1992] 2 A.C. 1"
             ]
         },
         {
-            "text": "In section (2) Hobhouse J analysed the restitutionary claim of money had and received under five headings of which only the second “void contracts and absence of consideration” is directly material. He recorded two arguments for the banks; first that payments made under a void contract do not amount to consideration for the purposes of the law of restitution; second, that the banks did not get the benefit for which they had bargained, sc. payments which would discharge a legal obligation and which, therefore, the banks might lawfully retain, but, by contrast, obtained under a void contract money which the local authority was prima facie entitled to recover. After referring to Rowland v Divall [1923] 2 K.B. 500, Linz v Electric Wire Co. of Palestine Ltd [1948] A.C. 371 and Rover International Ltd v Cannon Film Sales Ltd (No.3) [1989] l W.L.R. 912 he said “In my judgment, the correct analysis is that any payments made under a contract which is void ab initio, in the way that an ultra vires contract is void, are not contractual payments at all. They are payments in which the legal property in the money passes to the recipient, but in equity the property in the money remains with the payer. The recipient holds the money as a fiduciary for the payer and is bound to recognise his equity and repay the money to him. This relationship and the consequent obligation have been recognised both by courts applying the common law and by Chancery courts. The principle is the same in both cases: it is unconscionable that the recipient should retain the money. Neither mistake nor the contractual principle of total failure of consideration are the basis for the right of recovery.”",
+            "text": "In section (2) Hobhouse J analysed the restitutionary claim of money had and received under five headings of which only the second “void contracts and absence of consideration” is directly material. He recorded two arguments for the banks; first that payments made under a void contract do not amount to consideration for the purposes of the law of restitution; second, that the banks did not get the benefit for which they had bargained, sc. payments which would discharge a legal obligation and which, therefore, the banks might lawfully retain, but, by contrast, obtained under a void contract money which the local authority was prima facie entitled to recover. After referring to Rowland v Divall [1923] 2 K.B. 500, Linz v Electric Wire Co. of Palestine Ltd [1948] A.C. 371 and Rover International Ltd v Cannon Film Sales Ltd (No.3) [1989] 1 W.L.R. 912 he said “In my judgment, the correct analysis is that any payments made under a contract which is void ab initio, in the way that an ultra vires contract is void, are not contractual payments at all. They are payments in which the legal property in the money passes to the recipient, but in equity the property in the money remains with the payer. The recipient holds the money as a fiduciary for the payer and is bound to recognise his equity and repay the money to him. This relationship and the consequent obligation have been recognised both by courts applying the common law and by Chancery courts. The principle is the same in both cases: it is unconscionable that the recipient should retain the money. Neither mistake nor the contractual principle of total failure of consideration are the basis for the right of recovery.”",
             "expected": [
                 "Rowland v Divall [1923] 2 K.B. 500",
                 "Linz v Electric Wire Co. of Palestine Ltd [1948] A.C. 371",
-                "Rover International Ltd v Cannon Film Sales Ltd (No.3) [1989] l W.L.R. 912"
+                "Rover International Ltd v Cannon Film Sales Ltd (No.3) [1989] 1 W.L.R. 912"
             ]
         },
         {
@@ -856,6 +856,91 @@
                 "Thomas McGhie & Sons Ltd v British Transport Commission [1962] 2 All ER 646.656G",
                 "Hoecheong Products Ltd v Cargill Ltd [1995] 1 WLR 404 at 409A-C",
                 "Jade Tower Ltd v NM Schroder Financial Management Ltd (unreported transcript 6 April 1995)"
+            ]
+        },
+        {
+            "text": "It is at this point that I would normally set out the factual background to the level necessary to understand the applications and this judgment. This is not necessary in this case however because I set out the background in my judgment in these proceedings delivered on 22 December 2020 bearing the neutral citation number [2020] EWHC 3689 (Comm) at paragraphs 13 to 15 in relation to the OCM claim and at paragraphs 21 to 23 in relation to the V8 claim. The facts relevant to the NOC claim are set out in my judgment of 13 October 2020 bearing the neutral citation number [2020] EWHC 2820 (Comm) at paragraphs 3 to 8. Since those judgments were delivered there have been some changes to matters of detail but not in ways that affect materially the applications I have to determine at this hearing. In those circumstances, I incorporate by reference into this judgment the summary of primary facts set out in the earlier judgments to which I referred a moment ago.",
+            "expected": [
+                "[2020] EWHC 3689 (Comm) at paragraphs 13 to 15",
+                "[2020] EWHC 2820 (Comm) at paragraphs 3 to 8"
+            ]
+        },
+        {
+            "text": "a. the applications to amend are all made under CPR Rule 17.1(2)(b) and thus require the permission of the court; b. in deciding whether to give permission the court must apply the summary judgment test and give permission only where the proposed amendment has a realistic prospect of success - see SPI North Limited v Swiss Post International (UK) Limited [2019] EWHC 2004 (Ch) per Andrew Hochhauser QC at paragraph 5; c. a defence with a real prospect of success is one which is more than merely fanciful; is one that carries some degree of conviction and is one that is more than merely arguable; d. the applicable summary judgment principles are those approved by the Court of Appeal in TfL Management Services Ltd v Lloyds Bank Plc [2013] EWCA (Civ) 1415 and include: i. in reaching a conclusion the court must not conduct a mini trial; ii. the obligation not to conduct a mini trial does not mean that the court must accept at face value and without analysis everything that a defendant says; iii. in arriving at a conclusion the court must take into account not only the evidence before it but the evidence that can reasonably be expected to be available at trial; and iv. short points of law can and should be resolved but difficult points of law, particularly those in developing areas, should be left for trial so that they can be decided by reference to actual as opposed to assumed facts; e. permission to amend will be refused where the defence sought to be raised is implausible or not supported by contemporaneous documentation - see Collier v P & MJ Wright (Holdings) Ltd [2008] 1 WLR 643 per Arden LJ (as she then was) at paragraph 21) - or which is speculative, surmise or invention - see Clarke v Marlborough Fine Art Ltd [2002] 1 WLR 1731; f. since the defendant seeks to withdraw admissions, it requires the permission of the court to do so - see CPR Rule 14.1(5); g. in deciding whether in the exercise of discretion a party should be permitted to withdraw an admission the court will consider all the circumstances of the case - see Sowerby v Charlton [2006] 1 WLR 568 at paragraph 35 - which circumstances include: \" ... (a) the reasons and justification for the application which must be made in good faith; (b) the balance of prejudice to the parties; (c) whether any party has been the author of any prejudice they may suffer; (d) the prospects of success of any issue arising from the withdrawal of an admission; (e) the public interest, in avoiding where possible satellite litigation, disproportionate use of court resources and the impact of any strategic manoeuvring. … The nearer any application is to a final hearing the less chance of success it will have even if the party making the application can establish clear prejudice. This may be decisive if the application is shortly before the hearing. … Above all, the exercise of any discretion will always depend on the facts of the particular case before the court. The words 'will consider all the circumstances of the case have particular resonance in this context.\"",
+            "expected": [
+                "SPI North Limited v Swiss Post International (UK) Limited [2019] EWHC 2004 (Ch)",
+                "Collier v P & MJ Wright (Holdings) Ltd [2008] 1 WLR 643",
+                "TfL Management Services Ltd v Lloyds Bank Plc [2013] EWCA (Civ) 1415",
+                "Clarke v Marlborough Fine Art Ltd [2002] 1 WLR 1731",
+                "Sowerby v Charlton [2006] 1 WLR 568 at paragraph 35"
+            ]
+        },
+        {
+            "text": "The necessary starting point, and almost the finishing point, on this application is the construction of this Policy. The proper approach of the court in relation to questions of contractual construction was summarised by Lord Hodge in Wood v Capita Insurance Services Ltd [2017] UKSC 24 in the well-known passage at paragraphs 10-13. I start with DCL's primary argument that SL's liability was that of the Insured under the Policy 'acting as a … trustee'. As part of that argument, DCL contends that (c) of the definition of 'Private Legal Practice' is not qualified by the opening words 'the provision of services in private Practice'; and further that the concluding words of (c), 'in conjunction with a Practice', qualify only 'any other role' and not the other roles set out in (c). Private Legal Practice I do not consider that DCL is correct in its argument that (c) is not qualified by the opening words of the definition. The essential definition of Private Legal Practice is 'the provision of services in private Practice as a solicitor'. What then follow are instances of what is included within the concept of 'services in private Practice as a solicitor' but are not intended to define as constituting Private Legal Practice matters which are not provided by way of such services.",
+            "expected": [
+                "Wood v Capita Insurance Services Ltd [2017] UKSC 24"
+            ]
+        },
+        {
+            "text": "The construction which I favour and have outlined above is consistent with the construction put on a similarly worded clause in Zurich Professional Ltd v Brown [2010] EWHC 3300 (Ch). It may be noted that there, no reliance was placed on the concluding words of the sub-clause (c) which appeared in that case, and which do not appear in the Policy in this case. Sir William Blackburne's decision proceeds on the basis that the fact that the solicitor had been acting in a capacity which fell within one of the categories identified in sub-clause (c), namely as a personal representative (which in that case would have fallen within the words 'executor … or other personal appointment'), was not sufficient to mean that liability arising from his actions arose from Private Legal Practice. This was because, for that to be the case, it was necessary that he should have been 'provi[ding] services in private practice as a solicitor'. That was referred to by Sir William Blackburne as a condition which needed to be fulfilled (paragraph 25).",
+            "expected": [
+                "Zurich Professional Ltd v Brown [2010] EWHC 3300 (Ch)"
+            ]
+        },
+        {
+            "text": "Nor in my view, to the extent that it is relevant, was DCL a 'quasi-client' of SL. This is a concept utilised in this area by Lord Toulson JSC in his judgment in Impact Funding Solutions Ltd v Barrington Services Ltd [2016] UKSC 57, [2017] AC 73, at [42] where he said: 'What sort of liabilities are commonly understood as professional liabilities of solicitors or, in Lord Diplock's language, what is the sector of the public that makes use of their services? First, and most obviously, there are the liabilities which solicitors may incur to their clients as a result of their professional retainer. Secondly, in connection with acting for their clients, they may give undertakings to third parties. \"As officers of the court solicitors are expected to abide by undertakings given by them professionally, and if they do not do so they may be called upon summarily to make good their defaults\": John Fox v Bannister, King & Rigbeys (Note) [1988] QB 925, 928, per Nicholls LJ.\" That is plainly a form of professional liability. Exceptionally, there are also other cases where a solicitor has been held liable as a \"quasi-client\", as in White v Jones [1995] 2 AC 207 (the disappointed beneficiary under a will). …'.",
+            "expected": [
+                "Impact Funding Solutions Ltd v Barrington Services Ltd [2016] UKSC 57",
+                "[2017] AC 73, at [42]",
+                "John Fox v Bannister, King & Rigbeys (Note) [1988] QB 925, 928",
+                "White v Jones [1995] 2 AC 207"
+            ]
+        },
+        {
+            "text": "Mr Yeo also emphasised in his submissions that it was an essential element of the trust relationship that SL was obliged to keep the Remittances, until paid to DCL, in its client account. That, Mr Yeo submitted, showed that the arrangement had as a central plank the utilisation of an account which is itself central to a solicitor's practice. I do not consider that the fact that SL's client account was used for the receipt of the Remittances determines that the liability which SL had to DCL arose from the provision of a service in private practice. That must depend on the use to which the client account was put and whether the liability arising was from the provision of services in private practice as a solicitor. That the use of a solicitor's client account as a vehicle for the receipt and distribution of money does not, without more involve the solicitor providing a service as a solicitor is, furthermore, supported by the decision of the Ontario Superior Court of Justice, affirmed by the Court of Appeal for Ontario in Cassells Brock & Blackwell LP v LawPro (2006) 80 OR (3d) 570, 2007 ONCA 122; and, by reference to that authority, by Cannon & McGurk: Professional Indemnity Insurance (2nd ed), 9.69.",
+            "expected": [
+                "Cassells Brock & Blackwell LP v LawPro (2006) 80 OR (3d) 570",
+                "2007 ONCA 122"
+            ]
+        },
+        {
+            "text": "The starting point is that each party should be allowed unrestricted access to inspect the other parties' disclosure subject to the implied undertaking that the disclosure will not be used for a collateral purpose - see CPR31.22; Church of Scientology of California v Department of Health [1979] 1 WLR 723 per Brandon LJ at 743F.",
+            "expected": [
+                "Church of Scientology of California v Department of Health [1979] 1 WLR 723"
+            ]
+        },
+        {
+            "text": "The importance of the confidential information to the issues in the case - see Roussel UCLAF v ICI at [54] and IPCom GmbH v HTC Europe [2013] EWHC 52 (Pat) at [20].",
+            "expected": [
+                "Roussel UCLAF v ICI at [54]",
+                "IPCom GmbH v HTC Europe [2013] EWHC 52 (Pat) at [20]"
+            ]
+        },
+        {
+            "text": "The error of the judge was in finding that the absence of a written agreement precluded a partnership. No writing or formality is required in order to establish a partnership within the meaning of s.1(1) of the Partnership Act 1890, which defines a partnership as \"the relation which subsists between persons carrying on a business in common with a view of profit.\" There was no requirement actually to participate in a profit share, though both parties had agreed that there was to be one: M Young Legal Associates v. Zahid (a firm) & Ors[2006] EWCA Civ 613 at[32]; [2006] 1 WLR 2562.",
+            "expected": [
+                "M Young Legal Associates v. Zahid (a firm) & Ors[2006] EWCA Civ 613 at[32]",
+                "[2006] 1 WLR 2562"
+            ]
+        },
+        {
+            "text": "No-one appears to have directed their attention to CPR 44.3 that, whereas the general rule is that the court may order the unsuccessful party to pay the costs, the court can make a different order and in the Court of Appeal the general rule did not necessarily apply to probate proceedings. That does not apply at first instance. What applies at first instance is what is left of the old probate practice. It is exemplified in cases such as Mitchell & Mitchell v Gard & Kingwell [1863] 3 Sw & Tr 275 or more recently in Spiers v English [1907] P 122 where the President, Sir Gorell Barnes said this at page 123:",
+            "expected": [
+                "Mitchell & Mitchell v Gard & Kingwell [1863] 3 Sw & Tr 275",
+                "Spiers v English [1907] P 122"
+            ]
+        },
+        {
+            "text": "This is clearly set out by Lord Bingham in his judgment in Heaton v AXA Equity & Law Life Assurance Society plc [2002] UKHL 15, [2002] 2 AC 329 at [8]-[9] in which he considered and explained the conclusion reached in Jameson as follows:",
+            "expected": [
+                "Heaton v AXA Equity & Law Life Assurance Society plc [2002] UKHL 15",
+                "[2002] 2 AC 329 at [8]-[9]"
+            ]
+        },
+        {
+            "text": "The judge was also correct to hold that in those circumstances the question of whether there was an intention to fix the full amount of the loss does not arise. The judgment fixes the loss regardless of what may have been intended – see Bryanston Finance Ltd v de Vries [1975] 1 QB 703 at pp717E-F, 733 (per Lord Denning MR) and p739E-740B (per Lawton LJ). Vanden submits that there may be exceptional cases in which satisfaction of a judgment may not bar a claim for the same damage, as recognised by Lord Bingham in Heaton at [5], referring by way of example to the Scottish case of Crawford v Springfield Co Ltd. Even if that be so, there is no equivalent wording in the Consent Order which might bring it within any such exception.",
+            "expected": [
+                "Bryanston Finance Ltd v de Vries [1975] 1 QB 703 at pp717E-F, 733 (per Lord Denning MR) and p739E-740B (per Lawton LJ"
             ]
         }
     ]

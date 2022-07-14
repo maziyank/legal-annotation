@@ -2,7 +2,7 @@
 const DICT = require("./_dict")
 
 const GENERAL_REGEX = {
-    PREFIX: new RegExp(`((\\. +|\:|\\(|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|\\(|^|\\n|\\.\\s+`, "gm"),
+    PREFIX: new RegExp(`((\\. +|\:|\\(|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|\\(|^|\\n|\\.\\s+`, "gmi"),
     YEAR: new RegExp("([\\[\\(\\s][1-2]\\d{3}[\\]\\)\\s)])"),
     V: new RegExp("(\\s[\\–\\-]?v[\\–\\-\\.]?\\s)"),
     NUM_OR_SLASHEDNUM: new RegExp("(\\d+(\\/\\d+)*((\\,\\s\\d+)|(\\-\\d+))*(\\.[\\d\\w]+)*)"),
@@ -12,7 +12,7 @@ const GENERAL_REGEX = {
     FULL_COURTNAME: new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`),
     DIVISION: new RegExp(`((\\([\\w\\d]*\\)))`),
     COURT_ABBV: new RegExp(`((((\\s*[A-Z][\\w\\’]*)){1,2})|((\\s*([A-Z])([\\\.A-Z])+)))`),
-    PARTY_NAME: new RegExp(`(((\\s*|^)([[A-Z0-9][a-z\\,\\-]*)(\\s[\\(\\-][A-Z0-9][a-z\\,\\-]+[\\)\\-])?(\\s+(of|for|%FOR%|%OF%|and|in|plc|&|the|ors|Co\\.))?(\\s\\([A-Z]+\\))?)+)`)
+    PARTY_NAME: new RegExp(`(((\\s*|^)([[A-Z0-9][a-z\\,\\-\\']*)(\\s[\\(\\-][A-Z0-9][a-z\\,\\-\\']+[\\)\\-])?(\\s+(of|for|%FOR%|%OF%|and|in|plc|&|the|ors|Co\\.))?(\\s\\([A-Z]+\\))?)+)`)
 }
 
 const GR = GENERAL_REGEX;

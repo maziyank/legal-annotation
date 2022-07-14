@@ -1,5 +1,5 @@
 const DICT = {
-    prefix: ["on", "see",  "appendix to", "in", "was emphasised in", "applied are", "applied is", "applied", "were", "appeal", "accord", "cites", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for"],
+    prefix: ["on", "see",  "appendix to", "in", "was emphasised in", "applied are", "applied is", "applied", "were", "was", "appeal", "as", "accord", "cites", "cite", "refer to", "was said by", "cited", "on", "by", "at", "with", "to", "of", "for", "against"],
     normalizer: [
         {
             "from": "[sS]ee,? generally,",
@@ -30,36 +30,16 @@ const DICT = {
             "to": "in"
         },
         {
-            "from": "speech\\sof(\\s[\\w\\%\\,\\']+){1,5}\\s+in",
-            "to": "speech in"
+            "from": "(Lord|Judge)(\\s[A-Z]\\w+){1,5}\\s+in",
+            "to": "lord in"
         },
         {
-            "from": "decision(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
-            "to": "decision in"
+            "from": "(\\s[A-Z]\\w+){1,2}\\s(Court|Tribunal)\\s+in",
+            "to": "court in"
         },
         {
-            "from": "ruling(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
-            "to": "rulings in"
-        },
-        {
-            "from": "judgment(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
-            "to": "judgement in"
-        },
-        {
-            "from": "adopting the words?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
-            "to": "judgement in"
-        },
-        {
-            "from": "observation(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
-            "to": "judgement in"
-        },
-        {
-            "from": "conclusion(s)?\\sof(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
-            "to": "rulings in"
-        },
-        {
-            "from": "approval(s)?\\sby(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
-            "to": "approval in"
+            "from": "of(\\s[A-Z]\\w+){1,6}\\s+in",
+            "to": "of in"
         },
         {
             "from": "(see\\s)?per(\\s[\\w\\%\\,\\']+){1,6}\\s+in",
@@ -96,7 +76,11 @@ const DICT = {
         {
             "from": "([a-z]+\\s){2}([a-z]+\\,)",
             "to": "see "
-        }
+        },
+        {
+            "from": "Court\\s+of\\s+Appeal\\s+in",
+            "to": "see"
+        },
     ],
     "month": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 }
