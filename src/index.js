@@ -24,3 +24,5 @@ const annotate = (text, rules = [cit_neutral2, cit_party_only, cit_party_date, c
 }
 
 module.exports = annotate;
+
+// Sample Fail Number 40, 82, 88, 97, 101, 123

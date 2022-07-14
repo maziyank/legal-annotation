@@ -35,10 +35,15 @@ const evaluate = () => {
     console.log("TP (Correct Prediction)\t\t:", TP);
     console.log("FN (Error Type I)\t\t:", FN);
     console.log("FP (Error Type II)\t\t:", FP);
-    console.log("Partial Prediction\t\t:", TP_Inaccurate);
+    console.log("Correct but Partial Prediction\t:", TP_Inaccurate);
     console.log("")
     console.log("Precision\t\t\t:", (TP / (TP+FP)).toFixed(3));
     console.log("Recall\t\t\t\t:", (TP / (TP+FN)).toFixed(3));
+    console.log("")
+    console.log("If also consider correct partial prediction:")
+    console.log("")
+    console.log("Precision\t\t\t:", ((TP + TP_Inaccurate) / (TP+TP_Inaccurate+FP)).toFixed(3));
+    console.log("Recall\t\t\t\t:", ((TP+TP_Inaccurate) / (TP+TP_Inaccurate+FN)).toFixed(3));
     console.log("")
     console.log("Done.")
 }
