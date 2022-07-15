@@ -17,7 +17,7 @@ const GENERAL_REGEX = {
 
 const GR = GENERAL_REGEX;
 
-const DATE_UNREPORTED = new RegExp(`(.*${GR.DATE_DDMMMMYYYY.source}\\,\\s+(unreported))`);
+const DATE_UNREPORTED = new RegExp(`(.*${GR.DATE_DDMMMMYYYY.source}\\,\\s+(unreported))|(unreported\\s+transcript\\s+${GR.DATE_DDMMMMYYYY.source})`);
 const NEUTRAL = new RegExp(`${GR.YEAR.source}(\\s*${GR.NUM_OR_SLASHEDNUM.source}?\\s*${GR.COURT_ABBV.source}?\\s*${GR.DIVISION.source}?\\s*${GR.NUM_OR_SLASHEDNUM.source}\\s*${GR.DIVISION.source}?)`);
 const REPORT = new RegExp(`${GR.YEAR.source}\\s+(\\d+\\s(\\w+\\s){1,4}\\d+(\\s\\([A-Z]\\w+\\))*)`);
 const UNUSUAL_1 = new RegExp(`((\\(?\\w+(\\/\\w+)+\\)?))(\\s+of\\s+${GR.DATE_DDMMMMYYYY.source})?`);
