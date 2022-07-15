@@ -39,6 +39,13 @@ const inc_matching = (text, RGX_PATTERN) => {
     return candidates
 }
 
+/**
+* Given text as input, capture common neutral citation (i.e. Anderson v Davis [1993] PIQR Q87) and unreported citation (i.e. Jade Tower Ltd v NM Schroder Financial Management Ltd (unreported transcript 6 April 1995)
+* @function cit_neutral
+* @param {String} text 
+* @return {[String]} list of captured citation
+*/
+
 const cit_neutral = (text) => {
     const with_party = inc_matching(text, RGX_NEUTRAL_FULL);
     const unusual_full_date = inc_matching(text, RGX_UNUSUAL_FULLDATE);
