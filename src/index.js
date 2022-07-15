@@ -1,6 +1,6 @@
 const { normalize } = require("./utils/_normalize");
 // const { cit_neutral } = require("./rules/neutral");
-const { cit_neutral2 } = require("./rules/neutral2");
+const { cit_neutral } = require("./rules/neutral");
 const { cit_party_only, cit_party_date, cit_party_unreported } = require("./rules/party_only");
 const { cit_short } = require("./rules/short");
 
@@ -11,7 +11,7 @@ const { cit_short } = require("./rules/short");
 * @param {[String]} rules list of citation rules or function to be applied (default: ["cit_neutral", "cit_party_only", "cit_party_date", "cit_party_unreported", "cit_short"])
 * @return {[String]} list of captured citation
 */
-const annotate = (text, rules = [cit_neutral2, cit_party_only, cit_party_date, cit_party_unreported, cit_short]) => {
+const annotate = (text, rules = [cit_neutral, cit_party_only, cit_party_date, cit_party_unreported, cit_short]) => {
     // normalize text
     text = normalize(text);
     rules = rules.map(fun => eval(fun));

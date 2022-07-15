@@ -2,11 +2,11 @@
 const DICT = require("./_dict")
 
 const GENERAL_REGEX = {
-    PREFIX: new RegExp(`((\\. +|\:|\\(|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|\\(|^|\\n|\\.\\s+`, "gmi"),
+    PREFIX: new RegExp(`((\\. +|\:|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|^|\\(|\\n|\\:|\\;|(\\.\\s+)`, "gm"),
     YEAR: new RegExp("([\\[\\(\\s][1-2]\\d{3}[\\]\\)\\s)])"),
     V: new RegExp("(\\s[\\–\\-]?v[\\–\\-\\.]?\\s)"),
     NUM_OR_SLASHEDNUM: new RegExp("(\\d+(\\/\\d+)*((\\,\\s\\d+)|(\\-\\d+))*(\\.[\\d\\w]+)*)"),
-    PINPOINT: new RegExp(`(((at)|(at pp)|(§)|((\\,\\s+)?esp at)|(at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|(at par[a]?[s]?)|(at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+)|(\\sto+\\s\\d+))*)|(\\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
+    PINPOINT: new RegExp(`((((\\,\\s+)?at)|((\\,\\s+)?at pp)|(§)|((\\,\\s+)?esp at)|((\\,\\s+)?at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|((\\,\\s+)?at par[a]?[s]?)|((\\,\\s+)?at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+)|(\\sto+\\s\\d+))*)|(\\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
     STOPPER: new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))"),
     DATE_DDMMMMYYYY: new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\s+(${DICT.month.join('|')})\\s+\\d{4}`),
     FULL_COURTNAME: new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`),
@@ -23,6 +23,8 @@ const REPORT = new RegExp(`${GR.YEAR.source}\\s+(\\d+\\s(\\w+\\s){1,4}\\d+(\\s\\
 const UNUSUAL_1 = new RegExp(`((\\(?\\w+(\\/\\w+)+\\)?))(\\s+of\\s+${GR.DATE_DDMMMMYYYY.source})?`);
 const CITEND = new RegExp(`(${NEUTRAL.source}|${REPORT.source}|${UNUSUAL_1.source}|(\\\(${DATE_UNREPORTED.source}\\\)))`, "g");
 const AND = new RegExp(`(${NEUTRAL.source}|${REPORT.source}|${UNUSUAL_1.source}${GR.STOPPER.source})(\\.|(\\s+and\\s+))`, "gm");
+const RGX_PARTY_ONLY = new RegExp(`${GR.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${GR.PARTY_NAME.source}`, "g");
+
 
 module.exports = {
     ...GENERAL_REGEX,
@@ -31,6 +33,7 @@ module.exports = {
     REPORT,
     UNUSUAL_1,
     CITEND,
-    AND
+    AND,
+    RGX_PARTY_ONLY
 };
 

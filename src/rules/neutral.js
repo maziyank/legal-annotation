@@ -1,45 +1,61 @@
-const RGX  = require("./../utils/_general_regex");
-const { denormalize } = require("./../utils/_normalize");
+const RGX = require("../utils/_general_regex");
 
-/**
-* Given text as input, capture neutral citation (i.e. SWP v Deane [2010] EWCA Civ 699)
-* @function cit_neutral
-* @param {String} text input raw text
-* @return {[String]} list of captured citation
-*/
+const { denormalize, normalize } = require("../utils/_normalize");
+const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
+const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
+const RGX_PARTY_ONLY = new RegExp(`${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source}`, "g");
 
-const cit_neutral = (text) => {
-    const RGX_NEUTRAL_FULL = new RegExp(`${RGX.V.source}.{1,100}\\s+${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?`, "gm");
-    const RGX_NOPARTY_FULL = new RegExp(`.*\\s+${RGX.CITEND.source}(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?`, "gm");
-    const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
+const inc_matching = (text, RGX_PATTERN) => {
+    let candidates = [];
 
-    const apply = (TYPE) => {
-        let citations = [];
-        cit_matches = Array.from(text.matchAll(TYPE));
-        prefix_match = Array.from(text.matchAll(RGX.PREFIX));
-        if (cit_matches && prefix_match) {
-            const candidates = cit_matches.map(cit => {
-                const candidate = prefix_match.filter(pre => pre.index < cit.index);
-                if (!candidate || candidate.length == 0) {
-                    return false;
-                }
-                const final_candidate = candidate[candidate.length - 1];
-                return [final_candidate.index + final_candidate[0].length, cit.index + cit[0].length];
-            });
-
-            if (candidates) {
-                citations = candidates.map(s => text.slice(s[0], s[1]));
-                citations = citations.map(item => denormalize(item));
-            }
+    candidates = Array.from(text.matchAll(RGX_PATTERN)).filter(m => !(/[a-z]+(\/[a-z]+)/.test(m[0])));
+    candidates = candidates.map((m, i) => {
+        const prev_match = i > 0 ? candidates[i - 1].index + candidates[i - 1][0].length : 0;
+        return {
+            found_in: text.slice(prev_match, m.index),
+            found_text: m[0],
+            start: m.index,
         }
-        return citations;
-    }
+    });
 
-    const with_party = apply(RGX_NEUTRAL_FULL);
-    const without_party = apply(RGX_NOPARTY_FULL).filter(cit => !RGX.V.test(cit));
-    const unusual_full_date = apply(RGX_UNUSUAL_FULLDATE);
+    candidates = candidates.map(({ found_text, found_in, start }, i) => {
+        const start_pos = Array.from(found_in.matchAll(RGX.PREFIX), m => m[0].length + m.index);
+        const subtext = start_pos.map(s => found_in.slice(s))
 
-    return [...new Set([...with_party, ...without_party, ...unusual_full_date])];
+        let j = 0;
+        while (j < subtext.length) {
+            const match = Array.from(subtext[j].matchAll(RGX_PARTY_ONLY));
+            if (match && match.length == 1) {
+                const num_v = Array.from(subtext[j].matchAll(new RegExp(RGX.V.source, "g"))).length;
+                if (num_v == 1)
+                    return denormalize(`${subtext[j].slice(match[0].index)}${found_text}`);
+            }
+            j++;
+        }
+
+        return denormalize(found_text);
+    }).filter(m => m.length > 5)
+
+    return candidates
 }
 
-module.exports = {cit_neutral};
+const cit_neutral = (text) => {
+    const with_party = inc_matching(text, RGX_NEUTRAL_FULL);
+    const unusual_full_date = inc_matching(text, RGX_UNUSUAL_FULLDATE);
+    return [...new Set([...with_party, ...unusual_full_date])];
+}
+
+module.exports = { cit_neutral };
+
+
+// const test_case = require('../../dataset/dataset.json');
+// Sample Fail Number 6, 40, 82, 88, 97, 101, 123, 37, 129
+// const no = 129
+// console.log({
+//     result: cit_neutral(normalize(test_case.scenarios[no].text)),
+//     gt: test_case.scenarios[no].expected
+// });
+
+
+
+
