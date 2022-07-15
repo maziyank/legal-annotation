@@ -17,7 +17,7 @@
 <body>
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2 p-2">
-            <a class="navbar-brand" href="#">Annotation Test</a>
+            <a class="navbar-brand" href="#">Annotation Test</a> 
             <button class="btn btn-success m-1" type="button" onclick="annotate_text()">Annotate</button>
             <button class="btn btn-success m-1" type="button" onclick="location.reload()">Reset</button>
             <button class="btn btn-info m-1" type="button" onclick="location.href='test-report.html'">Test
@@ -27,6 +27,7 @@
 
         <div class="row p-2 vh-100">
             <div class="col-6">
+                <input type="file" id="file-input" onchange="open_file()" class="mb-2"/>
                 <textarea id="text-input" rows="30" class="w-100 vh-75"></textarea>
             </div>
             <div class="col-6 border h-75 overflow-auto" id="text-output">
@@ -44,6 +45,16 @@
     const text_input = document.querySelector("#text-input");
     const text_output = document.querySelector("#text-output");
     var cases = [];
+
+    const open_file = () => {
+        let file = document.querySelector("#file-input").files[0];
+		let reader = new FileReader();
+		reader.addEventListener('load', function(e) {
+	    		let text = e.target.result;
+	    		text_input.textContent = text;
+		});
+		reader.readAsText(file);
+    }
 
     fetch("dataset.json")
         .then(response => response.json())
