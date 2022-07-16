@@ -38,6 +38,11 @@ node evaluate.js
 
 ### Usage
 
+execute `annotate` method that return promise.
+
 ```js
-annotate("sample text", ["NEUTRAL", "PARTY_ONLY", "PARTY_DATE", "PARTY_UNREPORTED", "SHORT"])
+annotate("sample text", ["NEUTRAL", "PARTY_ONLY", "PARTY_DATE", "PARTY_UNREPORTED", "SHORT"],
+        data => .... ,
+        error => ....
+)
 ```

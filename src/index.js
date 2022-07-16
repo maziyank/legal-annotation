@@ -19,10 +19,17 @@ const SHORT = cit_short;
 */
 
 const annotate = (text, applied_rules = [NEUTRAL, PARTY_ONLY, PARTY_DATE, PARTY_UNREPORTED, SHORT]) => {
-    const normalized_text = normalize(text);
-    applied_rules = applied_rules.map(fun => eval(fun));
-    const citations = applied_rules.reduce((acc, fun) => acc.concat(fun(normalized_text)), []);
-    return [...new Set(citations)];
+    return new Promise(function (resolve, reject) {
+        try {
+            const normalized_text = normalize(text);
+            applied_rules = applied_rules.map(fun => eval(fun));
+            const citations = applied_rules.reduce((acc, fun) => acc.concat(fun(normalized_text)), []);
+            resolve([...new Set(citations)]);
+        } catch (error) {
+            reject(error);
+        }
+
+    })
 }
 
 module.exports = annotate;
