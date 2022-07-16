@@ -39,5 +39,5 @@ node evaluate.js
 ### Usage
 
 ```js
-annotate("sample text")
+annotate("sample text", ["NEUTRAL", "PARTY_ONLY", "PARTY_DATE", "PARTY_UNREPORTED", "SHORT"])
 ```

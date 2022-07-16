@@ -1,25 +1,27 @@
 const { normalize } = require("./utils/_normalize");
-// const { cit_neutral } = require("./rules/neutral");
 const { cit_neutral } = require("./rules/neutral");
 const { cit_party_only, cit_party_date, cit_party_unreported } = require("./rules/party_only");
 const { cit_short } = require("./rules/short");
 
+/** List of rules to be applied */
+const NEUTRAL = cit_neutral;
+const PARTY_ONLY = cit_party_only;
+const PARTY_DATE = cit_party_date;
+const PARTY_UNREPORTED = cit_party_unreported;
+const SHORT = cit_short;
+
 /**
 * Given text as input, this function will capture any case citation.
-* @function annotate
+* @function apply
 * @param {String} text input raw text
-* @param {[String]} rules list of citation rules or function to be applied (default: ["cit_neutral", "cit_party_only", "cit_party_date", "cit_party_unreported", "cit_short"])
+* @param {[String]} applied_rules list of citation rules or function to be applied (default: ["NEUTRAL", "PARTY_ONLY", "PARTY_DATE", "PARTY_UNREPORTED", "SHORT"])
 * @return {[String]} list of captured citation
 */
-const annotate = (text, rules = [cit_neutral, cit_party_only, cit_party_date, cit_party_unreported, cit_short]) => {
-    // normalize text
-    text = normalize(text);
-    rules = rules.map(fun => eval(fun));
-    let citations = [];
-    rules.forEach(apply => {
-        citations = citations.concat(apply(text));
-    });
 
+const annotate = (text, applied_rules = [NEUTRAL, PARTY_ONLY, PARTY_DATE, PARTY_UNREPORTED, SHORT]) => {
+    const normalized_text = normalize(text);
+    applied_rules = applied_rules.map(fun => eval(fun));
+    const citations = applied_rules.reduce((acc, fun) => acc.concat(fun(normalized_text)), []);
     return [...new Set(citations)];
 }
 
