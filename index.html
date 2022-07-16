@@ -65,15 +65,17 @@
 
     const annotate_text = () => {
         let text = text_input.value;
-        annotate(text, data => {
-            data.forEach(c => {
-                text = text.replace(c, `<a href="#" data-toggle="tooltip" data-placement="top" title="${c}"><mark>${c}</mark></a>`);
-            });
-            text = text.replace(/\n\n/gm, '</br></br>');
-            text_output.innerHTML = text;
-        },
+        annotate(text).then(
+            data => {
+                    data.forEach(c => {
+                        text = text.replace(c, `<a href="#" data-toggle="tooltip" data-placement="top" title="${c}"><mark>${c}</mark></a>`);
+                    });
+                    text = text.replace(/\n\n/gm, '</br></br>');
+                    text_output.innerHTML = text;
+            
+                },
             error => {
-                console.log(error);
-            })
+                    console.log(error);
+                    })
     }
 </script>
