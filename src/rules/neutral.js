@@ -4,7 +4,9 @@ const { denormalize, normalize } = require("../utils/_normalize");
 const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
 const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
 const RGX_PARTY_ONLY = new RegExp(`${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source}`, "g");
-const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY}\\,\\s*)?[Aa]pplication\\sno\\.\\s\\d+\\/\\d+\\)`);
+const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`);
+const RGX_WITH_DEX = new RegExp(`\\(?\\(dec\\.\\)\\,\\sno\\.\\s\\d+\\/\\d+\\,\\s${RGX.DATE_DDMMMMYYYY}\\)?`);
+
 
 const inc_matching = (text, RGX_PATTERN) => {
     let candidates = [];
@@ -64,6 +66,8 @@ module.exports = { cit_neutral };
 //     result: cit_neutral(normalize(test_case.scenarios[no].text)),
 //     gt: test_case.scenarios[no].expected
 // });
+
+// console.log(cit_neutral('test  Marchiani v. France (dec.), no. 30392/03, 27 May 2008'));
 
 
 
