@@ -3,9 +3,9 @@ const RGX = require("../utils/_general_regex");
 const { denormalize, normalize } = require("../utils/_normalize");
 const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
 const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
-const RGX_PARTY_ONLY = new RegExp(`${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source}`, "g");
-const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`);
-const RGX_WITH_DEX = new RegExp(`\\(?\\(dec\\.\\)\\,\\sno\\.\\s\\d+\\/\\d+\\,\\s${RGX.DATE_DDMMMMYYYY}\\)?`);
+const RGX_PARTY_ONLY = new RegExp(`${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source}`, "gm");
+const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`, "gm");
+const RGX_WITH_DEX = new RegExp(`\\(?\\(dec\\.\\)\\,\\sno\\.\\s\\d+\\/\\d+\\,\\s${RGX.DATE_DDMMMMYYYY}\\)?`, "gm");
 
 
 const inc_matching = (text, RGX_PATTERN) => {
@@ -52,6 +52,9 @@ const inc_matching = (text, RGX_PATTERN) => {
 const cit_neutral = (text) => {
     const with_party = inc_matching(text, RGX_NEUTRAL_FULL);
     const unusual_full_date = inc_matching(text, RGX_UNUSUAL_FULLDATE);
+    // const app_no = inc_matching(text, RGX_WITH_APPLICATION);
+    // const dec_no = inc_matching(text, RGX_WITH_DEX);
+    
     return [...new Set([...with_party, ...unusual_full_date])];
 }
 
@@ -67,7 +70,7 @@ module.exports = { cit_neutral };
 //     gt: test_case.scenarios[no].expected
 // });
 
-// console.log(cit_neutral('test  Marchiani v. France (dec.), no. 30392/03, 27 May 2008'));
+// console.log(cit_neutral('test  Marchiani v. France (dec.), application no. 30392/03, 27 May 2008'));
 
 
 
