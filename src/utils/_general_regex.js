@@ -9,6 +9,7 @@ const GENERAL_REGEX = {
     PINPOINT: new RegExp(`((((\\,\\s+)?at)|((\\,\\s+)?at pp)|(§)|((\\,\\s+)?esp at)|((\\,\\s+)?at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|((\\,\\s+)?at par[a]?[s]?)|((\\,\\s+)?at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+)|(\\sto+\\s\\d+))*)|(\\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
     STOPPER: new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))"),
     DATE_DDMMMMYYYY: new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\s+(${DICT.month.join('|')})\\s+\\d{4}`),
+    DATE_MMMMDDYYYY: new RegExp(`(${DICT.month.join('|')})\\s+(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\,\\s+\\d{4}`),
     FULL_COURTNAME: new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`),
     DIVISION: new RegExp(`((\\([\\w\\d]*\\)))`),
     COURT_ABBV: new RegExp(`((((\\s*[A-Z][\\w\\’]*)){1,2})|((\\s*([A-Z])([\\\.A-Z])+)))`),
