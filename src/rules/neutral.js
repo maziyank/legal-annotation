@@ -3,7 +3,7 @@ const RGX = require("../utils/_general_regex");
 const { denormalize, normalize } = require("../utils/_normalize");
 const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
 const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
-const RGX_PARTY_ONLY = new RegExp(`${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source}`, "gm");
+const RGX_PARTY_ONLY = new RegExp(`((${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source})|(Re\\s+${RGX.PARTY_NAME.source}\\,?))`, "gm");
 const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`, "gm");
 const RGX_WITH_DEX = new RegExp(`\\(?\\(dec\\.\\)\\,\\sno\\.\\s\\d+\\/\\d+\\,\\s${RGX.DATE_DDMMMMYYYY}\\)?`, "gm");
 
@@ -30,7 +30,7 @@ const inc_matching = (text, RGX_PATTERN) => {
             const match = Array.from(subtext[j].matchAll(RGX_PARTY_ONLY));
             if (match && match.length == 1) {
                 const num_v = Array.from(subtext[j].matchAll(new RegExp(RGX.V.source, "g"))).length;
-                if (num_v == 1)
+                if (num_v <= 1)
                     return denormalize(`${subtext[j].slice(match[0].index)}${found_text}`);
             }
             j++;
@@ -61,16 +61,14 @@ const cit_neutral = (text) => {
 module.exports = { cit_neutral };
 
 
-// const test_case = require('../../dataset/dataset.json');
+const test_case = require('../../dataset/dataset.json');
 // Sample Fail Number 6, 40, 82, 88, 97, 101, 123, 37, 129
-// const no = 129
+const no = 136
 
-// console.log({
-//     result: cit_neutral(normalize(test_case.scenarios[no].text)),
-//     gt: test_case.scenarios[no].expected
-// });
-
-// console.log(cit_neutral('test  Marchiani v. France (dec.), application no. 30392/03, 27 May 2008'));
+console.log({
+    result: cit_neutral(normalize(test_case.scenarios[no].text)),
+    gt: test_case.scenarios[no].expected
+});
 
 
 

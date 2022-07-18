@@ -942,6 +942,13 @@
             "expected": [
                 "Bryanston Finance Ltd v de Vries [1975] 1 QB 703 at pp717E-F, 733 (per Lord Denning MR) and p739E-740B (per Lawton LJ"
             ]
+        },
+        {
+            "text": "I appreciate that in Re Salmen Mr. Justice Eve, whose decision was upheld by the Court of Appeal, said in the course of his judgment that the jurisdiction must be founded upon some such proposition as that the circumstances of the case raise an implied contract on the part of the persons against whom the claim for remuneration is made, to pay such remuneration. I observe that Mr. Justice Upjohn in Re Worthington disagreed with that altogether. He said that the true rule was that the court had an inherent jurisdiction to authorise remuneration, even against creditors. He pointed out that the Court of Appeal did not consider the question of inherent jurisdiction; in the Court of Appeal the case was treated as governed by Re White, (1898) 1 Ch 297. I agree with that; Re White says nothing about contract. Further, I think it necessary to bear in mind that Re Salmen was a case of an insolvent estate (as was Re White). In such a case, the court might, whatever the jurisdiction, be unwilling to impose upon the creditors a liability to remunerate in the absence of some circumstances that made it equitable that the creditors should bear the remuneration. A provision in a will authorising trustees to charge does not bind the creditors. As Lord Justice Chitty said in Re White, the declaration made by the testator is bounty on his part. No one can claim the bounty until the creditors are satisfied.",
+            "expected": [
+                "Re White, (1898) 1 Ch 297",
+                "Re Salmen"
+            ]
         }
     ]
 }
