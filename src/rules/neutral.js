@@ -1,12 +1,12 @@
 const RGX = require("../utils/_general_regex");
 
 const { denormalize, normalize } = require("../utils/_normalize");
-const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(\\s*of\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
+const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(((\\s*on)|(\\s*of)|(\\,))\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
 const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
 const RGX_PARTY_ONLY = new RegExp(`((${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source})|(Re\\s+${RGX.PARTY_NAME.source}\\,?))`, "gm");
 
 const RGX_UNUSUAL_FULLDATE_2 = new RegExp(`\\(${RGX.DATE_MMMMDDYYYY.source}\\,\\s\\d+\\s[A-Z]\\.\\s\\d+\\)`, "gm");
-// const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY.source}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`, "gm");
+const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY.source}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`, "gm");
 // const RGX_WITH_DEX = new RegExp(`\\(?\\(dec\\.\\)\\,\\sno\\.\\s\\d+\\/\\d+\\,\\s${RGX.DATE_DDMMMMYYYY.source}\\)?`, "gm");
 
 
@@ -38,7 +38,10 @@ const inc_matching = (text, RGX_PATTERN) => {
             j++;
         }
 
-        return denormalize(found_text);
+        found_text = denormalize(found_text);
+        if (new RegExp(`^\\d{4}\\)`).test(found_text)) found_text = `(${found_text}`
+
+        return found_text;
     }).filter(m => m.length > 5)
 
     return candidates
@@ -56,7 +59,7 @@ const cit_neutral = (text) => {
     const unusual_full_date = inc_matching(text, RGX_UNUSUAL_FULLDATE);
     const unusual_full_date2 = inc_matching(text, RGX_UNUSUAL_FULLDATE_2);
 
-    // const app_no = inc_matching(text, RGX_WITH_APPLICATION);
+    const app_no = inc_matching(text, RGX_WITH_APPLICATION);
     // const dec_no = inc_matching(text, RGX_WITH_DEX);
     
     return [...new Set([...with_party, ...unusual_full_date, ...unusual_full_date2])];
@@ -65,15 +68,17 @@ const cit_neutral = (text) => {
 module.exports = { cit_neutral };
 
 
-// const test_case = require('../../dataset/dataset.json');
+const test_case = require('../../dataset/dataset.json');
 // Sample Fail Number 6, 40, 82, 88, 97, 101, 123, 37, 129
-// const no = 137
+const no = 137
 
 // console.log({
 //     result: cit_neutral(normalize(test_case.scenarios[no].text)),
 //     gt: test_case.scenarios[no].expected
 // });
 
+
+console.log(cit_neutral(normalize("Markovic and Others v. Italy [GC], no. 1398/03, § 84, ECHR 2006-XIV ")));
 
 
 
