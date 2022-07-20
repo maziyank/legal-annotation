@@ -11,7 +11,7 @@ const normalize = (txt) => {
 
 const denormalize = (txt) => {
     if (!txt) return
-    txt = txt.replace(/\-\S+\-/gm, x => `(${x.slice(1, x.length - 1)})`);
+    // txt = txt.replace(/\-\S+\-/gm, x => `(${x.slice(1, x.length - 1)})`);
     txt = txt.trim();
     txt = txt.replace(/^\(/, "");
     if (/\)$/.test(txt) && !(/\(.*/.test(txt))) {

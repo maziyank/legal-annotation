@@ -982,6 +982,26 @@
                 "Re MRJ (Reconsideration of Order) [2014] EWHC B15 (COP)",
                 "[2014] EWCOP B15"
             ]
+        },
+        {
+            "text": "the excessive length of judicial proceedings, in particular the applicable provisions of the 2004 Act, are stated in the Court's decisions in the cases of Charzyński v. Poland no. 15212/03 (dec.), §§ 12-23, ECHR 2005-V and Ratajczyk v. Poland no. 11215/02 (dec.), ECHR 2005-VIII and the judgment in the case of Krasuski v. Poland, no. 61444/00, §§ 34-46, ECHR 2005-V.   THE LAW  I.ALLEGED VIOLATION OF ARTICLE 6 § 1 OF THE CONVENTION ON ACCOUNT OF THE UNREASONABLE LENGTH OF THREE SETS OF PROCEEDINGS FOR PAYM",
+            "expected": [
+                "Charzyński v. Poland no. 15212/03 (dec.), §§ 12-23, ECHR 2005-V",
+                "Ratajczyk v. Poland no. 11215/02",
+                "Krasuski v. Poland, no. 61444/00, §§ 34-46, ECHR 2005-V"
+            ]
+        },
+        {
+            "text": "treated in the same way, unless such difference in treatment is objectively justified (Case T-311/94 BPB de Eendracht v Commission [1998] ECR II-1129, paragraph 309, and the case-law cited). 105 In accordance with this principle, the sixth paragraph of Section 1.A of the Guidelines provides that, in the case of an infringement involving several undertakings, it might be necessary to apply weightings to the starting amounts of the fines in order to take account of the specific weight and, therefore, the real ",
+            "expected": [
+                "Eendracht v Commission [1998] ECR II-1129, paragraph 309"
+            ]
+        },
+        {
+            "text": "at right and secondly, that the finding that the Respondent had no feasible option available, so far as requiring the Appellant to accept the new terms was concerned, was a perverse finding on the evidence. As to the first ground, we have been referred to the Decision of the House of Lords in the case of Halfpenny -v- IGE Medical Systems Ltd [2001] IRLR 96.  We have also considered the statutory provisions which are relevant to the present appeal, being sections 78, 79 and 82 of the Employment Rights",
+            "expected": [
+                "Halfpenny -v- IGE Medical Systems Ltd [2001] IRLR 96"
+            ]
         }
     ]
 }

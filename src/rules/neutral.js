@@ -67,9 +67,9 @@ const cit_neutral = (text) => {
 module.exports = { cit_neutral };
 
 
-const test_case = require('../../dataset/dataset.json');
-// Sample Fail Number 6, 40, 82, 88, 97, 101, 123, 37, 129
-const no = 137
+// const test_case = require('../../dataset/dataset.json');
+// // Sample Fail Number 6, 40, 82, 88, 97, 101, 123, 37, 129
+// const no = 143
 
 // console.log({
 //     result: cit_neutral(normalize(test_case.scenarios[no].text)),
@@ -77,6 +77,6 @@ const no = 137
 // });
 
 
-// console.log(cit_neutral(normalize("DPP v. Walsh (Court of Appeal, 26th February 2016)")));
-
+// console.log(cit_neutral(normalize("Charzyński v. Poland no. 15212/03 (dec.)")));
+// 
 
