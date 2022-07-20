@@ -6,7 +6,7 @@ const GENERAL_REGEX = {
     YEAR: new RegExp("([\\[\\(\\s][1-2]\\d{3}[\\]\\)\\s)])"),
     V: new RegExp("([\\–\\-]?(v|against)[\\–\\-\\.]?)"),
     NUM_OR_SLASHEDNUM: new RegExp("(\\d+(\\/\\d+)*((\\,\\s\\d+)|(\\-\\d+))*(\\.[\\d\\w]+)*)"),
-    PINPOINT: new RegExp(`((((\\,\\s+)?at)|((\\,\\s+)?at pp)|((\\,\\s+)?§)|((\\,\\s+)?esp at)|((\\,\\s+)?at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|((\\,\\s+)?at par[a]?[s]?)|((\\,\\s+)?at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+)|(\\sto+\\s\\d+))*)|(\\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
+    PINPOINT: new RegExp(`((((\\,\\s+)?at)|((\\,\\s+)?at pp)|((\\,\\s+)?§$?)|((\\,\\s+)?esp at)|((\\,\\s+)?at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|((\\,\\s+)?at par[a]?[s]?)|((\\,\\s+)?at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+)|(\\sto+\\s\\d+))*)|(\\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
     STOPPER: new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))"),
     DATE_DDMMMMYYYY: new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\s+(${DICT.month.join('|')})\\s+\\d{4}`),
     DATE_MMMMDDYYYY: new RegExp(`(${DICT.month.join('|')})\\s+(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\,\\s+\\d{4}`),
