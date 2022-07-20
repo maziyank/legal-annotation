@@ -4,7 +4,7 @@ const { denormalize, normalize } = require("../utils/_normalize");
 const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(((\\s*on)|(\\s*of)|(\\,))\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
 const RGX_UNUSUAL_FULLDATE = new RegExp(`(\\,\\s+)?${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
 
-const RGX_UNUSUAL_FULLDATE_2 = new RegExp(`\\(${RGX.DATE_MMMMDDYYYY.source}\\,\\s\\d+\\s[A-Z]\\.\\s\\d+\\)`, "gm");
+const RGX_UNUSUAL_FULLDATE_2 = new RegExp(`(\\(?${RGX.DATE_MMMMDDYYYY.source}\\,\\s)?(\\d+\\s[A-Z]\\.\\s\\d+\\)?)`, "gm");
 const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY.source}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`, "gm");
 // const RGX_WITH_DEC = new RegExp(`\\(?\\(dec\\.\\)\\,\\sno\\.\\s\\d+\\/\\d+\\,\\s${RGX.DATE_DDMMMMYYYY.source}\\)?`, "gm");
 
@@ -77,6 +77,6 @@ module.exports = { cit_neutral };
 // });
 
 
-// console.log(cit_neutral(normalize("Charzyński v. Poland no. 15212/03 (dec.)")));
-// 
+// console.log(cit_neutral(normalize("Caesar v. The Magistrates of Dundee,  20 D. 859")));
+
 
