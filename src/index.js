@@ -34,3 +34,6 @@ const annotate = (text, applied_rules = [NEUTRAL, PARTY_ONLY, PARTY_DATE, PARTY_
 
 module.exports = annotate;
 
+
+
+// console.log(annotate(normalize("DPP v. Walsh (Court of Appeal, 26th February 2016)")));

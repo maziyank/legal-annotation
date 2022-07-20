@@ -2,7 +2,7 @@ const RGX = require("../utils/_general_regex");
 
 const { denormalize, normalize } = require("../utils/_normalize");
 const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(((\\s*on)|(\\s*of)|(\\,))\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
-const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
+const RGX_UNUSUAL_FULLDATE = new RegExp(`(\\,\\s+)?${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
 
 const RGX_UNUSUAL_FULLDATE_2 = new RegExp(`\\(${RGX.DATE_MMMMDDYYYY.source}\\,\\s\\d+\\s[A-Z]\\.\\s\\d+\\)`, "gm");
 const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY.source}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`, "gm");
@@ -77,7 +77,6 @@ const no = 137
 // });
 
 
-console.log(cit_neutral(normalize("Markovic and Others v. Italy [GC], no. 1398/03, § 84, ECHR 2006-XIV ")));
-
+// console.log(cit_neutral(normalize("DPP v. Walsh (Court of Appeal, 26th February 2016)")));
 
 

@@ -4,13 +4,13 @@ const DICT = require("./_dict")
 const GENERAL_REGEX = {
     PREFIX: new RegExp(`((\\. +|\:|\\s|^)(${DICT.prefix.map(t => `(${t})`).join('|')})\\s)|^|\\(|\\n|\\:|\\;|(\\.\\s+)`, "gm"),
     YEAR: new RegExp("([\\[\\(\\s][1-2]\\d{3}[\\]\\)\\s)])"),
-    V: new RegExp("([\\–\\-]?v[\\–\\-\\.]?)"),
+    V: new RegExp("([\\–\\-]?(v|against)[\\–\\-\\.]?)"),
     NUM_OR_SLASHEDNUM: new RegExp("(\\d+(\\/\\d+)*((\\,\\s\\d+)|(\\-\\d+))*(\\.[\\d\\w]+)*)"),
     PINPOINT: new RegExp(`((((\\,\\s+)?at)|((\\,\\s+)?at pp)|((\\,\\s+)?§)|((\\,\\s+)?esp at)|((\\,\\s+)?at page)|(\\,\\s+par[a]?[s]?)|(at p\\.)|(par[a]?[s]?)|((\\,\\s+)?at par[a]?[s]?)|((\\,\\s+)?at paragraph[s]?))\\s*((\\d+((-\\d+)|(\\,\\s+\\d+)|(\\sto+\\s\\d+))*)|(\\d+\\s+([A-Z\\\–]*))|(\\[\\d+\\]((\\s*\\-\\s*)\\[\\d+\\])*)))`),
     STOPPER: new RegExp("(?=\\s|$|\\n|\\.|\\,|\\;|\\:|\\))"),
     DATE_DDMMMMYYYY: new RegExp(`(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\s+(${DICT.month.join('|')})\\s+\\d{4}`),
     DATE_MMMMDDYYYY: new RegExp(`(${DICT.month.join('|')})\\s+(([0-9])|([0-2][0-9])|([3][0-1]))(rd|th|st)?\\,\\s+\\d{4}`),
-    FULL_COURTNAME: new RegExp(`(([A-Z][\\w\\-]+\\s)+(Tribunal))`),
+    FULL_COURTNAME: new RegExp(`((([A-Z][\\w\\-]+\\s)+(Tribunal))|(Court\\s+of\\s+[A-Z][a-z]+))`),
     DIVISION: new RegExp(`((\\([\\w\\d]*\\)))`),
     COURT_ABBV: new RegExp(`((((\\s*[A-Z][\\w\\’]*)){1,2})|((\\s*([A-Z])([\\\.A-Z])+)))`),
     PARTY_NAME: new RegExp(`(((\\s*|^)([[A-Z0-9É][a-z\\,\\-\\']*)(\\s[\\(\\-][A-Z0-9É][a-z\\,\\-\\']+[\\)\\-])?(\\s+(of|for|%FOR%|%OF%|and|in|plc|ex|parte|&|the|ors|Co\\.))?(\\s\\([A-Z]+\\))?\\.?)+)`)
