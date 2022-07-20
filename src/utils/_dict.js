@@ -19,11 +19,11 @@ const DICT = {
         },
         {
             "from": "\\s[A-Z]{1,10}\\s+in",
-            "to": "see in"
+            "to": " see in"
         },
         {
             "from": "(\\s[A-Z]\\w+){1,2}\\s(Court|Tribunal|Division|Chamber|Lord(s?)|House|Justice|Board)\\s+in",
-            "to": "court in"
+            "to": " court in"
         },
         {
             "from": "of(\\s[A-Z]\\w+){1,6}\\s+in",
