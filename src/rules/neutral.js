@@ -3,11 +3,10 @@ const RGX = require("../utils/_general_regex");
 const { denormalize, normalize } = require("../utils/_normalize");
 const RGX_NEUTRAL_FULL = new RegExp(`${RGX.CITEND.source}(\\s*${RGX.PINPOINT.source})?(((\\s*on)|(\\s*of)|(\\,))\\s+${RGX.DATE_DDMMMMYYYY.source})?(\\(${RGX.DATE_DDMMMMYYYY.source}\\))?`, "g");
 const RGX_UNUSUAL_FULLDATE = new RegExp(`,\\s+${RGX.FULL_COURTNAME.source},\\s+${RGX.DATE_DDMMMMYYYY.source}`, "gm");
-const RGX_PARTY_ONLY = new RegExp(`((${RGX.PARTY_NAME.source}(\\s+[\\–\\-]?v[\\–\\-\\.]?)${RGX.PARTY_NAME.source})|(Re\\s+${RGX.PARTY_NAME.source}\\,?))`, "gm");
 
 const RGX_UNUSUAL_FULLDATE_2 = new RegExp(`\\(${RGX.DATE_MMMMDDYYYY.source}\\,\\s\\d+\\s[A-Z]\\.\\s\\d+\\)`, "gm");
 const RGX_WITH_APPLICATION = new RegExp(`\\((${RGX.DATE_DDMMMMYYYY.source}\\,\\s*)?([Aa]pplication\\s)?no\\.\\s\\d+\\/\\d+\\)`, "gm");
-// const RGX_WITH_DEX = new RegExp(`\\(?\\(dec\\.\\)\\,\\sno\\.\\s\\d+\\/\\d+\\,\\s${RGX.DATE_DDMMMMYYYY.source}\\)?`, "gm");
+// const RGX_WITH_DEC = new RegExp(`\\(?\\(dec\\.\\)\\,\\sno\\.\\s\\d+\\/\\d+\\,\\s${RGX.DATE_DDMMMMYYYY.source}\\)?`, "gm");
 
 
 const inc_matching = (text, RGX_PATTERN) => {
@@ -29,9 +28,9 @@ const inc_matching = (text, RGX_PATTERN) => {
 
         let j = 0;
         while (j < subtext.length) {
-            const match = Array.from(subtext[j].matchAll(RGX_PARTY_ONLY));
+            const match = Array.from(subtext[j].matchAll(RGX.RGX_PARTY_ONLY));
             if (match && match.length == 1) {
-                const num_v = Array.from(subtext[j].matchAll(new RegExp(RGX.V.source, "g"))).length;
+                const num_v = Array.from(subtext[j].matchAll(new RegExp(`\\s+${RGX.V.source}\\s+`, "g"))).length;
                 if (num_v <= 1)
                     return denormalize(`${subtext[j].slice(match[0].index)}${found_text}`);
             }
@@ -60,7 +59,7 @@ const cit_neutral = (text) => {
     const unusual_full_date2 = inc_matching(text, RGX_UNUSUAL_FULLDATE_2);
 
     const app_no = inc_matching(text, RGX_WITH_APPLICATION);
-    // const dec_no = inc_matching(text, RGX_WITH_DEX);
+    // const dec_no = inc_matching(text, RGX_WITH_DEC);
     
     return [...new Set([...with_party, ...unusual_full_date, ...unusual_full_date2])];
 }
