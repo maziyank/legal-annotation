@@ -10,7 +10,7 @@ const DICT = {
             "to": ". in"
         },
         {
-            "from": "^In",
+            "from": "^In\s(?=[^(re)])",
             "to": "in"
         },
         {

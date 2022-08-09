@@ -26,7 +26,7 @@ const REPORT = new RegExp(`${GR.YEAR.source}\\s+(\\d+\\s(\\w+\\s){1,4}\\d+(\\s\\
 const UNUSUAL_1 = new RegExp(`((\\(?\\w+(\\/\\w+)+\\)?))(\\s+of\\s+${GR.DATE_DDMMMMYYYY.source})?`);
 const CITEND = new RegExp(`(${EUR_REPORT2.source}|${EUR_REPORT.source}|${NEUTRAL.source}|${UNUSUAL_1.source}|(\\\(${DATE_UNREPORTED.source}\\\)))`, "g");
 const AND = new RegExp(`(${NEUTRAL.source}|${REPORT.source}|${UNUSUAL_1.source}${GR.STOPPER.source})(\\.|(\\s+and\\s+))`, "gm");
-const RGX_PARTY_ONLY = new RegExp(`((Re\\s+${GR.PARTY_NAME.source}\\,?)|(${GR.PARTY_NAME.source}(\\s+${GR.V.source})${GR.PARTY_NAME.source}))`, "gm");
+const RGX_PARTY_ONLY = new RegExp(`(((Re|In\\s+re)\\s+${GR.PARTY_NAME.source}\\,?)|(${GR.PARTY_NAME.source}(\\s+${GR.V.source})${GR.PARTY_NAME.source}))`, "gm");
 
 module.exports = {
     ...GENERAL_REGEX,
